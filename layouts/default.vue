@@ -86,7 +86,12 @@ export default {
   async fetch() {
     this.items =  await this.$content('', { deep: true }).only(['nav_name']).fetch()
     for (const i in this.items) {
-      this.setCategory(this.items[i])
+      if(this.items[i].nav_name !== '') {
+        this.setCategory(this.items[i])
+      } else {
+        delete this.items[i]
+      }
+      
     }
     this.menu = this.buildMenu(this.items)
     this.topMenu = this.menu.Top
