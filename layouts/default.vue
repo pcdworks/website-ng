@@ -84,8 +84,8 @@ export default {
     }
   },
   async fetch() {
-    this.items =  await this.$content('', { deep: true }).only(['nav_name']).fetch()
-    for (const i in this.items) {
+    this.items =  await this.$content('', { deep: true }).only(['nav_name', 'order']).fetch()
+    for (const i in this.items.sort((a, b) => (a.order > b.order) ? 1 : -1)) {
       if(this.items[i].nav_name !== '') {
         this.setCategory(this.items[i])
       } else {

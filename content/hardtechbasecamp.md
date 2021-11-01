@@ -2,6 +2,7 @@
 title: 'HARDTECH Basecamp Incubator'
 description: "It's a long journey to turn an idea into a commercially viable product. We know, we’ve done it, both for our own and for many of the 50+ clients that we have served."
 nav_name: 'HARDTECH Basecamp'
+order: 2
 ---
 
 # ⛰ HARDTECH Basecamp Incubator™
