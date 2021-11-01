@@ -9,20 +9,36 @@
     >
       <v-list>
         <v-list-item
-          v-for="(item, i) in items"
+          v-for="(item, i) in topMenu"
           :key="i"
           :to="item.path"
           router
           exact
         >
-          <v-list-item-action>
-            <!-- <v-icon>{{ item.icon }}</v-icon> -->
-          </v-list-item-action>
           <v-list-item-content>
             <v-list-item-title v-text="item.nav_name" />
           </v-list-item-content>
         </v-list-item>
       </v-list>
+      <v-list-group v-for="(group, name) in menu" :key="group.key">
+        <template #activator>
+          <v-list-item-title>{{name}}</v-list-item-title>
+        </template>
+        <v-list>
+          <v-list-item
+            v-for="(sitem, j) in group"
+            :key="j"
+            :to="sitem.path"
+            router
+            exact
+          >
+            <v-list-item-content>
+              <v-list-item-title v-text="sitem.nav_name" />
+            </v-list-item-content>
+          </v-list-item>
+        </v-list>
+      </v-list-group>
+
     </v-navigation-drawer>
     <v-app-bar
       :clipped-left="true"
@@ -47,7 +63,6 @@
     </v-app-bar>
     <v-main>
       <v-container>
-        {{items}}
         <Nuxt />
       </v-container>
     </v-main>
@@ -63,11 +78,46 @@ export default {
     return {
       drawer: null,
       miniVariant: false,
-      items: []
+      items: [],
+      menu: [],
+      topMenu: []
     }
   },
   async fetch() {
     this.items =  await this.$content('', { deep: true }).only(['nav_name']).fetch()
+    for (const i in this.items) {
+      this.setCategory(this.items[i])
+    }
+    this.menu = this.buildMenu(this.items)
+    this.topMenu = this.menu.Top
+    delete this.menu.Top
+  },
+  methods: {
+    toTitleCase (str) {
+      return str.replace(
+        /\w\S*/g,
+        function(txt) {
+          return (txt.charAt(0).toUpperCase() + txt.substr(1).toLowerCase())
+        }
+      ).replace(/-/g, ' ')
+    },
+    setCategory (item) {
+      if(item.path) {
+        const path = item.path.split('/')
+        if(path.length > 2) {
+          item.category = this.toTitleCase(path[1])
+        } else {
+          item.category = 'Top'
+        }
+      }
+    },
+    buildMenu (items) {
+      const groups = items.reduce((groups, item) => ({
+        ...groups,
+        [item.category]: [...(groups[item.category] || []), item]
+      }), {})
+      return groups
+    }
   }
 }
 </script>
