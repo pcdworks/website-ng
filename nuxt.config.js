@@ -6,8 +6,8 @@ export default {
 
   // Global page headers: https://go.nuxtjs.dev/config-head
   head: {
-    titleTemplate: '%s - pcdworks-website',
-    title: 'pcdworks-website',
+    titleTemplate: '%s | Product Concept Development, Inc.',
+    title: 'Product Concept Development, Inc.',
     htmlAttrs: {
       lang: 'en'
     },
