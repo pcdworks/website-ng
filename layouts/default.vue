@@ -11,7 +11,6 @@
           v-for="(item, i) in topMenu"
           :key="i"
           :to="item.path"
-          router
           exact
         >
           <v-list-item-content>
@@ -28,7 +27,6 @@
             v-for="(sitem, j) in group"
             :key="j"
             :to="sitem.path"
-            router
             exact
           >
             <v-list-item-content>
@@ -72,23 +70,21 @@
 export default {
   data () {
     return {
-      drawer: true,
-      items: [],
+      drawer: false,
       menu: [],
       topMenu: []
     }
   },
   async fetch() {
-    this.items =  await this.$content('', { deep: true }).only(['nav_name', 'order']).fetch()
-    for (const i in this.items.sort((a, b) => (a.order > b.order) ? 1 : -1)) {
-      if(this.items[i].nav_name !== '') {
-        this.setCategory(this.items[i])
+    const items =  await this.$content('', { deep: true }).only(['nav_name', 'order', 'path']).fetch()
+    for (const i in items.sort((a, b) => (a.order > b.order) ? 1 : -1)) {
+      if(items[i].nav_name !== '') {
+        this.setCategory(items[i])
       } else {
-        delete this.items[i]
+        delete items[i]
       }
-      
     }
-    this.menu = this.buildMenu(this.items)
+    this.menu = this.buildMenu(items)
     this.topMenu = this.menu.Top
     delete this.menu.Top
   },
