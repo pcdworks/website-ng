@@ -16,7 +16,6 @@ collections:
     format: 'frontmatter'
     create: true
     slug: '{{slug}}'
-    format: 'markdown'
     editor:
       preview: false
     fields:
