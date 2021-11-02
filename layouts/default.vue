@@ -45,7 +45,10 @@
       fixed
       app
     >
-      <v-app-bar-nav-icon @click.stop="drawer = !drawer" />
+      <v-app-bar-nav-icon id="navi" @click.stop="drawer = !drawer">
+        <v-icon>mdi-menu</v-icon>
+        Menu
+      </v-app-bar-nav-icon>
       <!-- <v-btn
         icon
         @click.stop="miniVariant = !miniVariant"
@@ -76,7 +79,7 @@
 export default {
   data () {
     return {
-      drawer: null,
+      drawer: false,
       miniVariant: false,
       items: [],
       menu: [],
@@ -128,6 +131,13 @@ export default {
 </script>
 
 <style>
+
+#navi {
+  width: 64px;
+  margin-left: 0px;
+  margin-right: -12px;
+}
+
 .logo img {
   padding-top: 2px;
   padding-bottom: 2px;
