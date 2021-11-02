@@ -1,12 +1,20 @@
 <template>
-    <nuxt-content :document="doc" />
+    <div>
+        <h1>Page not found</h1>
+        <h2>The page you're looking for does not seem to exist</h2>
+        <a href="/index">Go to Homepage</a>
+    </div>
 </template>
 
 <script>
 export default {
-async asyncData({ $content, params }) {
-  const doc = await $content('home').fetch()
-  return { doc }
+data () {
+  return {
+    doc: {
+      description: 'The page you\'re looking for does not seem to exist',
+      title: 'Page not found'
+    }
+  }
 },
 head() {
   return {

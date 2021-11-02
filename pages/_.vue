@@ -5,7 +5,7 @@
 <script>
 export default {
 async asyncData({ $content, params }) {
-  const doc = await $content(params.slug || params.pathMatch || 'home').fetch()
+  const doc = await $content(params.slug || params.pathMatch || 'index').fetch()
   return { doc }
 },
 head() {
