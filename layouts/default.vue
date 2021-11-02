@@ -2,7 +2,6 @@
   <v-app dark>
     <v-navigation-drawer
       v-model="drawer"
-      :mini-variant="miniVariant"
       :clipped="true"
       fixed
       app
@@ -49,12 +48,6 @@
         <v-icon>mdi-menu</v-icon>
         Menu
       </v-app-bar-nav-icon>
-      <!-- <v-btn
-        icon
-        @click.stop="miniVariant = !miniVariant"
-      >
-        <v-icon>mdi-{{ `chevron-${miniVariant ? 'right' : 'left'}` }}</v-icon>
-      </v-btn> -->
       <v-toolbar-title>
         <router-link to="/">
           <div class="logo">
@@ -79,8 +72,7 @@
 export default {
   data () {
     return {
-      drawer: false,
-      miniVariant: false,
+      drawer: true,
       items: [],
       menu: [],
       topMenu: []

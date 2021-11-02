@@ -4,6 +4,7 @@
     :color="color"
     :elevation="elevation"
     :icon="icon"
+    class="mb-4"
     >
         {{message}}
         <br/>

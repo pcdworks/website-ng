@@ -3,7 +3,30 @@ title: 'Home'
 description: ''
 nav_name: 'Home'
 order: 0
+
+# page content
+carouselImages:
+  -
+    src: "images/stock-slide-1.jpg"
+    text: ""
+  - 
+    src: "images/stock-slide-2.jpg"
+    text: ""
+  - 
+    src: "images/stock-slide-3.jpg"
+    text: ""
+  - 
+    src: "images/stock-slide-4.jpg"
+    text: ""
+  - 
+    src: "images/stock-slide-5.jpg"
+    text: ""
+  -
+    src: "images/stock-slide-6.jpg"
+    text: ""
 ---
+
+<carousel :images="carouselImages"></carousel>
 
 <banner
     message="Home of the HARDTECH Basecamp Incubator"
@@ -11,7 +34,7 @@ order: 0
     elevation="10"
     color="secondary"
     button=true
-    button-text="Learn More"
+    button-text="Learn More About the basecamp"
     button-olor="accent">
 </banner>
 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Turpis egestas integer eget aliquet nibh praesent tristique magna sit. Lacus suspendisse faucibus interdum posuere lorem. Arcu cursus euismod quis viverra nibh cras pulvinar mattis. Tincidunt vitae semper quis lectus nulla at. Sem viverra aliquet eget sit amet tellus cras adipiscing enim. Facilisis sed odio morbi quis commodo. Tristique nulla aliquet enim tortor at. Volutpat commodo sed egestas egestas. Nunc aliquet bibendum enim facilisis gravida neque. Nibh mauris cursus mattis molestie a iaculis at. Velit euismod in pellentesque massa placerat duis ultricies lacus. Ut ornare lectus sit amet est. A iaculis at erat pellentesque adipiscing commodo elit at imperdiet. Sollicitudin aliquam ultrices sagittis orci a scelerisque purus semper. Tempor orci eu lobortis elementum. Lobortis scelerisque fermentum dui faucibus in ornare quam. Ullamcorper sit amet risus nullam eget felis. Risus pretium quam vulputate dignissim suspendisse in. Et leo duis ut diam quam nulla.
