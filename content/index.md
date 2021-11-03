@@ -39,4 +39,6 @@ date: 2021-11-03T15:43:21.985Z
     button-olor="accent">
 </banner>
 
-<shader-group :items="shades"></shader>
+<shader-group :items="shades"></shader-group>
+
+<shader src="/images/stock-slide-4.jpg" text="Because we live in a dynamic world that is ever changing, we believe in the ''Power of Many'' to solve our industries most complex technological challenges. The world of innovation is a collaborative one. "></shader>

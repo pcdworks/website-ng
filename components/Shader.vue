@@ -1,24 +1,30 @@
 <template>
   <v-hover v-slot="{ hover }">
-    <v-card
-      max-width="600"
-    >
-      <v-img
-        :aspect-ratio="16/9"
-        :src="src"
-      >
+    <v-card class="mb-8">
+      <v-img :aspect-ratio="16 / 9" :src="src" max-height="300px">
         <v-expand-transition>
           <div
             v-if="hover"
-            class="d-flex transition-fast-in-fast-out primary v-card--reveal black--text"
-            style="height: 100%;"
+            class="
+              d-flex
+              transition-fast-in-fast-out
+              primary
+              v-card--reveal
+              black--text
+            "
+            style="height: 100%"
           >
-          <div
-            v-resize-text="{ratio: 3.5, minFontSize: '12px', maxFontSize: '100px', delay: 200}"
-            class="pa-5"
-          >
-            {{text}}
-          </div>
+            <div
+              v-resize-text="{
+                ratio: 3.5,
+                minFontSize: '12px',
+                maxFontSize: '26px',
+                delay: 200,
+              }"
+              class="pa-5"
+            >
+              {{ text }}
+            </div>
           </div>
         </v-expand-transition>
       </v-img>
@@ -31,20 +37,18 @@ export default {
   props: {
     src: {
       type: String,
-      default: ''
+      default: '',
     },
     text: {
       type: String,
-      default: ''
-    }
+      default: '',
+    },
   },
-  data: () => ({
-  })
+  data: () => ({}),
 }
 </script>
 
 <style>
-
 .v-card--reveal {
   align-items: center;
   bottom: 0;
@@ -53,5 +57,4 @@ export default {
   position: absolute;
   width: 100%;
 }
-
 </style>

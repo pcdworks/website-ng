@@ -2,7 +2,7 @@
   <v-carousel
     v-model="model"
     hide-delimiters
-    class="mb-4"
+    class="mb-8"
   >
     <v-carousel-item
       v-for="(image, i) in images"
