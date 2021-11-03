@@ -10,10 +10,10 @@
       :src="image.src"
     >
     <v-container
+      v-if="image.text"
       fill-height
       fluid
       pa-0 ma-0 pb-0
-      v-if="image.text"
     >
       <v-layout fill-height align-end pb-0 mb-0>
         <v-flex xs12>
