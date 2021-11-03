@@ -41,6 +41,7 @@
       :clipped-left="true"
       fixed
       app
+      dark
     >
       <v-app-bar-nav-icon id="navi" @click.stop="drawer = !drawer">
         <v-icon>mdi-menu</v-icon>
