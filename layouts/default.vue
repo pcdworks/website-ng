@@ -1,5 +1,5 @@
 <template>
-  <v-app dark>
+  <v-app>
     <v-navigation-drawer
       v-model="drawer"
       :clipped="true"
@@ -54,6 +54,9 @@
         </router-link>
       </v-toolbar-title>
       <v-spacer />
+      <v-btn icon @click="toggleDarkMode">
+        <v-icon>{{switchIcon}}</v-icon>
+      </v-btn>
     </v-app-bar>
     <v-main>
       <v-container>
@@ -72,7 +75,8 @@ export default {
     return {
       drawer: false,
       menu: [],
-      topMenu: []
+      topMenu: [],
+      darkMode: false
     }
   },
   async fetch() {
@@ -88,7 +92,42 @@ export default {
     this.topMenu = this.menu.Top
     delete this.menu.Top
   },
+  computed: {
+    switchIcon () {
+      return this.darkMode ? 'mdi-white-balance-sunny' : 'mdi-moon-waning-crescent';
+    }
+  },
+  mounted () {
+    const theme = localStorage.getItem("dark_theme");
+    if (theme) {
+        if (theme === "true") {
+            this.$vuetify.theme.dark = true
+            this.darkMode = true
+        } else {
+            this.$vuetify.theme.dark = false
+            this.darkMode = false
+        }
+    } else if (
+        window.matchMedia &&
+        window.matchMedia("(prefers-color-scheme: dark)").matches
+    ) {
+        this.$vuetify.theme.dark = true
+        this.darkMode = true
+        localStorage.setItem(
+            "dark_theme",
+            this.$vuetify.theme.dark.toString()
+        )
+    }
+  },
   methods: {
+    toggleDarkMode () {
+        this.$vuetify.theme.dark = !this.$vuetify.theme.dark;
+        this.darkMode = !this.darkMode;
+        localStorage.setItem(
+            "dark_theme",
+            this.$vuetify.theme.dark.toString()
+        )
+    },
     toTitleCase (str) {
       return str.replace(
         /\w\S*/g,
