@@ -4,7 +4,8 @@
     :color="color"
     :elevation="elevation"
     :icon="icon"
-    class="mb-4"
+    two-line
+    class="mb-4 white--text"
     >
         {{message}}
         <br/>
