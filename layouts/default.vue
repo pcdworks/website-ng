@@ -49,7 +49,7 @@
       <v-toolbar-title>
         <router-link to="/">
           <div class="logo">
-            <img src="@/static/images/logo.png" alt="PCDworks logo" />
+            <img src="@/static/images/logo.png" alt="PCDworks logo" max-width="500px"/>
           </div>
         </router-link>
       </v-toolbar-title>

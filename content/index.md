@@ -30,5 +30,3 @@ date: 2021-11-03T15:43:21.985Z
     button-text="Learn More About the basecamp"
     button-olor="accent">
 </banner>
-
-![](/images/pcdworks-software.png)
