@@ -13,9 +13,12 @@
             class="d-flex transition-fast-in-fast-out primary v-card--reveal black--text"
             style="height: 100%;"
           >
-          <p class="pa-5">
+          <div
+            v-resize-text="{ratio: 3.5, minFontSize: '12px', maxFontSize: '100px', delay: 200}"
+            class="pa-5"
+          >
             {{text}}
-          </p>
+          </div>
           </div>
         </v-expand-transition>
       </v-img>
