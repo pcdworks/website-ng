@@ -26,7 +26,7 @@ export default {
 <style scoped>
 .map-responsive {
   overflow:hidden;
-  padding-bottom: 56.25%;
+  padding-bottom: 40.25%;
   position: relative;
   height: 0;
 }
