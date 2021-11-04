@@ -1,7 +1,7 @@
 <template>
   <div>
     <div class='embed-container'>
-      <iframe :src="link"
+      <iframe :src="src"
               frameborder='0'
               webkitAllowFullScreen
               mozallowfullscreen
@@ -13,6 +13,22 @@
     </div>
   </div>
 </template>
+
+<script>
+export default {
+  props: {
+    src: {
+      type: String,
+      default: '',
+    },
+    text: {
+      type: String,
+      default: '',
+    },
+  },
+  data: () => ({}),
+}
+</script>
 
 <style scoped>
 .below-text {

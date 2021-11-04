@@ -1,7 +1,7 @@
 <template>
   <div>
     <div class="videoWrapper">
-      <iframe :src="link"
+      <iframe :src="src"
               frameborder="0"
               allow="accelerometer;
                     autoplay;
@@ -17,6 +17,22 @@
   </div>
 </template>
 
+
+<script>
+export default {
+  props: {
+    src: {
+      type: String,
+      default: '',
+    },
+    text: {
+      type: String,
+      default: '',
+    },
+  },
+  data: () => ({}),
+}
+</script>
 
 <style scoped>
 .below-text {
