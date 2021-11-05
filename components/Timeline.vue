@@ -52,6 +52,10 @@ export default {
     getWindowHeight(event) {
       this.windowHeight = document.documentElement.clientHeight;
     }
+  },
+  beforeDestroy() {
+    window.removeEventListener('resize', this.getWindowWidth);
+    window.removeEventListener('resize', this.getWindowHeight);
   }
 }
 </script>
