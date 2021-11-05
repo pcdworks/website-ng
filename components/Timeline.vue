@@ -12,6 +12,7 @@
         </v-card-title>
         <v-card-text>
           <br/>
+          <!-- eslint-disable vue/no-v-html -->
           <div v-html="$md.render(n.text)"></div>
         </v-card-text>
       </v-card>
@@ -44,6 +45,10 @@ export default {
       this.getWindowHeight()
     })
   },
+  beforeDestroy() {
+    window.removeEventListener('resize', this.getWindowWidth);
+    window.removeEventListener('resize', this.getWindowHeight);
+  },
   methods: {
     getWindowWidth(event) {
       this.windowWidth = document.documentElement.clientWidth;
@@ -52,10 +57,6 @@ export default {
     getWindowHeight(event) {
       this.windowHeight = document.documentElement.clientHeight;
     }
-  },
-  beforeDestroy() {
-    window.removeEventListener('resize', this.getWindowWidth);
-    window.removeEventListener('resize', this.getWindowHeight);
   }
 }
 </script>
