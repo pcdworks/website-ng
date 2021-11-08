@@ -42,7 +42,7 @@ members:
     education:
     title: 'Machinist'
     phone: '+19034806191'
-    email: '@pcdworks.com'
+    email: 'sbammel@pcdworks.com'
     avatar: ''
     linkedin: ''
     skills:
@@ -81,7 +81,7 @@ members:
     education:
     title: 'Electronics Technician'
     phone: '+19034803175'
-    email: 'tramirez@pcdworks.com'
+    email: 'gallbritton@pcdworks.com'
     avatar: ''
     linkedin: ''
     skills:
