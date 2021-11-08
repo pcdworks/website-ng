@@ -36,9 +36,86 @@ members:
     avatar: ''
     linkedin: 'https://www.linkedin.com/in/bert-sackett-85248139'
     skills:
-      - 'EE'
-      - 'Motors'
     information: 'Bert Sackett is a seasoned engineer and a PCDworks partner, current in many technologies with extensive experience designing and developing embedded systems, both electronic and software based. His key skills in power supply systems, motor control, RF communications, and circuit design are a huge benefit to all PCDworks projects.'
+
+  - name: 'Scott Bammel'
+    education:
+    title: 'Machinist'
+    phone: '+19034806191'
+    email: '@pcdworks.com'
+    avatar: ''
+    linkedin: ''
+    skills:
+    information: ''
+
+  - name: 'Calvin Schlau'
+    education:
+      - 'B.S. Mechanical Engineering'
+    title: 'Mechanical Engineer'
+    phone: '+19034806154'
+    email: 'cschlau@pcdworks.com'
+    avatar: ''
+    linkedin: ''
+    skills:
+    information: ''
+
+  - name: 'Taylor Ramirez'
+    education:
+      - 'B.S. Electrical Engineering'
+      - 'B.S. Computer Science'
+    title: 'Electrical Engineer & Software Engineer'
+    phone: '+19034803177'
+    email: 'tramirez@pcdworks.com'
+    avatar: ''
+    linkedin: ''
+    skills:
+      - 'C'
+      - 'C++'
+      - 'Java'
+      - 'Python'
+      - 'Clojure'
+      - 'Unix Shell Script (bash/zsh)'
+    information: ''
+
+  - name: 'Gary Allbritton'
+    education:
+    title: 'Electronics Technician'
+    phone: '+19034803175'
+    email: 'tramirez@pcdworks.com'
+    avatar: ''
+    linkedin: ''
+    skills:
+    information: ''
+
+  - name: 'Josh Wood'
+    education:
+      - 'B.S. Electrical Engineering'
+    title: 'Electrical Engineer & Software Engineer'
+    phone: '+19034803178'
+    email: 'jwood@pcdworks.com'
+    avatar: ''
+    linkedin: ''
+    skills:
+      - 'C'
+      - 'C++'
+      - 'Clojure'
+      - 'Clojurescript'
+      - 'KiCad'
+      - 'Altium'
+      - 'FreeCAD'
+      - 'PCB Design'
+      - 'Embedded software'
+    information: ''
+
+  - name: 'Drew Pyle'
+    education:
+    title: ''
+    phone: '+19034806207'
+    email: 'apyle@pcdworks.com'
+    avatar: ''
+    linkedin: ''
+    skills:
+    information: ''
 ---
 
 <team :members="members"></team>

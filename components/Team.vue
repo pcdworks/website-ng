@@ -15,6 +15,7 @@
             :title="member.title"
             :education="member.education"
             :information="member.information"
+            :phone="member.phone"
             :skills="member.skills"
             :linkedin="member.linkedin"
             :twitter="member.twitter"
