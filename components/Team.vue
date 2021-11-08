@@ -13,7 +13,7 @@
           <team-member
             :name="member.name"
             :title="member.title"
-            :education="member.title"
+            :education="member.education"
             :information="member.information"
             :skills="member.skills"
             :linkedin="member.linkedin"

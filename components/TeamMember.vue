@@ -20,14 +20,25 @@
       </v-list-item>
       <v-tabs>
         <v-tab v-if="information != ''">Information</v-tab>
-        <v-tab v-if="skills.length != 0">Skills</v-tab>
+        <v-tab v-if="skills.length != 0 || education.length != 0">Education & Skills</v-tab>
         <v-tab-item v-if="information != ''" class="tabby">
           <br/>
           {{information}}
         </v-tab-item>
-        <v-tab-item v-if="skills.length != 0" class="tabby">
+        <v-tab-item v-if="skills.length != 0 || education.length != 0" class="tabby">
           <br/>
-          {{skills}}
+          <h3 v-if="education.length != 0">Education</h3>
+          <ul>
+            <li v-for="(e, id) in education" :key="id">
+              {{e}}
+            </li>
+          </ul>
+          <h3 v-if="skills.length != 0">Skills</h3>
+          <ul>
+            <li v-for="(skill, id) in skills" :key="id">
+              {{skill}}
+            </li>
+          </ul>
         </v-tab-item>
       </v-tabs>
     </v-card-text>
