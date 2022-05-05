@@ -62,7 +62,7 @@ export default {
     theme: {
       themes: {
         dark: {
-          primary: '#afbd21',
+          primary: 'white',
           accent: '#afbd21',
           secondary: '#5E6E65',
           info: '#2196F3',
@@ -71,7 +71,7 @@ export default {
           success: '#4CAF50'
         },
         light: {
-          primary: '#afbd21',
+          primary: 'white',
           accent: '#afbd21',
           secondary: '#5E6E65',
           info: '#2196F3',

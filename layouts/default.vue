@@ -1,72 +1,12 @@
 <template>
   <v-app>
-    <v-navigation-drawer
-      v-model="drawer"
-      :clipped="true"
-      fixed
-      app
-    >
-      <v-list>
-        <v-list-item
-          v-for="(item, i) in topMenu"
-          :key="i"
-          :to="item.path"
-          exact
-        >
-          <v-list-item-content>
-            <v-list-item-title v-text="item.nav_name" />
-          </v-list-item-content>
-        </v-list-item>
-      </v-list>
-      <v-list-group v-for="(group, name) in menu" :key="group.key">
-        <template #activator>
-          <v-list-item-title>{{name}}</v-list-item-title>
-        </template>
-        <v-list>
-          <v-list-item
-            v-for="(sitem, j) in group"
-            :key="j"
-            :to="sitem.path"
-            exact
-          >
-            <v-list-item-content>
-              <v-list-item-title v-text="sitem.nav_name" />
-            </v-list-item-content>
-          </v-list-item>
-        </v-list>
-      </v-list-group>
-
-    </v-navigation-drawer>
-    <v-app-bar
-      :clipped-left="true"
-      fixed
-      app
-      dark
-    >
-      <v-app-bar-nav-icon id="navi" @click.stop="drawer = !drawer">
-        <v-icon>mdi-menu</v-icon>
-        Menu
-      </v-app-bar-nav-icon>
-      <v-toolbar-title>
-        <router-link to="/">
-          <div class="logo">
-            <img src="@/static/images/logo.png" alt="PCDworks logo" max-width="500px"/>
-          </div>
-        </router-link>
-      </v-toolbar-title>
-      <v-spacer />
-      <v-btn icon @click="toggleDarkMode">
-        <v-icon>{{switchIcon}}</v-icon>
-      </v-btn>
-    </v-app-bar>
+    <v-toolbar app>
+    </v-toolbar>
     <v-main>
-      <v-container>
+      <v-container fluid>
         <Nuxt />
       </v-container>
     </v-main>
-    <v-footer absolute inset app>
-      <span>&copy; 1997-{{ new Date().getFullYear() }} - Product Concept Development, Inc. - All Rights Reserved.</span>
-    </v-footer>
   </v-app>
 </template>
 

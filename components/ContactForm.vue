@@ -1,80 +1,100 @@
 <template>
-  <v-container fluid fill-height>
+  <v-container fluid fill-height class="contact-panel">
     <v-layout align-center justify-center>
-      <v-flex xs12 sm12 md10 lg8>
-        <v-card class="elevation-4" width="100%">
-          <v-toolbar>
-            <v-toolbar-title>Contact Us</v-toolbar-title>
-          </v-toolbar>
-          <v-form
-            ref="form"
-            v-model="valid"
-            lazy-validation
-            name="contact"
-            method="POST"
-            data-netlify="true"
-            data-netlify-honeypot="bot-field"
-            @submit.prevent="handleSubmit"
-          >
-            <input type="hidden" name="form-name" value="contact" />
-            <v-card-text>
-              <v-text-field
-                v-model="form.name"
-                :rules="nameRules()"
-                label="Name"
-                required
-                name="name"
-              ></v-text-field>
-
-                <v-text-field
-                  v-model="form.email"
-                  :rules="emailRules()"
-                  label="Email address"
-                  required
-                  name="email"
-                ></v-text-field>
-
-                <v-text-field
-                  v-model="form.phone"
-                  label="Phone number (Optional)"
-                  name="phone"
-                ></v-text-field>
-
-                <v-text-field
-                  v-model="form.company"
-                  label="Company (Optional)"
-                  name="company"
-                ></v-text-field>
-                <v-textarea
-                  v-model="form.message"
-                  auto-grow
-                  :rules="messageRules()"
-                  label="Message"
-                  rows="5"
-                  required
-                  name="message"
-                ></v-textarea>
-                <p>
-                  Please detail any specific inquiries or areas of interest.
-                </p>
-              </v-card-text>
-            <v-card-actions>
+      <v-flex xs12 sm12 md12 lg12 align-self-start>
+        <v-row>
+          <v-col>
+            <v-content>
+              <h1>Let's get to work</h1>
+              <p>
+                Whether your challenge is tiny
+                or titanic, we're eager to help.
+                Drop us a line and let's discuss
+                how, together, we can make
+                your project a success.
+              </p>
+            </v-content>
+          </v-col>
+          <v-col>
+            <v-form
+              ref="form"
+              v-model="valid"
+              lazy-validation
+              name="contact"
+              method="POST"
+              data-netlify="true"
+              data-netlify-honeypot="bot-field"
+              @submit.prevent="handleSubmit"
+            >
+              <input type="hidden" name="form-name" value="contact" />
+              <v-row dense>
+                <v-col>
+                  <v-text-field
+                    v-model="form.name"
+                    solo
+                    :rules="nameRules()"
+                    label="Name"
+                    required
+                    name="name"
+                  ></v-text-field>
+                </v-col>
+                <v-col>
+                  <v-text-field
+                    v-model="form.email"
+                    solo
+                    :rules="emailRules()"
+                    label="Email address"
+                    required
+                    name="email"
+                  ></v-text-field>
+                </v-col>
+              </v-row>
+              <v-row dense>
+                <v-col>
+                  <v-text-field
+                    v-model="form.phone"
+                    solo
+                    label="Phone Number"
+                    name="phone"
+                  ></v-text-field>
+                </v-col>
+                <v-col>
+                  <v-text-field
+                    v-model="form.company"
+                    solo
+                    label="Company Website"
+                    name="company"
+                  ></v-text-field>
+                </v-col>
+              </v-row>
+              <v-row>
+                <v-col>
+                  <v-textarea
+                    v-model="form.message"
+                    solo
+                    auto-grow
+                    :rules="messageRules()"
+                    label="Project Description"
+                    rows="5"
+                    required
+                    name="message"
+                  ></v-textarea>
+                </v-col>
+              </v-row>
               <v-btn
                 :disabled="!valid"
                 color="primary"
+                class="slanted"
                 type="submit"
                 value="Submit"
+                outlined
                 @click="validate"
               >
-                Send
-                <v-icon right>mdi-send</v-icon>
+                Submit
               </v-btn>
-              <v-btn color="secondary" @click="reset" >
-                Clear<v-icon right>mdi-close-thick</v-icon>
-              </v-btn>
-            </v-card-actions>
-          </v-form>
-        </v-card>
+            </v-form>
+          </v-col>
+        </v-row>
       </v-flex>
     </v-layout>
   </v-container>
@@ -143,3 +163,14 @@ export default {
   }
 }
 </script>
+
+<style scoped>
+.contact-panel {
+  background: #afbd21;
+}
+.slanted {
+  -ms-transform: skewX(-30deg);
+  -webkit-transform: skewX(-30deg);
+  transform: skewX(-30deg);
+}
+</style>
