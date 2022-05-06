@@ -5,7 +5,11 @@
       <v-row align="center" align-content="center">
         <v-col cols="12" xl="3" lg="3" md="2" sm="12" xs="12">
           <center>
-            <v-toolbar-title><Logo/></v-toolbar-title>
+            <v-toolbar-title>
+              <router-link to="/">
+                <Logo/>
+              </router-link>
+            </v-toolbar-title>
           </center>
         </v-col>
         <v-col cols="6" lg="6" md="8" class="d-none d-sm-none d-md-flex" xl="6" align-self="center">
@@ -25,17 +29,8 @@
               </v-list-item>
             </v-list>
           </v-menu>
-          <v-btn text tile class="nav-btn">
-            Campus
-          </v-btn>
-          <v-btn text tile class="nav-btn">
-            Expertise
-          </v-btn>
-          <v-btn text tile class="nav-btn">
-            Work
-          </v-btn>
-          <v-btn text tile class="nav-btn">
-            About
+          <v-btn v-for="item in topMenu" :key="item.nav_name" text tile class="nav-btn" :to="item.path">
+            {{item.nav_name}}
           </v-btn>
           </div>
         </v-col>
@@ -55,23 +50,10 @@
         nav
       >
         <v-list-item-group
-          v-model="group"
           active-class="deep-purple--text text--accent-4"
         >
-          <v-list-item>
-            <v-list-item-title>Foo</v-list-item-title>
-          </v-list-item>
-
-          <v-list-item>
-            <v-list-item-title>Bar</v-list-item-title>
-          </v-list-item>
-
-          <v-list-item>
-            <v-list-item-title>Fizz</v-list-item-title>
-          </v-list-item>
-
-          <v-list-item>
-            <v-list-item-title>Buzz</v-list-item-title>
+          <v-list-item v-for="item in topMenu" :key="item.nav_name" :to="item.path">
+            <v-list-item-title>{{item.nav_name}}</v-list-item-title>
           </v-list-item>
         </v-list-item-group>
       </v-list>
@@ -91,7 +73,8 @@ export default {
       drawer: false,
       menu: [],
       topMenu: [],
-      darkMode: false
+      darkMode: false,
+      services: []
     }
   },
   async fetch() {
@@ -152,7 +135,8 @@ export default {
       ).replace(/-/g, ' ')
     },
     setCategory (item) {
-      if(item.path) {
+      console.log(item)
+      if(item.path && item.path !== '/index') {
         const path = item.path.split('/')
         if(path.length > 2) {
           item.category = this.toTitleCase(path[1])
