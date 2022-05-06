@@ -1,7 +1,81 @@
 <template>
   <v-app>
-    <v-toolbar app>
-    </v-toolbar>
+    <v-app-bar id="navi" fixed hide-on-scroll elevation="1" height="122px" color="white">
+      <v-app-bar-nav-icon class="d-none d-flex d-sm-flex d-md-none" @click.stop="drawer = !drawer"></v-app-bar-nav-icon>
+      <v-row align="center" align-content="center">
+        <v-col cols="12" xl="3" lg="3" md="2" sm="12" xs="12">
+          <center>
+            <v-toolbar-title><Logo/></v-toolbar-title>
+          </center>
+        </v-col>
+        <v-col cols="6" lg="6" md="8" class="d-none d-sm-none d-md-flex" xl="6" align-self="center">
+          <div id="menu">
+          <v-menu offset-y>
+            <template #activator="{ on, attrs }">
+              <v-btn text tile class="nav-btn" v-bind="attrs" v-on="on">
+                Services
+              </v-btn>
+            </template>
+            <v-list>
+              <v-list-item
+                v-for="(item, index) in services"
+                :key="index"
+              >
+                <v-list-item-title>{{ item.title }}</v-list-item-title>
+              </v-list-item>
+            </v-list>
+          </v-menu>
+          <v-btn text tile class="nav-btn">
+            Campus
+          </v-btn>
+          <v-btn text tile class="nav-btn">
+            Expertise
+          </v-btn>
+          <v-btn text tile class="nav-btn">
+            Work
+          </v-btn>
+          <v-btn text tile class="nav-btn">
+            About
+          </v-btn>
+          </div>
+        </v-col>
+        <v-col cols="3" lg="3" md="2" class="d-none d-sm-none d-md-flex" align-self="center" xl="3">
+          <div id="contact-btn" class="nav-btn">
+            <span>Contact</span>
+          </div>
+        </v-col>
+      </v-row>
+    </v-app-bar>
+    <v-navigation-drawer
+      v-model="drawer"
+      absolute
+      temporary
+    >
+      <v-list
+        nav
+      >
+        <v-list-item-group
+          v-model="group"
+          active-class="deep-purple--text text--accent-4"
+        >
+          <v-list-item>
+            <v-list-item-title>Foo</v-list-item-title>
+          </v-list-item>
+
+          <v-list-item>
+            <v-list-item-title>Bar</v-list-item-title>
+          </v-list-item>
+
+          <v-list-item>
+            <v-list-item-title>Fizz</v-list-item-title>
+          </v-list-item>
+
+          <v-list-item>
+            <v-list-item-title>Buzz</v-list-item-title>
+          </v-list-item>
+        </v-list-item-group>
+      </v-list>
+    </v-navigation-drawer>
     <v-main>
       <v-container fluid>
         <Nuxt />
@@ -101,24 +175,58 @@ export default {
 <style>
 
 #navi {
-  width: 64px;
-  margin-left: 0px;
-  margin-right: -12px;
+  margin-top: 32px !important;
 }
 
-.logo img {
-  padding-top: 2px;
-  padding-bottom: 2px;
-  width: 310px;
+.v-toolbar__content, .v-toolbar__extension {
+  padding-left: 32px;
+  padding-right: 32px;
+}
+
+.nav-btn {
+  font-size: 1rem !important;
+  font-weight: 700;
+  color: black;
+}
+
+#contact-btn {
+  background: #afbd21;
+  text-align: center;
+  text-decoration: none;
+  border: 0;
+  outline: 0;
+  padding: 12px 44px;
+  display: inline-block;
+  transform: skew(-30deg);
+  text-transform: uppercase;
+  margin: 0 auto;
   max-width: 100%;
 }
-.logo {
-  width: 340px;
-  max-width: 100%;
-  margin: auto;
-}
-.v-toolbar__title {
+
+#contact-btn-pad {
+  -webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+  -moz-box-sizing: border-box;    /* Firefox, other Gecko */
+  box-sizing: border-box;         /* Opera/IE 8+ */
+  max-width: 312px;
   width: 100%;
-  padding-right: 56px;
+  text-align: center;
 }
+
+#contact-btn:visited {
+  color: #fff;
+}
+
+#contact-btn:hover {
+  opacity: 90%;
+}
+
+#contact-btn > span {
+  display: inline-block;
+  transform: skew(30deg);
+}
+
+#menu {
+  margin: 0 auto;
+}
+
 </style>
