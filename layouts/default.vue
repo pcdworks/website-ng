@@ -1,6 +1,6 @@
 <template>
   <v-app>
-    <v-app-bar id="navi" fixed hide-on-scroll elevation="1" height="122px" color="white">
+    <v-app-bar id="navi" fixed hide-on-scroll elevation="1" height="100px" color="white">
       <v-app-bar-nav-icon class="d-none d-flex d-sm-flex d-md-none" @click.stop="drawer = !drawer"></v-app-bar-nav-icon>
       <v-row align="center" align-content="center">
         <v-col cols="12" xl="3" lg="3" md="2" sm="12" xs="12">
@@ -35,9 +35,9 @@
           </div>
         </v-col>
         <v-col cols="3" lg="3" md="2" class="d-none d-sm-none d-md-flex" align-self="center" xl="3">
-          <div id="contact-btn" class="nav-btn">
+          <a id="contact-btn" class="nav-btn" href="#contact">
             <span>Contact</span>
-          </div>
+          </a>
         </v-col>
       </v-row>
     </v-app-bar>
@@ -59,15 +59,19 @@
       </v-list>
     </v-navigation-drawer>
     <v-main>
-      <v-container fluid>
+      <v-container fluid id="heart">
         <Nuxt />
+        <contact-form/>
+        <div id="because-i-have-to"></div>
       </v-container>
     </v-main>
   </v-app>
 </template>
 
 <script>
+import ContactForm from '~/components/ContactForm.vue'
 export default {
+  components: { ContactForm },
   data () {
     return {
       drawer: false,
@@ -158,6 +162,10 @@ export default {
 
 <style>
 
+#heart {
+  padding: 0;
+}
+
 #navi {
   margin-top: 32px !important;
 }
@@ -170,7 +178,7 @@ export default {
 .nav-btn {
   font-size: 1rem !important;
   font-weight: 700;
-  color: black;
+  color: black !important;
 }
 
 #contact-btn {
@@ -213,4 +221,8 @@ export default {
   margin: 0 auto;
 }
 
+#because-i-have-to {
+  height: 128px;
+  background: #5E6E65;
+}
 </style>

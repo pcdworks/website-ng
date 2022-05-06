@@ -1,102 +1,108 @@
 <template>
   <v-container fluid fill-height class="contact-panel">
-    <v-layout align-center justify-center>
-      <v-flex xs12 sm12 md12 lg12 align-self-start>
-        <v-row>
-          <v-col>
-            <v-content>
-              <h1>Let's get to work</h1>
-              <p>
-                Whether your challenge is tiny
-                or titanic, we're eager to help.
-                Drop us a line and let's discuss
-                how, together, we can make
-                your project a success.
-              </p>
-            </v-content>
-          </v-col>
-          <v-col>
-            <v-form
-              ref="form"
-              v-model="valid"
-              lazy-validation
-              name="contact"
-              method="POST"
-              data-netlify="true"
-              data-netlify-honeypot="bot-field"
-              @submit.prevent="handleSubmit"
-            >
-              <input type="hidden" name="form-name" value="contact" />
-              <v-row dense>
-                <v-col>
-                  <v-text-field
-                    v-model="form.name"
-                    solo
-                    :rules="nameRules()"
-                    label="Name"
-                    required
-                    name="name"
-                  ></v-text-field>
-                </v-col>
-                <v-col>
-                  <v-text-field
-                    v-model="form.email"
-                    solo
-                    :rules="emailRules()"
-                    label="Email address"
-                    required
-                    name="email"
-                  ></v-text-field>
-                </v-col>
-              </v-row>
-              <v-row dense>
-                <v-col>
-                  <v-text-field
-                    v-model="form.phone"
-                    solo
-                    label="Phone Number"
-                    name="phone"
-                  ></v-text-field>
-                </v-col>
-                <v-col>
-                  <v-text-field
-                    v-model="form.company"
-                    solo
-                    label="Company Website"
-                    name="company"
-                  ></v-text-field>
-                </v-col>
-              </v-row>
-              <v-row>
-                <v-col>
-                  <v-textarea
-                    v-model="form.message"
-                    solo
-                    auto-grow
-                    :rules="messageRules()"
-                    label="Project Description"
-                    rows="5"
-                    required
-                    name="message"
-                  ></v-textarea>
-                </v-col>
-              </v-row>
-              <v-btn
-                :disabled="!valid"
-                color="primary"
-                class="slanted"
-                type="submit"
-                value="Submit"
-                outlined
-                @click="validate"
+    <v-container>
+      <v-layout align-center justify-center>
+        <v-flex xs12 sm12 md12 lg12 align-self-start>
+          <v-row>
+            <v-col cols="12" xs="12" md="12" lg="1" xl="2"></v-col>
+            <v-col cols="12" xs="12" md="4" lg="3" xl="2">
+              <v-content>
+                <h1 id="mega">Let's get to work</h1>
+                <p id="mega-message">
+                  Whether your challenge is tiny
+                  or titanic, we're eager to help.
+                  Drop us a line and let's discuss
+                  how, together, we can make
+                  your project a success.
+                </p>
+              </v-content>
+            </v-col>
+            <v-col cols="12" xs="12" md="8" lg="7" xl="6">
+              <v-form
+                id="contact"
+                ref="form"
+                v-model="valid"
+                lazy-validation
+                name="contact"
+                method="POST"
+                data-netlify="true"
+                data-netlify-honeypot="bot-field"
+                @submit.prevent="handleSubmit"
               >
-                Submit
-              </v-btn>
-            </v-form>
-          </v-col>
-        </v-row>
-      </v-flex>
-    </v-layout>
+                <input type="hidden" name="form-name" value="contact" />
+                <v-row dense>
+                  <v-col>
+                    <v-text-field
+                      v-model="form.name"
+                      solo
+                      :rules="nameRules()"
+                      label="Name"
+                      required
+                      name="name"
+                    ></v-text-field>
+                  </v-col>
+                  <v-col>
+                    <v-text-field
+                      v-model="form.email"
+                      solo
+                      :rules="emailRules()"
+                      label="Email address"
+                      required
+                      name="email"
+                    ></v-text-field>
+                  </v-col>
+                </v-row>
+                <v-row dense>
+                  <v-col>
+                    <v-text-field
+                      v-model="form.phone"
+                      solo
+                      :rules="phoneRules()"
+                      label="Phone Number"
+                      name="phone"
+                    ></v-text-field>
+                  </v-col>
+                  <v-col>
+                    <v-text-field
+                      v-model="form.company"
+                      solo
+                      :rules="companyRules()"
+                      label="Company Website"
+                      name="company"
+                    ></v-text-field>
+                  </v-col>
+                </v-row>
+                <v-row dense>
+                  <v-col>
+                    <v-textarea
+                      v-model="form.message"
+                      solo
+                      auto-grow
+                      :rules="messageRules()"
+                      label="Project Description"
+                      rows="5"
+                      required
+                      name="message"
+                    ></v-textarea>
+                  </v-col>
+                </v-row>
+                <button
+                  :disabled="!valid"
+                  id="contact-send"
+                  outlined
+                  type="submit"
+                  value="Submit"
+                  @click="validate"
+                >
+                  <span>Submit</span>
+                </button>
+              </v-form>
+            </v-col>
+            <v-col cols="12" xs="12" md="12" lg="1" xl="2"></v-col>
+          </v-row>
+        </v-flex>
+      </v-layout>
+    </v-container>
   </v-container>
 </template>
 
@@ -115,7 +121,7 @@ export default {
   }),
   head() {
     return {
-      title: "Contact Us | " + 'Product Concept Development, Inc.'
+      title: "Contact | " + 'Product Concept Development, Inc.'
     };
   },
   methods: {
@@ -128,8 +134,14 @@ export default {
         v => /.+@.+/.test(v) || 'Email address must be valid'
       ]
     },
+    phoneRules() {
+      return [v => !!v || 'Phone number is required']
+    },
+    companyRules() {
+      return [v => !!v || 'Company website is required']
+    },
     messageRules() {
-      return [v => !!v || 'Message is required']
+      return [v => !!v || 'Project description is required']
     },
     validate() {
       this.$refs.form.validate()
@@ -165,12 +177,47 @@ export default {
 </script>
 
 <style scoped>
+#mega {
+  font-size: 3.2rem;
+  font-weight: 740;
+  text-transform: uppercase;
+}
+#mega-message {
+  font-weight: 650;
+}
 .contact-panel {
   background: #afbd21;
+  padding-top: 84px;
+  padding-bottom: 84px;
 }
-.slanted {
-  -ms-transform: skewX(-30deg);
-  -webkit-transform: skewX(-30deg);
-  transform: skewX(-30deg);
+
+#contact-send {
+  background: #afbd21;
+  text-align: center;
+  text-decoration: none;
+  padding: 10px 42px;
+  border: 2px solid white;
+  display: inline-block;
+  transform: skew(-30deg);
+  text-transform: uppercase;
+  margin: 0 auto;
+  max-width: 100%;
+  color: white;
 }
+
+
+#contact-send:visited {
+  color: #fff;
+}
+
+#contact-send:hover {
+  color: white;
+}
+
+#contact-send > span {
+  display: inline-block;
+  transform: skew(30deg);
+}
+
+
 </style>
