@@ -2,7 +2,7 @@
 title: About
 nav_name: About
 order: 3
-people:
+team:
   - name: 'Donna Rainone'
     degrees: 'AIA'
     position: 'President'
@@ -55,10 +55,66 @@ people:
     circuit design are a huge benefit to
     all PCDworks projects.
     '
+
+board:
+  - name: 'Dan Overly'
+    degrees: ''
+    position: ''
+    image: '/images/donna-headshot.png'
+    bio: '
+    '
+  - name: 'Yoda'
+    degrees: ''
+    position: ''
+    image: '/images/donna-headshot.png'
+    bio: '
+    '
+  - name: 'Chewbacca'
+    degrees: ''
+    position: ''
+    image: '/images/donna-headshot.png'
+    bio: '
+    '
+
+
+phases:
+  - image: '/images/phase-1.png'
+    title: 'Phase 1'
+    subtitle: 'Immersive Innovation session'
+    bullets:
+      - "Background research"
+      - - "Patent searches"
+        - "What's already been tried"
+        - "Technology landscape"
+        - "Research enabling technologies"
+        - "Competitor analysis"
+      - "Immersive ideation session (3-4-day session)"
+      - "Initial concepts"
+      - "Concept refinement"
+  - image: '/images/phase-2.png'
+    title: 'Phase 2'
+    subtitle: ''
+  - image: '/images/phase-3.png'
+    title: 'Phase 3'
+    subtitle: ''
+  - image: '/images/phase-4.png'
+    title: 'Phase 4'
+    subtitle: ''
+  - image: '/images/phase-5.png'
+    title: 'Phase 5'
+    subtitle: ''
 ---
 <backing>
   <center>
     <h1>Meet the team</h1>
-    <People :people="people"></People>
+    <br>
+    <People :people="team"></People>
+    <br>
+    <br>
+    <h2>Advisory Board</h2>
+    <People :people="board"></People>
   </center>
 </backing>
+
+<Phases :phases="phases">
+</Phases>

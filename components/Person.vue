@@ -28,12 +28,12 @@ export default {
             default: '/images/person.png'
         },
         name: {
-            type: String,
-            default: 'Person'
+            type: [String,Boolean],
+            default: ''
         },
         degrees: {
             type: String,
-            default: 'B.S.E.E.'
+            default: ''
         },
         position: {
             type: String,
@@ -43,7 +43,7 @@ export default {
             type: String,
             default: ''
         }
-    },
+    }
 }
 </script>
 
@@ -60,6 +60,7 @@ export default {
     color: #afbc21;
     font-size: 1.75rem;
     font-weight: 750;
+    line-height: 1.85rem;
 }
 
 .bottom-name {
