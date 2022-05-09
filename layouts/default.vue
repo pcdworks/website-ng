@@ -43,23 +43,31 @@
     </v-app-bar>
     <v-navigation-drawer
       v-model="drawer"
-      absolute
+      app
       temporary
     >
       <v-list
         nav
       >
-        <v-list-item-group
-          active-class="deep-purple--text text--accent-4"
-        >
+        <v-list-item-group>
+          <v-list-item to="/">
+            <v-list-item-title>
+              Home
+            </v-list-item-title>
+          </v-list-item>
           <v-list-item v-for="item in topMenu" :key="item.nav_name" :to="item.path">
             <v-list-item-title>{{item.nav_name}}</v-list-item-title>
+          </v-list-item>
+          <v-list-item href="#contact">
+            <v-list-item-title>
+              Contact
+            </v-list-item-title>
           </v-list-item>
         </v-list-item-group>
       </v-list>
     </v-navigation-drawer>
     <v-main>
-      <v-container fluid id="heart">
+      <v-container id="heart" fluid>
         <Nuxt />
         <contact-form/>
         <div id="because-i-have-to"></div>
@@ -139,7 +147,6 @@ export default {
       ).replace(/-/g, ' ')
     },
     setCategory (item) {
-      console.log(item)
       if(item.path && item.path !== '/index') {
         const path = item.path.split('/')
         if(path.length > 2) {
@@ -162,13 +169,20 @@ export default {
 
 <style>
 
-#heart {
-  padding: 0;
+h1 {
+  text-transform: uppercase;
 }
 
-#navi {
-  margin-top: 32px !important;
+#heart {
+  padding-left: 0;
+  padding-right: 0;
+  padding-bottom: 0;
+  padding-top: 100px;
 }
+
+/* #navi {
+  margin-top: 32px !important;
+} */
 
 .v-toolbar__content, .v-toolbar__extension {
   padding-left: 32px;

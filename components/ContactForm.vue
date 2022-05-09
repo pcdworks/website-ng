@@ -6,8 +6,11 @@
           <v-row>
             <v-col cols="12" xs="12" md="12" lg="1" xl="2"></v-col>
             <v-col cols="12" xs="12" md="4" lg="3" xl="2">
-              <v-content>
-                <h1 id="mega">Let's get to work</h1>
+              <v-main>
+                <h1 id="mega">
+                  Let's get<br>
+                  to work
+                </h1>
                 <p id="mega-message">
                   Whether your challenge is tiny
                   or titanic, we're eager to help.
@@ -15,7 +18,7 @@
                   how, together, we can make
                   your project a success.
                 </p>
-              </v-content>
+              </v-main>
             </v-col>
             <v-col cols="12" xs="12" md="8" lg="7" xl="6">
               <v-form
@@ -87,8 +90,8 @@
                   </v-col>
                 </v-row>
                 <button
-                  :disabled="!valid"
                   id="contact-send"
+                  :disabled="!valid"
                   outlined
                   type="submit"
                   value="Submit"
@@ -200,7 +203,7 @@ export default {
   display: inline-block;
   transform: skew(-30deg);
   text-transform: uppercase;
-  margin: 0 auto;
+  margin: 0 32px;
   max-width: 100%;
   color: white;
 }
