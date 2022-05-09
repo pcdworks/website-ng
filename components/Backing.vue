@@ -21,6 +21,7 @@ export default {
 
 .backing {
   padding-top: 48px;
+  padding-bottom: 64px;
   min-height: 400px;
   background: #5e6e65;
 }
