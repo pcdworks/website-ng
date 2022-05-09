@@ -122,11 +122,6 @@ export default {
       company: ''
     }
   }),
-  head() {
-    return {
-      title: "Contact | " + 'Product Concept Development, Inc.'
-    };
-  },
   methods: {
     nameRules() {
       return [v => !!v || 'Name is required']
