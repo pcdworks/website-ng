@@ -1,14 +1,14 @@
 <template>
-    <v-card elevation="10" class="pt-6 pb-16 fill-height">
+    <v-card elevation="0" class="pt-6 pb-16 fill-height" flat>
         <v-card-title>
-            <v-img :src="image" max-height="150px" max-width="150px"></v-img>
+            <v-img :src="image" max-height="150px" max-width="150px" class="phase-image"></v-img>
             <div class="phase-title">{{title}}</div>
         </v-card-title>
         <v-card-subtitle>
             <div class="phase-subtitle">{{subtitle}}</div>
         </v-card-subtitle>
         <v-card-text>
-            <ul class="phase-text">
+            <ul class="phase-text pr-16">
                 <div v-for="(item, idx) in bullets" :key="idx">
                     <li v-if="typeof(item) == 'string'">{{item}}</li>
                     <ul v-else>
@@ -47,11 +47,19 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+
+.phase-image {
+    float: left;
+    max-width: 40%;
+}
+
 .phase-title {
     color: #afbc21;
-    font-size: 2.8rem;
+    font-size: 2.4rem;
     font-weight: 600;
-    padding-left: 2rem;
+    padding-left: 1rem;
+    width: 50%;
+    float: right;
 }
 
 .phase-subtitle {

@@ -7,7 +7,7 @@ team:
     degrees: 'AIA'
     position: 'President'
     image: '/images/donna-headshot.png'
-    bio: '
+    bio: "
     Donna honed her design and
     management skills working as an
     architect designing and building
@@ -18,12 +18,12 @@ team:
     her work has been featured in
     several publications, including AIA
     Architect magazine.
-    '
+    "
   - name: 'Mike Rainone'
     degrees: 'NPDP, IDSA'
     position: 'Vise president'
     image: '/images/mike-headshot.png'
-    bio: '
+    bio: "
     With 30+ patents to his name, Mike
     has a broad knowledge of emerging
     technologies coupled with a strong
@@ -38,12 +38,12 @@ team:
     University of North Texas. He also
     has done doctoral work in cognitive
     psychology at MTSU.
-    '
+    "
   - name: 'Bert Sackett'
     degrees: 'B.S.E.E, M.S.E.E,'
     position: 'Partner'
     image: '/images/bert-headshot.png'
-    bio: '
+    bio: "
     Bert is a seasoned engineer with
     extensive experience designing
     and developing embedded
@@ -54,7 +54,7 @@ team:
     control, RF communications, and
     circuit design are a huge benefit to
     all PCDworks projects.
-    '
+    "
 
 board:
   - name: 'Dan Overly'
@@ -93,16 +93,33 @@ phases:
       - "Concept refinement"
   - image: '/images/phase-2.png'
     title: 'Phase 2'
-    subtitle: ''
+    subtitle: 'Engineering Design'
+    bullets:
+      - "Concept refinement collaboration"
+      - "Initial engineering analysis"
+      - "Detailed design"
+      - "Initial proof of concept test of most difficult aspect"
   - image: '/images/phase-3.png'
     title: 'Phase 3'
-    subtitle: ''
+    subtitle: 'Full Prototype Development'
+    bullets:
+      - "Collaborative prototype drawing development/refinement"
+      - "Develop prototype"
+      - "Prototype testing"
   - image: '/images/phase-4.png'
     title: 'Phase 4'
-    subtitle: ''
+    subtitle: 'Design for Manufacturing'
+    bullets:
+      - "Develop full set of documentation for manufacturing"
   - image: '/images/phase-5.png'
     title: 'Phase 5'
-    subtitle: ''
+    subtitle: 'Product Optimization / Enhancement'
+    bullets:
+      - "Background research on product use in market"
+      - "Immersive ideation session to focus on product Improvement Initial concepts"
+      - "Jointly developed proposal for next phase of targeted improvements"
+      - "Next phase go ahead"
+
 ---
 <backing>
   <center>
@@ -112,6 +129,7 @@ phases:
     <br>
     <br>
     <h2>Advisory Board</h2>
+    <br>
     <People :people="board"></People>
   </center>
 </backing>

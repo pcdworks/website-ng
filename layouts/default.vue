@@ -1,6 +1,6 @@
 <template>
   <v-app>
-    <v-app-bar id="navi" fixed hide-on-scroll elevation="1" height="100px" color="white">
+    <v-app-bar app fixed hide-on-scroll elevation="1" height="100px" color="white">
       <v-app-bar-nav-icon class="d-none d-flex d-sm-flex d-md-none" @click.stop="drawer = !drawer"></v-app-bar-nav-icon>
       <v-row align="center" align-content="center">
         <v-col cols="12" xl="3" lg="3" md="2" sm="12" xs="12">
@@ -177,12 +177,7 @@ h1 {
   padding-left: 0;
   padding-right: 0;
   padding-bottom: 0;
-  padding-top: 100px;
 }
-
-/* #navi {
-  margin-top: 32px !important;
-} */
 
 .v-toolbar__content, .v-toolbar__extension {
   padding-left: 32px;

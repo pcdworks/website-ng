@@ -1,10 +1,9 @@
 <template>
-    <v-card elevation="8" class="pt-6 pb-16 fill-height">
+    <v-card elevation="8" class="pt-6 pb-16 fill-height person" tile>
         <br/>
         <v-img
             lazy-src="/images/person.png"
             :src="image"
-            transition
             width="254"
             height="254"
             contain
@@ -28,7 +27,7 @@ export default {
             default: '/images/person.png'
         },
         name: {
-            type: [String,Boolean],
+            type: [String, Boolean],
             default: ''
         },
         degrees: {
@@ -75,6 +74,10 @@ export default {
     font-size: 1.5rem;
     font-weight: 520;
     line-height: 1.7rem;
+}
+
+.person {
+    width: 90%;
 }
 
 </style>
