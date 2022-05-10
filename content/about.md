@@ -136,3 +136,21 @@ phases:
 
 <Phases :phases="phases">
 </Phases>
+
+<ImageFader image="/images/mickey.png">
+<h2>The most magical place on earth</h2>
+<h3>(sorry, Mickey)</h3>
+<br>
+<p>
+  Schedule a visit and experience the magic
+  of PCDworks for yourself.
+</p>
+<br>
+<strong>PCDworks</strong>
+<br>
+<p>
+  410 Private Road 8315
+  <br>
+  Palestine, TX 75803
+</p>
+</ImageFader>

@@ -3,7 +3,7 @@
         <v-row class="px-xl-16 px-lg-16 px-md-4 px-xs-0">
             <v-col v-for="p in phases" :key="p.name"
                    cols="12" xs="12" sm="12" md="12" xl= "4" lg="4"
-                   class="pa-0">
+                   class="pa-2">
                    <Phase :title="p.title"
                           :image="p.image"
                           :subtitle="p.subtitle"

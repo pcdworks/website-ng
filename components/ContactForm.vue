@@ -6,7 +6,7 @@
           <v-row>
             <v-col cols="12" xs="12" md="12" lg="1" xl="2"></v-col>
             <v-col cols="12" xs="12" md="4" lg="3" xl="2">
-              <v-main>
+              <v-main class="pa-0">
                 <h1 id="mega">
                   Let's get<br>
                   to work
