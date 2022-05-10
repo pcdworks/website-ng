@@ -1,5 +1,5 @@
 <template>
-    <v-card elevation="0" class="pt-6 pb-16 fill-height" flat>
+    <v-card elevation="0" class="pt-6 pb-6 fill-height" flat>
         <v-card-title>
             <v-img :src="image" max-height="150px" max-width="150px" class="phase-image"></v-img>
             <div class="phase-title">{{title}}</div>
