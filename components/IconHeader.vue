@@ -33,10 +33,30 @@ export default {
     font-size: 2.4rem;
     font-weight: 600;
     padding-left: 1rem;
-    max-width: calc(50% - 1rem);
+    max-width: calc(60% - 1rem);
     display: inline-block;
     white-space: normal;
     word-break: break-word;
+}
+
+
+@media #{map-get($display-breakpoints, 'sm-and-down')} {
+    .icon-image {
+        display: block;
+        max-width: 100vw;
+        margin: 0 auto;
+    }
+
+    .icon-title {
+        padding-top: 1rem;
+        text-align: center;
+        max-width: 100vw;
+        width: 100vw;
+        display: block;
+        white-space: normal;
+        word-break: break-word;
+    }
+
 }
 
 </style>

@@ -64,13 +64,141 @@ completion."
                 multi-physics modeling and another four
                 months were spent building and testing this
                 new, disruptive technology."
+group1:
+    - title: 'Consumer Goods'
+      image: '/images/work-3.png'
+      works:
+        - title: "Coleman Grills"
+          problem: "Set up time for the customer or the assembly point in the
+                \"Big Box\" store exceeded two hours. Coleman asked PCDworks to
+                examine the product to try to reduce assembly time and reduce the
+                manufacturing complexity."
+          solution: ""
+          results: "You could say our design efforts were well done. Altogether,
+            we cut assembly time to less than 1/2 hour, reduced the shipping cube
+            by 20%, and slashed manufacturing costs by 4%."
+    - title: 'Transportation'
+      image: '/images/work-4.png'
+      works:
+        - title: "Trinity Rail Railcar / The Connected Railcar"
+          problem: "The mantra of shipping via railroad is “ship and pray”
+                because once the cargo is loaded and the railcar is placed into the
+                hands of the carriers, the shipper loses control over the shipment. As a
+                result, most often any damage or loss that occurred during shipment,
+                cannot be attributed to the carrier."
+          solution: "Taking end user requirements into account, we developed a
+                suite of ruggedized sensors, some patented, that can detect impact,
+                intrusion, theft, load level, possible contamination, hatch security, load
+                environmental conditions, and along with location."
+          results: "Shipment info is available in real time via a PCDworks
+                developed gateway, to the cloud, with some local data aggregation and
+                analysis. In addition, PCDworks provides DFM, and supply chain
+                procurement assistance."
+group2:
+  - title: 'Military'
+    image: '/images/work-6.png'
+    works:
+      - title: "Automated tie-down device"
+        problem: "The Office of Naval Research needed a self-powered,
+                remote-controlled tension system that would reduce cargo damage,
+                decrease load and unload times, and minimize crew involvement."
+        solution: "We created a system of individual units which, when
+                networked together, provide the ability to simultaneously secure and
+                release loads. This entailed designing a customized multi-hop wireless
+                communication, advanced sensing capabilities, and a proprietary
+                self-releasing hook. It also included a custom motor, high performance
+                battery pack, linear actuator, printed circuit boards, and carbon fiber
+                case."
+        results: "Our new small, lightweight, and semi-automated system
+                requires minimal human involvement to tension and release loads,
+                reducing load and unload times by 20 percent. Additional uses are
+                being considered for nuclear waste transport, rail shipping, and aircraft
+                docking."
+  - title: 'Food'
+    image: '/images/work-7.png'
+    works:
+      - title: "Potato cooker"
+        problem: "Occasional improper cooking caused the entire granule line
+                at a prominent US-based potato manufacturing plant to shut down. This
+                resulted in a 3-day production loss."
+        solution: "We analyzed the problem and set about finding a solution.
+                To do so, the cooker was instrumented to determine hot spots and
+                thermal efficiency, wireless sensor probes were designed, closed loop
+                steam controls were chosen for installation and overall system
+                architecture was designed."
+      - title: "Marmon Food Service (On behalf of Burger King)"
+        problem: "A major fast-food chain is evolving to fresh product cooking
+                to appeal to customers looking for a healthy alternative to heavily fried,
+                fat covered burgers. The chain's equipment supplier needed a broiler
+                capable of supplying fresh cooked, unfrozen product with less char, less
+                fatand in less than 90 seconds."
+        solution: "Our client asked us to explore alternate technology to
+                atmospheric open flame burners."
+        results: "We went back to our roots to a time when we were working
+                on Infrared driven camping stoves. We found a new generation of
+                Infrared emitting material and created burners that cooked the burgers
+                iin record time with less fat and minimal charting."
 
-# - title: 'Consumer Goods'
-# - title: 'Transportation'
-# - title: 'Medical'
-# - title: 'Military'
-# - title: 'Food'
+medical:
+  title: "Medical"
+  image: "/images/work-5.png"
+  works:
+    - 
+        title: "Resuscitation Device"
+        problem: "When performing CPR on
+                drowning victims and others with respiratory
+                failure, it's difficult to maintain the proper
+                lung inflation and rate of inflation, especially
+                while alone. Providing oxygen instead of
+                exhaled air is key to survival success."
+        solution: "PCDworks, along with its client,
+                developed the first and only automated
+                rescue breathing system that works on
+                adults, children, and infants. It delivers 100%
+                pure oxygen in the proper flow and pressure
+                regimen for each, depending on the mask
+                selected. Two patents pending."
+        results: "Proof of concept tests and demonstration completed within 6 months."
+    - 
+        title: "Infection detection, post-surgery"
+        problem: "Can you anticipate infection in a
+                sutured incision prior to the development of a
+                full-blown infection beneath the surface."
+        solution: "In vivo use of fiber optics in
+                spectroscopy and optical notch filtering for
+                detection and discrimination of bacterial
+                growth in the wound."
+        results: "Early intervention into a specific
+                bacterial species infection in the incision
+                allows for early intervention with species
+                specific antibiotics rather than prophylactic
+                intervention with broad spectrum antibiotics.
+                Two major patents issued."
+    - 
+        title: "Cardiopulmonary bypass"
+        problem: "Cardiopulmonary bypass surgery
+                is a time-consuming operation. Every
+                additional minute of surgery decreases a
+                patient's chance of survival."
+        solution: "We collaborated with an industrial
+                design firm to help our client simplify the
+                bypass procedure by organizing pumps and
+                tubes into a compact structure. We also
+                created designs, developed prototypes, and
+                assisted in preparing a unit that was ready to
+                manufacture. Our team further improved
+                speed and patient safety by inventing a
+                Vacuum Assisted Venous Return (VAVR)
+                which enhances venous flow and reduced the
+                size of the necessary line."
+        results: "A cardiac bypass system that
+                reduces the need for blood products,
+                shortens surgery times, and offers greater
+                fluid management options for the clinical
+                team — all of which is proven to decrease
+                morbidity."
 ---
+
 
 <text-image image="/images/work-1.png">
 <template v-slot:left>
@@ -90,3 +218,9 @@ completion."
 
 <work-hor :work="oil">
 </work-hor>
+<work-split-vert :works="group1">
+</work-split-vert>
+<work-hor :work="medical">
+</work-hor>
+<work-split-vert :works="group2">
+</work-split-vert>
