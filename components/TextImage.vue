@@ -49,7 +49,7 @@ export default {
 ::v-deep h1 {
     text-transform: uppercase;
     color: #afbc21;
-    font-size: 5rem;
+    font-size: 4.5rem;
     line-height: 1.1;
     padding-left: 1rem;
     padding-right: 1rem;

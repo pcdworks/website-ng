@@ -21,7 +21,7 @@ team:
     "
   - name: 'Mike Rainone'
     degrees: 'NPDP, IDSA'
-    position: 'Vise president'
+    position: 'Vice president'
     image: '/images/mike-headshot.png'
     bio: "
     With 30+ patents to his name, Mike
@@ -121,7 +121,7 @@ phases:
       - "Next phase go ahead"
 
 ---
-<text-image image="/images/b21.png">
+<text-image image="/images/about-1.png">
   <template v-slot:left>
   <h2>We've got the experience to</h2>
   <h1>Make it happen</h1>
@@ -161,7 +161,7 @@ phases:
     <people :people="board"></people>
   </center>
 </backing>
-<text-image image="/images/b22.png">
+<text-image image="/images/about-2.png">
   <template v-slot:left>
   <h2>
     Our goal is to help you
