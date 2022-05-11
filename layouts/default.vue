@@ -174,9 +174,7 @@ h1 {
 }
 
 #heart {
-  padding-left: 0;
-  padding-right: 0;
-  padding-bottom: 0;
+  padding: 0 !important;
 }
 
 .v-toolbar__content, .v-toolbar__extension {
