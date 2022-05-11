@@ -1,9 +1,6 @@
 <template>
     <v-card elevation="0" class="pt-6 pb-6 fill-height" flat>
-        <v-card-title>
-            <v-img :src="image" max-height="150px" max-width="150px" class="phase-image"></v-img>
-            <div class="phase-title">{{title}}</div>
-        </v-card-title>
+        <icon-header :image="image" :text="title"></icon-header>
         <v-card-subtitle>
             <div class="phase-subtitle">{{subtitle}}</div>
         </v-card-subtitle>
@@ -23,8 +20,10 @@
 </template>
 
 <script>
+import IconHeader from './IconHeader.vue'
 export default {
     name: 'Phase',
+    components: { IconHeader },
     props: {
         image: {
             type: String,
