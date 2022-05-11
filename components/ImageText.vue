@@ -94,7 +94,7 @@ export default {
 
 @media #{map-get($display-breakpoints, 'md-and-down')} {
   ::v-deep h1{
-    font-size:4rem;
+    font-size:3rem;
   }
 
   ::v-deep h2 {
