@@ -20,7 +20,7 @@ main:
             needed to design and build the
             “hard” physical innovations that
             change the world."
-      link: "#"
+      link: "/services/hardTech-basecamp-incubator"
     - image: "/images/lander-2.png"
       title: "DESIGN ENGINEERING SERVICES"
       text: "Whether you're revolutionizing the
@@ -28,7 +28,7 @@ main:
             we dig deeper, work smarter, and
             push science and technology further
             to quickly bring your vision to life."
-      link: "#"
+      link: "/services/design-engineering-services"
     - image: "/images/lander-3.png"
       title: "PRODUCT INNOVATION & DEVELOPMENT"
       text: "Guidance, research,
@@ -37,7 +37,7 @@ main:
           have everything you need to
           design, build, and test just about
           anything you can dream up."
-      link: "#"
+      link: "/services/product-innovation-and-development"
 
 ---
 

@@ -22,10 +22,11 @@
             </template>
             <v-list>
               <v-list-item
-                v-for="(item, index) in services"
+                v-for="(item, index) in menu.Services"
                 :key="index"
+                :to="item.path"
               >
-                <v-list-item-title>{{ item.title }}</v-list-item-title>
+                <v-list-item-title>{{ item.nav_name }}</v-list-item-title>
               </v-list-item>
             </v-list>
           </v-menu>
@@ -168,7 +169,6 @@ export default {
 </script>
 
 <style>
-
 h1 {
   text-transform: uppercase;
 }
