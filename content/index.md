@@ -74,6 +74,67 @@ possible:
           ensure you get the right team for
           your project."
       link: "/for/universities"
+logos:
+  - image: "/images/ingersoll-rand.png"
+    alt: "Ingersoll-Rand"
+    link: "https://www.ingersollrand.com"
+  - image: "/images/kimberly-clark.png"
+    alt: "Kiberly-Clark"
+    link: "https://www.kimberly-clark.com"
+  - image: "/images/med-logics-inc.png"
+    alt: "Med-Logics,Inc."
+    link: "https://mlogics.com/"
+  - image: "/images/covidien.png"
+    alt: "Covidien"
+    link: "https://www.medtronic.com/covidien/en-us/index.html"
+  - image: "/images/fmc.png"
+    alt: "FMC"
+    link: "https://www.fmc.com"
+  - image: "/images/halliburton.png"
+    alt: "Halliburton"
+    link: "https://www.halliburton.com/"
+  - image: "/images/trinityrail.png"
+    alt: "Trinity Rail"
+    link: "https://www.trinityrail.com/"
+  - image: "/images/baker-hughes.png"
+    alt: "Baker Huges"
+    link: "https://www.bakerhughes.com/"
+  - image: "/images/sunbream.png"
+    alt: "Sunbeam"
+    link: "https://www.sunbeam.com/"
+  - image: "/images/prince-castle-inc.png"
+    alt: "Prince Castle Inc."
+    link: "https://www.princecastle.com/"
+  - image: "/images/cameron.png"
+    alt: "Cameron"
+    link: "https://www.slb.com/companies/cameron"
+  - image: "/images/pepsico.png"
+    alt: "Pepsico"
+    link: "https://www.pepsico.com/"
+  - image: "/images/onesubsea.png"
+    alt: "OneSubsea"
+    link: "https://www.onesubsea.slb.com/"
+  - image: "/images/coleman.png"
+    alt: "Coleman"
+    link: "https://www.coleman.com/"
+  - image: "/images/weatherford.png"
+    alt: "Weatherford"
+    link: "https://www.weatherford.com/"
+  - image: "/images/parker.png"
+    alt: "Parker"
+    link: "https://www.parker.com"
+  - image: "/images/geno.png"
+    alt: "GenNO"
+    link: "#"
+  - image: "/images/basic-american-foods.png"
+    alt: "Basic American Foods"
+    link: "https://www.baf.com/"
+  - image: "/images/schlage.png"
+    alt: "Schlage"
+    link: "http://www.schlage.com/"
+  - image: "/images/onr.png"
+    alt: "Office of Navel Research"
+    link: "https://www.onr.navy.mil/"
 ---
 
 <lander :content="main">
@@ -82,3 +143,13 @@ possible:
 <lander :content="possible">
 </lander>
 
+<clients :logos="logos">
+<h1>
+  INNOVATION COMES
+  <br>
+  IN ALL FORMS
+</h1>
+<h2>
+  (Just like the clients who trust us)
+</h2>
+</clients>

@@ -67,7 +67,7 @@ export default {
           secondary: '#5E6E65',
           info: '#2196F3',
           warning: '#FFC107',
-          error: '#FF5252',
+          error: '#FFFFFF',
           success: '#4CAF50'
         },
         light: {
@@ -76,7 +76,7 @@ export default {
           secondary: '#5E6E65',
           info: '#2196F3',
           warning: '#FFC107',
-          error: '#FF5252',
+          error: '#FFFFFF',
           success: '#4CAF50'
         }
       }
