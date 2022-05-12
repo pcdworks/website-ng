@@ -1,9 +1,12 @@
 <template>
-  <v-img src="/images/lander.png">
+  <v-img src="/images/lander.png" :aspect-ratio="16/9"
+         gradient="to top right, rgba(51, 102, 51, 0.5), rgba(51, 102, 51, 0.5)">
     <v-row class="py-16 lander fill-height">
       <v-col align="center">
         <div class="px-xl-16 px-lg-16 px-md-4 px-xs-0 mx-1">
+          <!-- eslint-disable vue/no-v-html -->
           <h1 v-html="content.title"></h1>
+          <!--eslint-enable-->
           <p>{{content.subtitle}}</p>
           <br>
           <v-row class="px-xl-16 px-lg-16 px-md-4 px-xs-0 mx-2">
@@ -65,9 +68,6 @@ export default {
   color: #5e6e64;
   font-weight: 600;
   font-size: 1.2rem;
-}
-.lander {
-  background: rgba(51, 102, 51, 0.5);
 }
 
 h1{
