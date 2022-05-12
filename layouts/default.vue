@@ -50,21 +50,34 @@
       <v-list
         nav
       >
-        <v-list-item-group>
-          <v-list-item to="/">
-            <v-list-item-title>
-              Home
-            </v-list-item-title>
+        <v-list-item to="/">
+          <v-list-item-title>
+            Home
+          </v-list-item-title>
+        </v-list-item>
+        <v-list-group>
+          <template v-slot:activator>
+            <v-list-item-content>
+              <v-list-item-title v-text="'Services'"></v-list-item-title>
+            </v-list-item-content>
+          </template>
+
+          <v-list-item
+            v-for="(item, index) in menu.Services"
+            :key="index"
+            :to="item.path"
+          >
+            <v-list-item-title v-text="item.nav_name"></v-list-item-title>
           </v-list-item>
-          <v-list-item v-for="item in topMenu" :key="item.nav_name" :to="item.path">
-            <v-list-item-title>{{item.nav_name}}</v-list-item-title>
-          </v-list-item>
-          <v-list-item href="#contact">
-            <v-list-item-title>
-              Contact
-            </v-list-item-title>
-          </v-list-item>
-        </v-list-item-group>
+        </v-list-group>
+        <v-list-item v-for="item in topMenu" :key="item.nav_name" :to="item.path">
+          <v-list-item-title v-text="item.nav_name"></v-list-item-title>
+        </v-list-item>
+        <v-list-item href="#contact">
+          <v-list-item-title>
+            Contact
+          </v-list-item-title>
+        </v-list-item>
       </v-list>
     </v-navigation-drawer>
     <v-main>
