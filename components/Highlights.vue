@@ -46,8 +46,8 @@ export default {
   text-align: center;
   border: 0;
   outline: 0;
-  padding-right: 44px;
-  padding-left: 44px;
+  padding-right: 20px;
+  padding-left: 20px;
   display: inline-block;
   transform: skew(-30deg);
   margin: 0 auto;
@@ -63,6 +63,7 @@ export default {
 
 span .highlight {
   display: inline-block;
+  width: 100%;
   transform: skew(30deg);
 }
 
