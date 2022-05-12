@@ -125,7 +125,7 @@ logos:
     link: "https://www.parker.com"
   - image: "/images/geno.png"
     alt: "GenNO"
-    link: "#"
+    link: ""
   - image: "/images/basic-american-foods.png"
     alt: "Basic American Foods"
     link: "https://www.baf.com/"
