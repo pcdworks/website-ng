@@ -103,35 +103,6 @@ p {
   font-weight: 650;
 }
 
-.learn-more {
-  background: #afbd21;
-  text-align: center;
-  text-decoration: none;
-  border: 0;
-  outline: 0;
-  padding: 12px 44px;
-  display: inline-block;
-  transform: skew(-30deg);
-  text-transform: uppercase;
-  margin: 0 auto;
-  max-width: 100%;
-  color: black;
-  text-transform: uppercase;
-  font-weight: 680;
-}
-
-.learn-more:visited {
-  color: black;
-}
-
-.learn-more:hover {
-  opacity: 90%;
-}
-
-.learn-more > span {
-  display: inline-block;
-  transform: skew(30deg);
-}
 
 @media #{map-get($display-breakpoints, 'md-and-down')} {
   h1{
