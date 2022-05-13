@@ -1,16 +1,16 @@
 <template>
-    <v-img :src="image"  :aspect-ratio="21/9"
+    <v-img :src="image" :aspect-ratio="21/9"
     gradient="to top right, rgba(0,0,0,0.5), rgba(0,0,0,0.5)">
         <div class="py-16 px-xl-16 px-lg-16 px-md-4">
             <div class="py-16 px-xl-16 px-lg-16 px-md-4 pa-6">
                 <slot></slot>
-                <v-tooltip top v-for="(highlight, idx) in highlights" :key="idx">
-                <template v-slot:activator="{ on, attrs }">
+                <v-tooltip v-for="(highlight, idx) in highlights" :key="idx" top>
+                <template #activator="{ on, attrs }">
                     <v-chip
                         color="#5e6e64" text-color="white" class="highlight" label large
                         v-bind="attrs"
-                        v-on="on"
-                        :to="highlight.link">
+                        :to="highlight.link"
+                        v-on="on">
                     <span class="highlight text-truncate">{{highlight.text}}</span>
                     </v-chip>
                 </template>
