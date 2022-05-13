@@ -80,7 +80,7 @@ export default {
 
 ::v-deep h2 {
     color: white;
-    font-size: 3.5rem;
+    font-size: 3rem;
     padding-left: 1rem;
     padding-right: 1rem;
 }
