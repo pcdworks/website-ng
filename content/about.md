@@ -122,96 +122,99 @@ phases:
 
 ---
 <text-image image="/images/about-1.png">
-  <template v-slot:left>
-  <h2>We've got the experience to</h2>
-  <h1>Make it happen</h1>
-  <br>
-  <p>
-    For a quarter of a century, we've developed
-    innovative solutions for 50+ companies across a
-    range of industries. And we've racked up more
-    than 30 patents along the way. Our projects span
-    industries including renewable energy,
-    transportation, medical, oil and gas, food
-    processing, military, and consumer goods. To us,
-    diversity is our strength.
-  </p>
-  <p>
-    Made up of a core team of passionate and experienced scientists,
-    engineers, and technical development experts, we also call upon a global
-    network of industry and academic resources with deep knowledge and
-    expertise in their respective fields to bring together the right team for your
-    particular project.
-  </p>
-  <p>
-    Bottom line? When you're ready to get your idea out into the world, we've got
-    the big brains (not to mention, small egos) to make it happen.
-  </p>
-  </template>
+<template v-slot:left>
+
+## We've got the experience to
+# Make it happen
+<br/>
+
+For a quarter of a century, we've developed
+innovative solutions for 50+ companies across a
+range of industries. And we've racked up more
+than 30 patents along the way. Our projects span
+industries including renewable energy,
+transportation, medical, oil and gas, food
+processing, military, and consumer goods. To us,
+diversity is our strength.
+
+Made up of a core team of passionate and experienced scientists,
+engineers, and technical development experts, we also call upon a global
+network of industry and academic resources with deep knowledge and
+expertise in their respective fields to bring together the right team for your
+particular project.
+
+Bottom line? When you're ready to get your idea out into the world, we've got
+the big brains (not to mention, small egos) to make it happen.
+
+</template>
 </text-image>
+
 <backing>
-  <center>
-    <h1>Meet the team</h1>
-    <br>
-    <people :people="team"></people>
-    <br>
-    <br>
-    <h2>Advisory Board</h2>
-    <br>
-    <people :people="board"></people>
-  </center>
+<center>
+
+# Meet the team
+
+<br/>
+<people :people="team"></people>
+<br/>
+<br/>
+
+## Advisory Board
+
+<br/>
+<people :people="board"></people>
+</center>
 </backing>
 <text-image image="/images/about-2.png">
-  <template v-slot:left>
-  <h2>
-    Our goal is to help you
-    <br>
-    know you can succeed.
-  </h2>
-  <h1>Period.</h1>
-  <br>
-  <p>
-    As a knowledge-based company, we use a stage gate
-    approach that involves constant testing, refinement,
-    and communication. This cycle of gaining knowledge
-    through iterative research, experimentation, and
-    discovery results in learning, which we apply to reduce
-    risk; it's a proven methodology that breaks down a
-    complex problem, prioritizes next steps, and increases
-    your likelihood of success.
-  </p>
-  <p>
-    Here's what you can expect when you work with us.
-  </p>
-  </template>
-  <template v-slot:right>
-  <h2>Initial discussion where we cover:</h2>
-  <ul>
-    <li>NDA agreement</li>
-    <li>Understanding of Ownership of IP</li>
-    <li>Joint Development of Problem Statement</li>
-    <li>Joint Development of Approach</li>
-    <li>Phase 1 Proposal</li>
-  </ul>
-  </template>
+<template v-slot:left>
+
+## Our goal is to help you<br/>know you can succeed.
+# Period
+<br/>
+
+As a knowledge-based company, we use a stage gate
+approach that involves constant testing, refinement,
+and communication. This cycle of gaining knowledge
+through iterative research, experimentation, and
+discovery results in learning, which we apply to reduce
+risk; it's a proven methodology that breaks down a
+complex problem, prioritizes next steps, and increases
+your likelihood of success.
+
+Here's what you can expect when you work with us.
+
+</template>
+<template v-slot:right>
+
+## Initial discussion where we cover:
+
+* NDA agreement
+* Understanding of Ownership of IP
+* Joint Development of Problem Statement
+* Joint Development of Approach
+* Phase 1 Proposal
+
+</template>
 </text-image>
 <phases :phases="phases">
 </phases>
 
 <image-fader image="/images/mickey.png">
-<h2>The most magical place on earth</h2>
-<h3>(sorry, Mickey)</h3>
-<br>
-<p>
-  Schedule a visit and experience the magic
-  of PCDworks for yourself.
-</p>
-<br>
-<strong>PCDworks</strong>
-<br>
-<p>
-  410 Private Road 8315
-  <br>
-  Palestine, TX 75803
-</p>
+
+## The most magical place on earth
+### (sorry, Mickey)
+
+<br/>
+
+Schedule a visit and experience the magic
+of PCDworks for yourself.
+
+<br/>
+
+**PCDworks**
+<br/>
+410 Private Road 8315
+<br/>
+Palestine, TX 75803
+
 </image-fader>

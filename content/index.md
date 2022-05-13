@@ -144,12 +144,8 @@ logos:
 </lander>
 
 <clients :logos="logos">
-<h1>
-  INNOVATION COMES
-  <br>
-  IN ALL FORMS
-</h1>
-<h2>
-  (Just like the clients who trust us)
-</h2>
+
+# INNOVATION COMES<br/>IN ALL FORMS
+## (Just like the clients who trust us)
+
 </clients>

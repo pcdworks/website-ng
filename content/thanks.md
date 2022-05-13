@@ -1,6 +1,6 @@
 ---
 title: 'Thank You'
-description: 'this'
+description: ''
 nav_name: ''
 order: 0
 ---
