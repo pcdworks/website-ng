@@ -92,6 +92,7 @@ export default {
     font-size: 3.5rem;
     padding-left: 1rem;
     padding-right: 1rem;
+    line-height: normal;
 }
 
 ::v-deep .left-content {
