@@ -15,7 +15,7 @@
                 <div class="pa-2 py-10 px-xl-16 px-lg-16 px-md-4">
                     <div class="px-xl-16 px-lg-16 px-md-4">
                         <slot name="right"></slot>
-                        <div class="pa-10" v-if="button">
+                        <div v-if="button" class="pa-10">
                             <a class="learn-more" :href="button.link">
                                 <span>{{button.text}}</span>
                             </a>
