@@ -205,6 +205,7 @@ medical:
 
 ## We specialize in
 # Not specializing
+<br/>
 
 The diversity of industries we work in is one of
 our greatest strengths. Our ability to

@@ -23,6 +23,7 @@
                     </v-card>
                 </v-col>
             </v-row>
+            <br/>
         </div>
     </div>
 </template>

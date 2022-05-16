@@ -9,6 +9,7 @@ order: 1
 
 ## Yeah, we've
 # Got skills
+<br/>
 
 Truly breakthrough product development
 requires high quality engineering capabilities and
@@ -28,6 +29,7 @@ engineering challenges.
 <template v-slot:right>
 
 ## Electrical Engineering
+<br/>
 
 Because many of our solutions require
 electro-mechanical subsystems, we maintain strong
@@ -54,6 +56,7 @@ systems. Our capabilities include:
 <template v-slot:left>
 
 ## Mechanical Engineering
+<br/>
 
 With extensive engineering capabilities, we provide a
 full range of services, including 3D CAD layouts,
@@ -103,7 +106,8 @@ In addition, we have local outsider consultants and have worked in:
 <image-text image="/images/expertise-4.png" trim>
 <template v-slot:right>
 
-## Mathematical Modeling<
+## Mathematical Modeling
+<br/>
 
 Mathematical modeling is a valuable tool to use when
 tackling problems that have plagued industries for
@@ -130,6 +134,7 @@ capabilities include:
 <template v-slot:left>
 
 ## Sensors and IoT
+<br/>
 
 In our state-of-the-art research and development
 lab, it's possible to design, prototype, and evaluate

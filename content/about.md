@@ -165,7 +165,7 @@ the big brains (not to mention, small egos) to make it happen.
 <people :people="board"></people>
 </center>
 </backing>
-<text-image image="/images/about-2.png">
+<text-image image="/images/about-2.png" :has_right="true">
 <template v-slot:left>
 
 ## Our goal is to help you<br/>know you can succeed.
@@ -187,6 +187,7 @@ Here's what you can expect when you work with us.
 <template v-slot:right>
 
 ## Initial discussion where we cover:
+<br/>
 
 * NDA agreement
 * Understanding of Ownership of IP
@@ -203,7 +204,6 @@ Here's what you can expect when you work with us.
 
 ## The most magical place on earth
 ### (sorry, Mickey)
-
 <br/>
 
 Schedule a visit and experience the magic

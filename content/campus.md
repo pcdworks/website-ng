@@ -9,6 +9,7 @@ order: 0
 
 ## For out-of-the-box thinking,
 # Step out of your box
+<br/>
 
 Located on 80 secluded acres and nestled within
 the breathtaking, pine-covered hills of East
@@ -36,6 +37,7 @@ thinking that yields accelerated breakthrough solutions.
 
 ## Experience if for
 # Yourself
+<br/>
 
 All are welcome to visit our campus. Come by yourself or bring your team to
 stroll the grounds, see what we're working on, and explore all the ways you
