@@ -10,7 +10,7 @@
                 <div class="pt-4 px-4 px-xl-16 px-lg-4 px-md-4 px-sm-16">
                     <div :class="trimClass">
                         <v-img :src="image" class="align-end">
-                            <div v-if="has_right"
+                            <div v-if="hasRight"
                             class="right-content py-2 px-2 py-lg-10 px-lg-16 py-xl-10 px-xl-16 py-md-8 px-md-6 px-sm-6 py-sm-6">
                                 <slot name="right"></slot>
                             </div>
@@ -34,7 +34,7 @@ export default {
             type: Boolean,
             default: false
         },
-        has_right: {
+        hasRight: {
             type: Boolean,
             default: false
         }
