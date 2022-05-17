@@ -240,7 +240,7 @@ h1 {
   text-decoration: none;
   border: 0;
   outline: 0;
-  padding: 12px 44px;
+  padding: 12px 24px;
   display: inline-block;
   transform: skew(-30deg);
   text-transform: uppercase;
