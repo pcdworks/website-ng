@@ -37,7 +37,7 @@ team:
     MA in Psychology from the
     University of North Texas. He also
     has done doctoral work in cognitive
-    psychology at MTSU.
+    psychology at TCU.
     "
   - name: 'Bert Sackett'
     degrees: 'B.S.E.E, M.S.E.E,'
