@@ -1,12 +1,12 @@
 <template>
   <v-app>
-    <v-app-bar app fixed hide-on-scroll elevation="1" height="100px" color="white" light>
+    <v-app-bar app fixed hide-on-scroll elevation="2" height="100px" color="white" light>
       <v-app-bar-nav-icon class="d-none d-flex d-sm-flex d-md-none" @click.stop="drawer = !drawer"></v-app-bar-nav-icon>
       <v-row align="center" align-content="center">
         <v-col cols="12" xl="3" lg="3" md="2" sm="12" xs="12">
           <center>
             <v-toolbar-title>
-              <router-link to="/">
+              <router-link to="/" alt="Home page">
                 <Logo/>
               </router-link>
             </v-toolbar-title>
@@ -122,28 +122,30 @@ export default {
     }
   },
   mounted () {
-    const theme = localStorage.getItem("dark_theme");
-    if (theme) {
-        if (theme === "true") {
-            this.$vuetify.theme.dark = true
-            this.darkMode = true
-        } else {
-            this.$vuetify.theme.dark = false
-            this.darkMode = false
-        }
-    } else if (
-        window.matchMedia &&
-        window.matchMedia("(prefers-color-scheme: dark)").matches
-    ) {
-        this.$vuetify.theme.dark = true
-        this.darkMode = true
-        localStorage.setItem(
-            "dark_theme",
-            this.$vuetify.theme.dark.toString()
-        )
-    }
   },
   methods: {
+    darkModeInit () {
+      const theme = localStorage.getItem("dark_theme")
+      if (theme) {
+          if (theme === "true") {
+              this.$vuetify.theme.dark = true
+              this.darkMode = true
+          } else {
+              this.$vuetify.theme.dark = false
+              this.darkMode = false
+          }
+      } else if (
+          window.matchMedia &&
+          window.matchMedia("(prefers-color-scheme: dark)").matches
+      ) {
+          this.$vuetify.theme.dark = true
+          this.darkMode = true
+          localStorage.setItem(
+              "dark_theme",
+              this.$vuetify.theme.dark.toString()
+          )
+      }
+    },
     toggleDarkMode () {
         this.$vuetify.theme.dark = !this.$vuetify.theme.dark;
         this.darkMode = !this.darkMode;
