@@ -3,7 +3,7 @@
         <v-row class="px-0">
             <v-col cols="12" xl="4" lg="4" md="4">
                 <div :class="trimClass">
-                    <v-img :src="image" class="align-end" :aspect-ratio="1">
+                    <v-img :src="image" class="align-end" :aspect-ratio="1" contain>
                         <div v-if="hasLeft"
                         class="left-content py-2 px-2 py-lg-10 px-lg-16 py-xl-10 px-xl-16 py-md-8 px-md-6 px-sm-6 py-sm-6">
                             <slot name="left"></slot>
