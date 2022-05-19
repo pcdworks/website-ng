@@ -8,7 +8,7 @@ order: 1
 <template v-slot:left>
 
 ## Yeah, we've
-# Got skills
+# Got know-how
 <br/>
 
 Truly breakthrough product development

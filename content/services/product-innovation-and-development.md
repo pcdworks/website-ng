@@ -2,6 +2,29 @@
 title: Product Innovation & Development
 nav_name: Product Innovation & Development
 order: 0
+
+highlights:
+    - text: "Swimmer rescue rebreathers"
+      link: ""
+    - text: "Cataract removal technology"
+      link: ""
+    - text: "The connected railcar, 1A Certified sensors, and gateway"
+      link: ""
+    - text: "Downhole linear motors driven pumps"
+      link: ""
+    - text: "Black water recovery system (Wall Street Journal Technology Award)"
+      link: ""
+    - text: "Next generation broiler for a major food chain"
+      link: ""
+    - text: "Automated, smart tie-down for the US Navy hovercraft"
+      link: ""
+    - text: "Harmonic drives for robotic application"
+      link: ""
+    - text: "Sensors and the accompanying communications and computer controls"
+      link: ""
+    - text: "Solar powered, active cooled, mobile vending platform"
+      link: "" 
+
 ---
 
 <text-image image="/images/pid-1.png">
@@ -81,3 +104,14 @@ gone before to help you find the solution you need.
 
 </template>
 </text-image>
+
+
+<highlights image="/images/highlights.png" :highlights="highlights">
+
+## We are taking innovation to
+# New Heights
+
+To date, we've developed innovative solutions for 50+ companies across 110+ corporate innovation-R&D projects—\
+and are responsible for more than 30 patents either issued or in process. Projects include:
+
+</highlights>
