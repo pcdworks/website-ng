@@ -1,11 +1,13 @@
 <template>
-    <v-row class="py-16">
-        <v-col align="center" cols="12">
+    <v-row class="py-16" align="center">
+        <v-col align-self="center" cols="12">
             <div class="px-xl-16 px-lg-16 px-md-4 px-xs-0 mx-1">
-                <slot></slot>
+                <center>
+                    <slot></slot>
+                </center>
             </div>
         </v-col>
-        <v-col cols="12">
+        <v-col cols="12" align-self="center">
             <v-row class="py-4 px-16" align="justify">
                 <v-col v-for="(logo, idx) in logos" :key="idx"
                     cols="12" lx="2" lg="2" md="3" sm="4">
