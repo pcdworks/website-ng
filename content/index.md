@@ -135,6 +135,12 @@ logos:
   - image: "/images/onr.png"
     alt: "Office of Navel Research"
     link: "https://www.onr.navy.mil/"
+  - image : "images/wello.png"
+    alt: "Wello Inc"
+    link: "https://welloinc.com/"
+  - image: "/images/smartsecurement.png"
+    alt: "SMART Securement Systems, LLC."
+    link: "https://smartsecurement.com/"
 ---
 
 <lander :content="main">
