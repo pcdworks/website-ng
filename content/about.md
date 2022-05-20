@@ -61,20 +61,17 @@ board:
     degrees: ''
     position: ''
     image: ''
-    bio: '
-    '
+    bio: ""
+  - name: 'Michael Neal'
+    degrees: 'B.S.M.E, M.S.M.E,'
+    position: ''
+    image: ''
+    bio: ""
   - name: ''
     degrees: ''
     position: ''
     image: ''
-    bio: '
-    '
-  - name: ''
-    degrees: ''
-    position: ''
-    image: ''
-    bio: '
-    '
+    bio: ""
 
 
 phases:
