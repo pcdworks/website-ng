@@ -7,18 +7,18 @@ order: 0
 <text-image image="/images/des-1.png">
 <template v-slot:left>
 
-## We turn big ideas into the
-# Next big thing
+## We turn big ideas into the next big thing through 
+# "Knowing"
 
-At PCDworks we realize that Innovation isn't
-just about having great ideas. It's about
-executing them.
+At PCDworks we realize that innovation isn't
+just about having great ideas. It's about reducing risk, proving concepts 
+and executing them.
 
 To guide you at this crucial stage, we employ a winning approach to product
-development, which is iterative and multi-step. This includes research,
-conceptualization, feasibility assessment, establishing design
-requirements, preliminary design, detailed design, production planning
-and tool design, and finally production.
+development, which is iterative and multi-step. This includes gaining knowledge
+through research, conceptualization, feasibility assessment, establishing design
+requirements, preliminary design, testing,  detailed design, prototyping, prototype te production planning,
+production, and finally testing again. 
 
 No doubt, the best way to test a theory is to see it in action. That's why we're
 committed to getting physical fast.

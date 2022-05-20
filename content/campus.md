@@ -32,8 +32,8 @@ thinking that yields accelerated breakthrough solutions.
 </template>
 </text-image>
 
-<text-image image="/images/campus-2.png">
-<template v-slot:left>
+<image-text image="/images/campus-2.png">
+<template v-slot:right>
 
 ## Experience if for
 # Yourself
@@ -44,4 +44,4 @@ stroll the grounds, see what we're working on, and explore all the ways you
 can experience out-of-the-box thinking. Schedule your visit today.
 
 </template>
-</text-image>
+</image-text>

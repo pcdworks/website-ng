@@ -38,16 +38,16 @@ and welcome them in through the Immersive
 Innovation™ process developed by PCDworks
 founder, psychologist Mike Rainone.
 
-Immersive Innovation serves as a catalyst to expand the solution space beyond
+The **Immersion Session™** innovation experience serves as a catalyst to expand the solution space beyond
 the current thinking. Through it, you gain new insight into your own
 understanding of the problem-the “aha” moment.
 
-All told, our Immersive Innovation process allows your team to define and
+All told, our Immersive Innovation™ process allows your team to define and
 decompose its problem, abandon preconceived notions, identify the solution
 space, and develop new and innovative concepts within this solution space. This
 all takes place at the PCDworks campus, where you're surrounded by the right
 people, the right psychology, and the right tools and technology to quickly move
-ideas to build out concepts. And most importantly, it's the perfect location for
+ideas to built out concepts. And most importantly, it's the perfect location for
 distraction-free collaboration and breakthrough thinking.
 
 </template>
@@ -56,7 +56,7 @@ distraction-free collaboration and breakthrough thinking.
 <image-text image="/images/pid-2.png">
 <template v-slot:right>
 
-## Experience te power of
+## Experience the power of
 # many
 
 Sometimes it's who you know in the world of innovation. And we know a
