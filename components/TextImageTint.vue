@@ -10,12 +10,20 @@
             </v-col>
             <v-col cols="12" xl="4" lg="4" md="4">
                 <div :class="trimClass">
-                    <v-img :src="image" class="align-end" :aspect-ratio="1">
+                    <v-img v-if="images.length === 0" :src="image" class="align-end" :aspect-ratio="1">
                         <div v-if="hasRight"
                         class="right-content py-2 px-2 py-lg-10 px-lg-16 py-xl-10 px-xl-16 py-md-8 px-md-6 px-sm-6 py-sm-6">
                             <slot name="right"></slot>
                         </div>
                     </v-img>
+                    <v-carousel v-else v-model="carousel" cycle>
+                        <v-carousel-item
+                            v-for="(img, i) in images"
+                            :key="i"
+                            :src="img"
+                        >
+                        </v-carousel-item>
+                    </v-carousel>
                 </div>
             </v-col>
         </v-row>
@@ -29,6 +37,10 @@ export default {
         image: {
             type: String,
             default: ''
+        },
+        images: {
+            type: Array,
+            default: () => []
         },
         trim: {
             type: Boolean,
