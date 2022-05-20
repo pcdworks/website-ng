@@ -1,36 +1,42 @@
 <template>
   <v-img :src="content.image" :aspect-ratio="16/9"
          :gradient="content.filter">
-    <v-row class="py-16 lander fill-height">
-      <v-col align="center">
+    <v-row class="py-16 lander fill-height" align="center">
+      <v-col align-self="center">
         <div class="px-xl-16 px-lg-16 px-md-4 px-xs-0 mx-1">
-          <!-- eslint-disable vue/no-v-html -->
-          <h1 v-html="content.title"></h1>
-          <!--eslint-enable-->
-          <p>{{content.subtitle}}</p>
-          <br>
+          <center>
+            <!-- eslint-disable vue/no-v-html -->
+            <h1 v-html="content.title"></h1>
+            <!--eslint-enable-->
+            <p>{{content.subtitle}}</p>
+            <br>
+          </center>
           <v-row class="px-xl-16 px-lg-16 px-md-4 px-xs-0 mx-2">
             <v-col v-for="(card, idx) in content.cards" :key="idx"
                   cols="12" xs="12" sm="12" md="12" xl="4" lg="4">
               <v-card elevation="8" class="pb-6 fill-height person" tile>
                 <v-card-title v-if="card.top_title">
-                  <div class="top-title">{{card.title}}</div>
+                  <div class="top-title">
+                    <center>{{card.title}}</center>
+                  </div>
                 </v-card-title>
                 <div v-else class="pt-6"></div>
                   <br/>
-                  <v-img
-                      :src="card.image"
-                      max-width="160"
-                      max-height="160"
-                      contain></v-img>
+                  <center>
+                    <v-img
+                        :src="card.image"
+                        max-width="160"
+                        max-height="160"
+                        contain></v-img>
+                  </center>
                   <v-card-subtitle v-if="!card.top_title">
                       <div class="px-xl-16 px-lg-4 px-md-12 px-sm-10 px-xs-4 entry-title">
-                        {{card.title}}
+                        <center>{{card.title}}</center>
                       </div>
                   </v-card-subtitle>
                   <v-card-text>
                       <p class="entry-text px-xl-16 px-lg-4 px-md-12 px-sm-10 px-xs-4">
-                        {{card.text}}
+                        <center>{{card.text}}</center>
                       </p>
                   </v-card-text>
                   <v-card-actions>
