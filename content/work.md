@@ -4,7 +4,7 @@ nav_name: Work
 order: 2
 oil:
   title: "Oil & Gas"
-  image: "/images/work/work-1.png"
+  image: "/images/work/work-1.webp"
   works:
     - 
         title: "Subsea safety valve"
@@ -66,7 +66,7 @@ completion."
                 new, disruptive technology."
 group1:
     - title: 'Consumer Goods'
-      image: '/images/work/work-2.png'
+      image: '/images/work/work-2.webp'
       works:
         - title: "Coleman Grills"
           problem: "Set up time for the customer or the assembly point in the
@@ -78,7 +78,7 @@ group1:
             we cut assembly time to less than 1/2 hour, reduced the shipping cube
             by 20%, and slashed manufacturing costs by 4%."
     - title: 'Transportation'
-      image: '/images/work/work-3.png'
+      image: '/images/work/work-3.webp'
       works:
         - title: "Trinity Rail Railcar / The Connected Railcar"
           problem: "The mantra of shipping via railroad is “ship and pray”
@@ -96,7 +96,7 @@ group1:
                 procurement assistance."
 group2:
   - title: 'Military'
-    image: '/images/work/work-5.png'
+    image: '/images/work/work-5.webp'
     works:
       - title: "Automated tie-down device"
         problem: "The Office of Naval Research needed a self-powered,
@@ -115,7 +115,7 @@ group2:
                 being considered for nuclear waste transport, rail shipping, and aircraft
                 docking."
   - title: 'Food'
-    image: '/images/work/work-6.png'
+    image: '/images/work/work-6.webp'
     works:
       - title: "Potato cooker"
         problem: "Occasional improper cooking caused the entire granule line
@@ -141,7 +141,7 @@ group2:
 
 medical:
   title: "Medical"
-  image: "/images/work/work-4.png"
+  image: "/images/work/work-4.webp"
   works:
     - 
         title: "Resuscitation Device"
@@ -200,7 +200,7 @@ medical:
 ---
 
 
-<text-image image="/images/work/hands.png">
+<text-image image="/images/work/hands.webp">
 <template v-slot:left>
 
 ## We specialize in
