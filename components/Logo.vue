@@ -1,5 +1,5 @@
 <template>
-  <img id="pcd-logo" src="/images/logo.png" alt="PCDworks Homepage"/>
+  <img id="pcd-logo" src="/images/logo.webp" alt="PCDworks Homepage"/>
 </template>
 
 <style>
