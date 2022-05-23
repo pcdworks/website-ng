@@ -6,7 +6,7 @@ team:
   - name: 'Donna Rainone'
     degrees: 'AIA'
     position: 'President'
-    image: '/images/about/donna-headshot.png'
+    image: '/images/about/donna-headshot.webp'
     bio: "
     Donna honed her design and
     management skills working as an
@@ -22,7 +22,7 @@ team:
   - name: 'Mike Rainone'
     degrees: 'NPDP, IDSA'
     position: 'Vice president'
-    image: '/images/about/mike-headshot.png'
+    image: '/images/about/mike-headshot.webp'
     bio: "
     With 30+ patents to his name, Mike
     has a broad knowledge of emerging
@@ -42,7 +42,7 @@ team:
   - name: 'Bert Sackett'
     degrees: 'B.S.E.E, M.S.E.E,'
     position: 'Partner'
-    image: '/images/about/bert-headshot.png'
+    image: '/images/about/bert-headshot.webp'
     bio: "
     Bert is a seasoned engineer with
     extensive experience designing
