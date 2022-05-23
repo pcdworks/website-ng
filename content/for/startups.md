@@ -5,7 +5,7 @@ order: 0
 
 starthere:
     text: "Let's get moving"
-    link: "/services/hardTech-basecamp-incubator"
+    link: "/services/hardtech-basecamp-incubator"
 
 ---
 
