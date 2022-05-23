@@ -147,3 +147,23 @@ an loT product from scratch.
 
 </template>
 </text-image>
+
+<image-text image="" trim>
+<template v-slot:right>
+
+## Software Engineering
+<br/>
+
+
+</template>
+</image-text>
+
+<text-image image="" trim>
+<template v-slot:left>
+
+## Prototyping
+<br/>
+
+
+</template>
+</text-image>
