@@ -6,7 +6,7 @@ team:
   - name: 'Donna Rainone'
     degrees: 'AIA'
     position: 'President'
-    image: '/images/donna-headshot.png'
+    image: '/images/about/donna-headshot.png'
     bio: "
     Donna honed her design and
     management skills working as an
@@ -22,7 +22,7 @@ team:
   - name: 'Mike Rainone'
     degrees: 'NPDP, IDSA'
     position: 'Vice president'
-    image: '/images/mike-headshot.png'
+    image: '/images/about/mike-headshot.png'
     bio: "
     With 30+ patents to his name, Mike
     has a broad knowledge of emerging
@@ -42,7 +42,7 @@ team:
   - name: 'Bert Sackett'
     degrees: 'B.S.E.E, M.S.E.E,'
     position: 'Partner'
-    image: '/images/bert-headshot.png'
+    image: '/images/about/bert-headshot.png'
     bio: "
     Bert is a seasoned engineer with
     extensive experience designing
@@ -75,7 +75,7 @@ board:
 
 
 phases:
-  - image: '/images/phase-1.png'
+  - image: '/images/about/phase-1.png'
     title: 'Phase 1'
     subtitle: 'Immersive Innovation session'
     bullets:
@@ -88,7 +88,7 @@ phases:
       - "Immersive ideation session (3-4-day session)"
       - "Initial concepts"
       - "Concept refinement"
-  - image: '/images/phase-2.png'
+  - image: '/images/about/phase-2.png'
     title: 'Phase 2'
     subtitle: 'Engineering Design'
     bullets:
@@ -96,19 +96,19 @@ phases:
       - "Initial engineering analysis"
       - "Detailed design"
       - "Initial proof of concept test of most difficult aspect"
-  - image: '/images/phase-3.png'
+  - image: '/images/about/phase-3.png'
     title: 'Phase 3'
     subtitle: 'Full Prototype Development'
     bullets:
       - "Collaborative prototype drawing development/refinement"
       - "Develop prototype"
       - "Prototype testing"
-  - image: '/images/phase-4.png'
+  - image: '/images/about/phase-4.png'
     title: 'Phase 4'
     subtitle: 'Design for Manufacturing'
     bullets:
       - "Develop full set of documentation for manufacturing"
-  - image: '/images/phase-5.png'
+  - image: '/images/about/phase-5.png'
     title: 'Phase 5'
     subtitle: 'Product Optimization / Enhancement'
     bullets:
@@ -117,8 +117,11 @@ phases:
       - "Jointly developed proposal for next phase of targeted improvements"
       - "Next phase go ahead"
 
+about_1:
+  - "/images/about/wasp-boat.webp"
+  - "/images/about/wello-station.webp"
 ---
-<text-image image="/images/about-1.png">
+<text-image :images="about_1">
 <template v-slot:left>
 
 ## We've got the experience to
@@ -162,7 +165,7 @@ the big brains (not to mention, small egos) to make it happen.
 <people :people="board"></people>
 </center>
 </backing>
-<text-image image="/images/about-2.png" :has-right="true">
+<text-image image="/images/about/about-2.png" :has-right="true">
 <template v-slot:left>
 
 ## Our goal is to help you<br/>know you can succeed.
@@ -197,7 +200,7 @@ Here's what you can expect when you work with us.
 <phases :phases="phases">
 </phases>
 
-<image-fader image="/images/mickey.png">
+<image-fader image="/images/about/mickey.png">
 
 ## The most magical place on earth
 ### (sorry, Mickey)

@@ -2,9 +2,16 @@
 title: Campus
 nav_name: Campus
 order: 0
+
+campus_1:
+    - "/images/campus/campus-0.jpg"
+    - "/images/campus/campus-1.png"
+
+campus_2:
+    - "/images/campus/campus-2.png"
 ---
 
-<text-image image="/images/campus-1.png">
+<text-image :images="campus_1">
 <template v-slot:left>
 
 ## For out-of-the-box thinking,
@@ -32,7 +39,7 @@ thinking that yields accelerated breakthrough solutions.
 </template>
 </text-image>
 
-<image-text image="/images/campus-2.png">
+<image-text :images="campus_2">
 <template v-slot:right>
 
 ## Experience if for

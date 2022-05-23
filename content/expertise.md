@@ -4,7 +4,7 @@ nav_name: Expertise
 order: 1
 ---
 
-<text-image image="/images/expertise-1.png">
+<text-image image="/images/expertise/expertise-1.png">
 <template v-slot:left>
 
 ## Yeah, we've
@@ -25,7 +25,7 @@ engineering challenges.
 </template>
 </text-image>
 
-<image-text image="/images/expertise-2.png" trim>
+<image-text image="/images/expertise/expertise-2.png" trim>
 <template v-slot:right>
 
 ## Electrical Engineering
@@ -52,7 +52,7 @@ systems. Our capabilities include:
 </template>
 </image-text>
 
-<text-image image="/images/expertise-3.png" trim>
+<text-image image="/images/expertise/expertise-3.png" trim>
 <template v-slot:left>
 
 ## Mechanical Engineering
@@ -103,7 +103,7 @@ In addition, we have local outsider consultants and have worked in:
 </template>
 </text-image>
 
-<image-text image="/images/expertise-4.png" trim>
+<image-text image="/images/expertise/expertise-4.png" trim>
 <template v-slot:right>
 
 ## Mathematical Modeling
@@ -130,7 +130,7 @@ capabilities include:
 </template>
 </image-text>
 
-<text-image image="/images/expertise-5.png" trim>
+<text-image image="/images/expertise/expertise-5.png" trim>
 <template v-slot:left>
 
 ## Sensors and IoT

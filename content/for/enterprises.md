@@ -10,7 +10,7 @@ gobutton:
 
 
 
-<text-image image="/images/fe-1.png">
+<text-image image="/images/for/enterprises/fe-1.png">
 <template v-slot:left>
 
 ## PCDworks
@@ -32,7 +32,7 @@ world is waiting for.
 </template>
 </text-image>
 
-<image-text-tint image="/images/fe-2.png" :button="gobutton">
+<image-text-tint image="/images/for/enterprises/fe-2.png" :button="gobutton">
 <template v-slot:right>
 
 ## It hinges on you. Swing into action now and see how we can help you succeed with:
@@ -46,7 +46,7 @@ world is waiting for.
 </template>
 </image-text-tint>
 
-<image-slide image="/images/fe-3.png">
+<image-slide image="/images/for/enterprises/fe-3.png">
 <template>
 
 "If your company is truly committed to ground breaking technology development and innovation
