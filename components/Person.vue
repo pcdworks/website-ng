@@ -2,7 +2,7 @@
     <v-card elevation="8" class="pt-6 pb-16 fill-height person" tile>
         <br/>
         <v-img
-            lazy-src="/images/person.png"
+            lazy-src="/images/person.webp"
             :src="image"
             width="254"
             height="254"
@@ -24,7 +24,7 @@ export default {
     props: {
         image: {
             type: String,
-            default: '/images/person.png'
+            default: '/images/person.webp'
         },
         name: {
             type: [String, Boolean],

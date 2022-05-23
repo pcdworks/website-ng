@@ -106,7 +106,7 @@ gone before to help you find the solution you need.
 </text-image>
 
 
-<highlights image="/images/highlights.png" :highlights="highlights">
+<highlights image="/images/highlights.webp" :highlights="highlights">
 
 ## We are taking innovation to
 # New Heights
