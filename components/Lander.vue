@@ -27,6 +27,7 @@
                         :src="card.image"
                         max-width="160"
                         max-height="160"
+                        :alt="card.title"
                         contain></v-img>
                   </center>
                   <v-card-subtitle v-if="!card.top_title">
@@ -40,7 +41,7 @@
                       </p>
                   </v-card-text>
                   <v-card-actions>
-                    <a class="learn-more" :href="card.link">
+                    <a class="learn-more" :href="card.link" :aria-label="card.title">
                       <span>Learn More</span>
                     </a>
                   </v-card-actions>

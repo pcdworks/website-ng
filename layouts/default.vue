@@ -206,10 +206,6 @@ export default {
   color: black;
 }
 
-.learn-more:hover {
-  opacity: 90%;
-}
-
 .learn-more > span {
   display: inline-block;
   transform: skew(30deg);
@@ -261,10 +257,6 @@ h1 {
 
 #contact-btn:visited {
   color: #fff;
-}
-
-#contact-btn:hover {
-  opacity: 90%;
 }
 
 #contact-btn > span {
