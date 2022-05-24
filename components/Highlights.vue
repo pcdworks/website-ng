@@ -57,10 +57,6 @@ export default {
   font-size: 1.2rem;
 }
 
-.highlight:hover {
-  opacity: 90%;
-}
-
 span .highlight {
   display: inline-block;
   width: 100%;

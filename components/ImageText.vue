@@ -113,7 +113,7 @@ export default {
     font-size: 2rem;
   }
 
-  ::v-deep .right-content {
+  ::v-deep .left-content {
         background: rgba(51, 102, 51, 0.8);
         color: rgba(255,255,255, 1);
         font-size: 1rem;
