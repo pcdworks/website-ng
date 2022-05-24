@@ -121,8 +121,11 @@ phases:
       - "Next phase go ahead"
 
 about_1:
-  - "/images/about/wasp-boat.webp"
-  - "/images/about/wello-station.webp"
+  - "/images/about/about-1.webp"
+  - "/images/about/about-2.webp"
+  - "/images/about/about-3.webp"
+  - "/images/about/about-4.webp"
+  - "/images/about/about-5.webp"
 ---
 <text-image :images="about_1">
 <template v-slot:left>
@@ -168,7 +171,7 @@ the big brains (not to mention, small egos) to make it happen.
 <people :people="board"></people>
 </center>
 </backing>
-<text-image image="/images/about/about-2.webp" :has-right="true">
+<text-image image="/images/about/about-nda.webp" :has-right="true">
 <template v-slot:left>
 
 ## Our goal is to help you<br/>know you can succeed.
