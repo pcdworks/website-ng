@@ -75,7 +75,7 @@ board:
 
 
 phases:
-  - image: '/images/about/phase-1.png'
+  - image: '/images/about/phase-1.webp'
     title: 'Phase 1'
     subtitle: 'Immersive Innovation session'
     bullets:
@@ -88,7 +88,7 @@ phases:
       - "Immersive ideation session (3-4-day session)"
       - "Initial concepts"
       - "Concept refinement"
-  - image: '/images/about/phase-2.png'
+  - image: '/images/about/phase-2.webp'
     title: 'Phase 2'
     subtitle: 'Engineering Design'
     bullets:
@@ -96,19 +96,19 @@ phases:
       - "Initial engineering analysis"
       - "Detailed design"
       - "Initial proof of concept test of most difficult aspect"
-  - image: '/images/about/phase-3.png'
+  - image: '/images/about/phase-3.webp'
     title: 'Phase 3'
     subtitle: 'Full Prototype Development'
     bullets:
       - "Collaborative prototype drawing development/refinement"
       - "Develop prototype"
       - "Prototype testing"
-  - image: '/images/about/phase-4.png'
+  - image: '/images/about/phase-4.webp'
     title: 'Phase 4'
     subtitle: 'Design for Manufacturing'
     bullets:
       - "Develop full set of documentation for manufacturing"
-  - image: '/images/about/phase-5.png'
+  - image: '/images/about/phase-5.webp'
     title: 'Phase 5'
     subtitle: 'Product Optimization / Enhancement'
     bullets:
@@ -165,7 +165,7 @@ the big brains (not to mention, small egos) to make it happen.
 <people :people="board"></people>
 </center>
 </backing>
-<text-image image="/images/about/about-2.png" :has-right="true">
+<text-image image="/images/about/about-2.webp" :has-right="true">
 <template v-slot:left>
 
 ## Our goal is to help you<br/>know you can succeed.
@@ -200,7 +200,7 @@ Here's what you can expect when you work with us.
 <phases :phases="phases">
 </phases>
 
-<image-fader image="/images/about/mickey.png">
+<image-fader image="/images/about/mickey.webp">
 
 ## The most magical place on earth
 ### (sorry, Mickey)

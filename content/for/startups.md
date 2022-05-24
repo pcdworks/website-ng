@@ -9,7 +9,7 @@ starthere:
 
 ---
 
-<text-image image="/images/for/startups/fsu-1.png">
+<text-image image="/images/for/startups/fsu-1.webp">
 <template v-slot:left>
 
 ## PCDworks
@@ -32,7 +32,7 @@ unwavering support.
 </template>
 </text-image>
 
-<image-text-tint image="/images/for/startups/fsu-2.png" :button="starthere">
+<image-text-tint image="/images/for/startups/fsu-2.webp" :button="starthere">
 <template v-slot:right>
 
 ## Here's how we'll make your journey more productive—<br/>and more pleasant:
@@ -47,7 +47,7 @@ unwavering support.
 </template>
 </image-text-tint>
 
-<image-slide image="/images/for/startups/fsu-3.png">
+<image-slide image="/images/for/startups/fsu-3.webp">
 <template>
 
 "If your company is truly committed to ground breaking technology development and innovation

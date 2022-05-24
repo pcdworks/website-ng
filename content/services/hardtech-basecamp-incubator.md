@@ -4,7 +4,7 @@ nav_name: HardTech Basecamp Incubator
 order: 0
 
 ---
-<text-image image="/images/services/hardtech-basecamp-incubator/htbc-1.png">
+<text-image image="/images/services/hardtech-basecamp-incubator/htbc-1.webp">
 <template v-slot:left>
 
 ## To reach startup success,
@@ -36,7 +36,7 @@ camaraderie and accelerate your project to the next stage.
 </template>
 </text-image>
 
-<image-text image="/images/services/hardtech-basecamp-incubator/htbc-2.png">
+<image-text image="/images/services/hardtech-basecamp-incubator/htbc-2.webp">
 <template v-slot:right>
 
 ## We strive to make
@@ -57,7 +57,7 @@ everything you need to be a happy—and highly productive—camper.
 </template>
 </image-text>
 
-<text-image image="/images/services/hardtech-basecamp-incubator/htbc-3.png">
+<text-image image="/images/services/hardtech-basecamp-incubator/htbc-3.webp">
 <template v-slot:left>
 
 ## Here's what separates us from
@@ -90,7 +90,7 @@ allows us to help you get your product to market fast.
 </template>
 </text-image>
 
-<text-image-tint image="/images/services/hardtech-basecamp-incubator/htbc-4.png">
+<text-image-tint image="/images/services/hardtech-basecamp-incubator/htbc-4.webp">
 <template v-slot:left>
 
 ## Is HardTech Basecamp

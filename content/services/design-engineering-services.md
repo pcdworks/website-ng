@@ -4,7 +4,7 @@ nav_name: Design Engineering Services
 order: 0
 ---
 
-<text-image image="/images/services/design-engineering-services/des-1.png">
+<text-image image="/images/services/design-engineering-services/des-1.webp">
 <template v-slot:left>
 
 ## We turn big ideas into the next big thing through 
@@ -26,7 +26,7 @@ committed to getting physical fast.
 </template>
 </text-image>
 
-<image-text image="/images/services/design-engineering-services/des-2.png">
+<image-text image="/images/services/design-engineering-services/des-2.webp">
 <template v-slot:right>
 
 ## Experience the fast and

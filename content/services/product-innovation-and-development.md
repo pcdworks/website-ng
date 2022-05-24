@@ -27,7 +27,7 @@ highlights:
 
 ---
 
-<text-image image="/images/services/product-innovation-and-development/pid-1.png">
+<text-image image="/images/services/product-innovation-and-development/pid-1.webp">
 <template v-slot:left>
 
 ## We help discover
@@ -53,7 +53,7 @@ distraction-free collaboration and breakthrough thinking.
 </template>
 </text-image>
 
-<image-text image="/images/services/product-innovation-and-development/pid-2.png">
+<image-text image="/images/services/product-innovation-and-development/pid-2.webp">
 <template v-slot:right>
 
 ## Experience the power of
@@ -79,7 +79,7 @@ innovation occurs.
 </template>
 </image-text>
 
-<text-image image="/images/services/product-innovation-and-development/pid-3.png">
+<text-image image="/images/services/product-innovation-and-development/pid-3.webp">
 <template v-slot:left>
 
 ## We'll help you create the next disruptive product.

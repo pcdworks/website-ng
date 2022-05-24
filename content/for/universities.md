@@ -8,7 +8,7 @@ begin:
     link: "/services/product-innovation-and-development"
 ---
 
-<text-image image="/images/for/universities/fu-1.png">
+<text-image image="/images/for/universities/fu-1.webp">
 <template v-slot:left>
 
 ## PCDworks
@@ -31,7 +31,7 @@ student development, and more.
 </template>
 </text-image>
 
-<image-text-tint image="/images/for/universities/fu-2.png" :button="begin">
+<image-text-tint image="/images/for/universities/fu-2.webp" :button="begin">
 <template v-slot:right>
 
 ## It's all academic. We're singularly qualified to extend your research capabilities by helping you:
@@ -47,7 +47,7 @@ student development, and more.
 </template>
 </image-text-tint>
 
-<image-slide image="/images/for/universities/fu-3.png">
+<image-slide image="/images/for/universities/fu-3.webp">
 <template>
 
 "PCD - Product Concept Development was instrumental in moving our Intellectual
