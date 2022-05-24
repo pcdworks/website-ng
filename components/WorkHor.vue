@@ -10,6 +10,9 @@
                         </v-card-title>
                         <v-card-text>
                             <p v-if="w.subtitle"><strong>{{w.subtitle}}</strong></p>
+                            <p v-if="w.image && w.image != ''">
+                                <v-img :src="w.image" :aspect-ratio="16/9" contain></v-img>
+                            </p>
                             <p v-if="w.problem">
                                 <strong>PROBLEM: </strong>{{w.problem}}
                             </p>

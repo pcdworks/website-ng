@@ -10,6 +10,7 @@ oil:
   works:
     - 
         title: "Subsea safety valve"
+        image: ""
         problem: "Down hole safety valves are a
                 mission-critical application. Current valves
                 are driven by hydraulics that threaten
@@ -26,6 +27,7 @@ took less than nine months from design to
 completion."
     - 
         title: "Water cut sensor"
+        image: ""
         problem: "The flow parameters of a newly
                 developed ratio of water to oil detection
                 method needed to be understood to
@@ -46,6 +48,7 @@ completion."
                     Project completed in 6 months."
     - 
         title: "LEAP pump"
+        image: ""
         subtitle: "An elegant solution to crude extraction"
         problem: "How to cost-effectively retrieve
                     the final drops of crude from aging oil fields."
@@ -71,6 +74,7 @@ group1:
       image: '/images/work/work-2.webp'
       works:
         - title: "Coleman Grills"
+          image: ""
           problem: "Set up time for the customer or the assembly point in the
                 \"Big Box\" store exceeded two hours. Coleman asked PCDworks to
                 examine the product to try to reduce assembly time and reduce the
@@ -83,6 +87,7 @@ group1:
       image: '/images/work/work-3.webp'
       works:
         - title: "Trinity Rail Railcar / The Connected Railcar"
+          image: ""
           problem: "The mantra of shipping via railroad is “ship and pray”
                 because once the cargo is loaded and the railcar is placed into the
                 hands of the carriers, the shipper loses control over the shipment. As a
@@ -101,6 +106,7 @@ group2:
     image: '/images/work/work-5.webp'
     works:
       - title: "Automated tie-down device"
+        image: ""
         problem: "The Office of Naval Research needed a self-powered,
                 remote-controlled tension system that would reduce cargo damage,
                 decrease load and unload times, and minimize crew involvement."
@@ -120,6 +126,7 @@ group2:
     image: '/images/work/work-6.webp'
     works:
       - title: "Potato cooker"
+        image: ""
         problem: "Occasional improper cooking caused the entire granule line
                 at a prominent US-based potato manufacturing plant to shut down. This
                 resulted in a 3-day production loss."
@@ -129,6 +136,7 @@ group2:
                 steam controls were chosen for installation and overall system
                 architecture was designed."
       - title: "Marmon Food Service (On behalf of Burger King)"
+        image: ""
         problem: "A major fast-food chain is evolving to fresh product cooking
                 to appeal to customers looking for a healthy alternative to heavily fried,
                 fat covered burgers. The chain's equipment supplier needed a broiler
@@ -147,6 +155,7 @@ medical:
   works:
     - 
         title: "Resuscitation Device"
+        image: ""
         problem: "When performing CPR on
                 drowning victims and others with respiratory
                 failure, it's difficult to maintain the proper
@@ -163,6 +172,7 @@ medical:
         results: "Proof of concept tests and demonstration completed within 6 months."
     - 
         title: "Infection detection, post-surgery"
+        image: ""
         problem: "Can you anticipate infection in a
                 sutured incision prior to the development of a
                 full-blown infection beneath the surface."
@@ -178,6 +188,7 @@ medical:
                 Two major patents issued."
     - 
         title: "Cardiopulmonary bypass"
+        image: ""
         problem: "Cardiopulmonary bypass surgery
                 is a time-consuming operation. Every
                 additional minute of surgery decreases a
