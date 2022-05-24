@@ -1,6 +1,8 @@
 ---
 title: Expertise
 nav_name: Expertise
+description: 'PCDworks has know-how in several categories including electrical engineering,
+mechanical engineering, software engineering, IOT, sensors, math modeling, and prototyping'
 order: 1
 ---
 

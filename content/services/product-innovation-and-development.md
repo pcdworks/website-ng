@@ -2,7 +2,8 @@
 title: Product Innovation & Development
 nav_name: Product Innovation & Development
 order: 0
-
+description: 'We don’t stumble onto great ideas. We clear a path and welcome them
+in through the Immersive Innovation™ process developed by PCDworks founder, psychologist Mike Rainone.'
 highlights:
     - text: "Swimmer rescue rebreathers"
       link: ""

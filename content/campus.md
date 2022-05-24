@@ -1,6 +1,9 @@
 ---
 title: Campus
 nav_name: Campus
+description: 'PCDworks campus is located on 80 secluded acres and nestled within
+the breathtaking, pine-covered hills of East
+Texas'
 order: 0
 
 campus_1:

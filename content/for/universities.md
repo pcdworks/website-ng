@@ -2,6 +2,7 @@
 title: For Universities
 nav_name: For Universities
 order: 0
+description: 'PCDworks for universities'
 
 begin:
     text: "Let's get to work"

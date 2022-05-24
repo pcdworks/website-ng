@@ -2,6 +2,8 @@
 title: Design Engineering Services
 nav_name: Design Engineering Services
 order: 0
+desciption: 'At PCDworks we realize that innovation isn't just about
+having great ideas. It's about reducing risk, proving concepts and executing them.'
 ---
 
 <text-image image="/images/services/design-engineering-services/des-1.webp">

@@ -1,6 +1,8 @@
 ---
 title: Work
 nav_name: Work
+description: 'PCDworks has worked in many industries including: oil & gas,
+              consumer goods, transportation, medical, military, and food'
 order: 2
 oil:
   title: "Oil & Gas"

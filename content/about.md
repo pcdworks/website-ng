@@ -2,6 +2,8 @@
 title: About
 nav_name: About
 order: 3
+description: 'PCDworks for a quarter of a century, we've developed
+innovative solutions for 50+ companies across a range of industries.'
 team:
   - name: 'Donna Rainone'
     degrees: 'AIA'

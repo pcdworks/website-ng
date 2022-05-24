@@ -2,7 +2,10 @@
 title: HardTech Basecamp Incubator
 nav_name: HardTech Basecamp Incubator
 order: 0
-
+description: 'Here, you and your team will live on an 80-acre campus in the
+quiet hills of the Piney Woods Region of East Texas, free from distraction.
+You'll work on your project in an equipment-rich environment
+with PCDworks innovation mentors, engineers, and tradesmen.'
 ---
 <text-image image="/images/services/hardtech-basecamp-incubator/htbc-1.webp">
 <template v-slot:left>
