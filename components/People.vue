@@ -9,7 +9,11 @@
                     :degrees="p.degrees"
                     :position="p.position"
                     :image="p.image"
-                    :bio="p.bio">
+                    :bio="p.bio"
+                    :phone="p.phone"
+                    :email="p.email"
+                    :linkedin="p.linkedin"
+                    :twitter="p.twitter">
                 </Person>
             </v-col>
         </v-row>

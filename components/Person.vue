@@ -1,13 +1,16 @@
 <template>
-    <v-card elevation="8" class="pt-6 pb-16 fill-height person" tile>
+    <v-card elevation="8" class="pt-6 fill-height person d-flex flex-column" tile>
         <br/>
-        <v-img
-            lazy-src="/images/person.webp"
-            :src="image"
-            width="254"
-            height="254"
-            contain
-            class="person-image"></v-img>
+        <center>
+            <v-img
+                lazy-src="/images/person.webp"
+                :src="image"
+                width="254"
+                height="254"
+                contain
+                class="person-image"></v-img>
+        </center>
+
         <v-card-subtitle>
             <div class="top-name">{{name}}, {{degrees}}</div><br>
             <div class="bottom-name">{{position}}</div>
@@ -15,6 +18,30 @@
         <v-card-text>
             <div class="bio pt-3 px-xl-16 px-lg-4 px-md-12 px-sm-10 px-xs-4">{{bio}}</div>
         </v-card-text>
+        <v-spacer/>
+        <v-card-actions>
+            <v-spacer/>
+            <a v-if="phone != ''" :href="'tel:' + phone" target="_blank" class="mr-1">
+                <b-btn icon>
+                <v-icon>mdi-phone</v-icon>
+                </b-btn>
+            </a>
+            <a v-if="email != ''" :href="'mailto:' + email" target="_blank" class="mr-1">
+                <b-btn icon>
+                <v-icon>mdi-email</v-icon>
+                </b-btn>
+            </a>
+            <a v-if="linkedin != ''" :href="linkedin" target="_blank" class="mr-1">
+                <b-btn icon>
+                <v-icon>mdi-linkedin</v-icon>
+                </b-btn>
+            </a>
+            <a v-if="twitter != ''" :href="twitter" target="_blank" class="mr-1">
+                <b-btn icon>
+                <v-icon>mdi-twitter</v-icon>
+                </b-btn>
+            </a>
+        </v-card-actions>
     </v-card>
 </template>
 
@@ -39,6 +66,22 @@ export default {
             default: 'Human'
         },
         bio: {
+            type: String,
+            default: ''
+        },
+        phone: {
+            type: String,
+            default: ''
+        },
+        email: {
+            type: String,
+            default: ''
+        },
+        linkedin: {
+            type: String,
+            default: ''
+        },
+        twitter: {
             type: String,
             default: ''
         }
