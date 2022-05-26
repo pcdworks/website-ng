@@ -41,9 +41,15 @@
                       </p>
                   </v-card-text>
                   <v-card-actions>
-                    <a class="learn-more" :href="card.link" :aria-label="card.title">
-                      <span>Learn More</span>
-                    </a>
+                     <v-tooltip top>
+                        <template #activator="{ on, attrs }">
+                          <a class="learn-more" :href="card.link" :aria-label="card.title" :alt="card.title" v-bind="attrs"
+                             v-on="on">
+                            <span>Learn More</span>
+                          </a>
+                        </template>
+                        <span>LEARN MORE ABOUT {{card.title}}</span>
+                      </v-tooltip>
                   </v-card-actions>
               </v-card>
             </v-col>
