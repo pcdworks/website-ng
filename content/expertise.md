@@ -150,12 +150,27 @@ an loT product from scratch.
 </template>
 </text-image>
 
-<image-text image="" trim>
+<image-text image="/images/expertise/dashboard.webp" trim>
 <template v-slot:right>
 
 ## Software Engineering
 <br/>
 
+Cross-platform desktop applications for Linux, macOS, Windows
+
+Mobile applications for Android and iOS
+
+We've develope embedded systems on several different platorms from a wide veriety of companies including: Nordic Semiconductor, Texas Instruments, NXP, STMicroelectronics
+
+
+Fullstack web development
+* Vue.js
+* React / Fulcro
+* Clojure / ClojureScript
+* Ruby on Rails
+* PostgreSQL / SQL Server
+* Cassandra
+* Docker
 
 </template>
 </image-text>
