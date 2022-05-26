@@ -8,7 +8,7 @@
             </div>
         </v-col>
         <v-col cols="12" align-self="center">
-            <v-row class="py-4 px-16" align="justify">
+            <v-row class="py-4 px-16" align="stretch">
                 <v-col v-for="(logo, idx) in logos" :key="idx"
                     cols="12" lx="2" lg="2" md="3" sm="4">
                     <v-list-item :href="logo.link" target="_blank">
