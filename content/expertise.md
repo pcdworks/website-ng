@@ -6,7 +6,7 @@ mechanical engineering, software engineering, IOT, sensors, math modeling, and p
 order: 1
 ---
 
-<text-image image="/images/expertise/expertise-1.webp">
+<text-image image="/images/expertise/coreteam.webp">
 <template v-slot:left>
 
 ## Yeah, we've

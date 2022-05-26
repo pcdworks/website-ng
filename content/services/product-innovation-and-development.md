@@ -80,10 +80,11 @@ innovation occurs.
 </template>
 </image-text>
 
-<text-image image="/images/services/product-innovation-and-development/pid-3.webp">
+<text-image image="/images/services/product-innovation-and-development/secureload.webp">
 <template v-slot:left>
 
-## We'll help you create the next disruptive product.
+## We'll help you create the next
+# disruptive product.
 
 To survive and thrive in today's competitive market, leading companies must
 create better and more exciting new products. But real innovation comes
@@ -91,7 +92,7 @@ with plenty of roadblocks.
 
 Because science, engineering, and design are at the heart of everything we
 do, we can help you with each hurdle and every barrier standing between
-you and the next great product.
+you and the next great product. Take a look at [SecureLoad](https://smartsecurement.com/)
 
 That means a full array of scientific and instrumentation testing
 capabilities, a diverse and experienced team, and an enormous network of
