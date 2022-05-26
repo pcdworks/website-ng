@@ -47,6 +47,11 @@ export default {
             default: false
         }
     },
+    data () {
+        return {
+            carousel: 0
+        }
+    },
     computed: {
         hasRight () {
             return this.$slots.default[0].text.length > 4
