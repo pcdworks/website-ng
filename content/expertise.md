@@ -170,7 +170,7 @@ Cross-platform desktop applications for Linux, macOS, Windows
 
 Mobile applications for Android and iOS
 
-We've develope embedded systems on several different platorms from a wide veriety of companies including: Nordic Semiconductor, Texas Instruments, NXP, STMicroelectronics
+We've developed embedded systems on several different platforms from a wide variety of companies including: Nordic Semiconductor, Texas Instruments, NXP,  STMicroelectronics
 
 
 Fullstack web development
@@ -188,8 +188,22 @@ Fullstack web development
 <text-image :images="prototypes" trim>
 <template v-slot:left>
 
-## Prototyping
+## Prototyping and Testing
 <br/>
+
+PCDworks has full prototyping capability, from electronic circuits to heavy metal.
+Also full prototype test lab with complete NI setup
+
+* Automatice Pick and Place machine with reflow oven
+* Voltera circuit printer
+* Complete machine shop
+* 4 axis CNC mill and manual mill
+* CNC and manual lathes
+* Welding- TIG, MIG, Oxy-Acetylene, Stick
+* Plasma cutting
+* Metal casting- sand and investment
+* Complete wood shop
+* CNC router
 
 
 </template>
