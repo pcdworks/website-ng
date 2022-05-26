@@ -22,6 +22,8 @@ campus_2:
     - "/images/campus/campus-8.webp"
     - "/images/campus/campus-13.webp"
     - "/images/campus/campus-14.webp"
+    - "/images/campus/campus-15.webp"
+    - "/images/campus/campus-16.webp"
 ---
 
 <text-image :images="campus_1">

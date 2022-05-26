@@ -5,8 +5,8 @@ order: 0
 description: 'We don’t stumble onto great ideas. We clear a path and welcome them
 in through the Immersive Innovation™ process developed by PCDworks founder, psychologist Mike Rainone.'
 highlights:
-    - text: "Swimmer rescue rebreathers"
-      link: ""
+    - text: "Resuscitation Device"
+      link: "https://tylerpaper.com/news/local/makerspace-helps-tyler-doctor-develop-cpr-device/article_70c95da9-2775-593b-95da-9ac6d022f5ef.html"
     - text: "Cataract removal technology"
       link: ""
     - text: "The connected railcar, 1A Certified sensors, and gateway"
@@ -28,7 +28,7 @@ highlights:
 
 ---
 
-<text-image image="/images/services/product-innovation-and-development/pid-1.webp">
+<text-image image="/images/services/product-innovation-and-development/pepsico-session.webp">
 <template v-slot:left>
 
 ## We help discover
