@@ -28,7 +28,7 @@ highlights:
 
 ---
 
-<text-image image="/images/services/product-innovation-and-development/pepsico-session.webp">
+<text-image image="/images/services/product-innovation-and-development/pepsico-session.png">
 <template v-slot:left>
 
 ## We help discover
