@@ -4,6 +4,16 @@ nav_name: Expertise
 description: 'PCDworks has know-how in several categories including electrical engineering,
 mechanical engineering, software engineering, IOT, sensors, math modeling, and prototyping'
 order: 1
+
+prototypes:
+    - "/images/expertise/prototype-1.webp"
+    - "/images/expertise/prototype-2.webp"
+    - "/images/expertise/prototype-3.webp"
+    - "/images/expertise/prototype-4.webp"
+    - "/images/expertise/prototype-5.webp"
+    - "/images/expertise/shop.webp"
+    - "/images/expertise/prototype-7.webp"
+
 ---
 
 <text-image image="/images/expertise/coreteam.webp">
@@ -175,7 +185,7 @@ Fullstack web development
 </template>
 </image-text>
 
-<text-image image="" trim>
+<text-image :images="prototypes" trim>
 <template v-slot:left>
 
 ## Prototyping
