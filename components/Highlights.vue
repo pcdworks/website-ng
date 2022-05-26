@@ -9,7 +9,8 @@
                     <v-chip
                         color="#5e6e64" text-color="white" class="highlight" label large
                         v-bind="attrs"
-                        :to="highlight.link"
+                        :href="highlight.link"
+                        target="_blank"
                         v-on="on">
                     <span class="highlight text-truncate">{{highlight.text}}</span>
                     </v-chip>
