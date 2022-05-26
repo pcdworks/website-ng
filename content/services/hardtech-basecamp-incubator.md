@@ -7,7 +7,7 @@ quiet hills of the Piney Woods Region of East Texas, free from distraction.
 You'll work on your project in an equipment-rich environment
 with PCDworks innovation mentors, engineers, and tradesmen."
 ---
-<text-image image="/images/services/hardtech-basecamp-incubator/htbc-1.webp">
+<text-image image="/images/services/hardtech-basecamp-incubator/htbc-1.png">
 <template v-slot:left>
 
 ## To reach startup success,
