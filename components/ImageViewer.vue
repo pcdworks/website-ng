@@ -5,8 +5,8 @@
       fullscreen
       transition="dialog-bottom-transition"
     >
-      <template v-slot:activator="{ on, attrs }">
-        <v-img v-bind="attrs" v-on="on" :src="image" class="align-end" :aspect-ratio="1" contain>
+      <template #activator="{ on, attrs }">
+        <v-img :src="image" class="align-end" :aspect-ratio="1" contain v-bind="attrs" v-on="on">
         </v-img>
       </template>
       <v-card>
@@ -24,7 +24,7 @@
                 </v-btn>
             </v-toolbar-items>
             </v-toolbar>
-        <v-img max-height="calc(100vh - 64px)" max-width="100vw" :src="image" contain>
+        <v-img class="ma-2" max-height="calc(100vh - 64px - 16px)" max-width="100vw" :src="image" contain>
         </v-img>
       </v-card>
     </v-dialog>
