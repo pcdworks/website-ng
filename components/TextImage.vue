@@ -15,7 +15,7 @@
                                 <slot name="right"></slot>
                             </div>
                         </v-img>
-                        <v-carousel v-else v-model="carousel" cycle>
+                        <v-carousel v-else v-model="carousel">
                             <v-carousel-item
                                 v-for="(img, i) in images"
                                 :key="i"

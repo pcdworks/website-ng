@@ -19,7 +19,7 @@ summit a place to prepare themselves and their
 gear for the journey. The basecamp doesn't get
 climbers to the top of the mountain, but instead
 prepares them for the trials ahead, de-risking the
-venture to ensure success.
+venture to ensure success. Just ask the founders of Renewell.
 
 **You'll find our HardTech Basecamp functions in much the same way.**
 
@@ -39,7 +39,7 @@ camaraderie and accelerate your project to the next stage.
 </template>
 </text-image>
 
-<image-text image="/images/services/hardtech-basecamp-incubator/htbc-2.webp">
+<image-text image="/images/services/hardtech-basecamp-incubator/happy-campers.webp">
 <template v-slot:right>
 
 ## We strive to make

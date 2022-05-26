@@ -10,17 +10,16 @@ campus_1:
     - "/images/campus/campus-0.webp"
     - "/images/campus/campus-1.webp"
     - "/images/campus/campus-3.webp"
-    - "/images/campus/campus-4.webp"
-    - "/images/campus/campus-5.webp"
     - "/images/campus/campus-6.webp"
     - "/images/campus/campus-7.webp"
+    - "/images/campus/campus-5.webp"
+    - "/images/campus/campus-12.webp"
+    - "/images/campus/campus-9.webp"
+
 
 campus_2:
+    - "/images/campus/campus-4.webp"
     - "/images/campus/campus-8.webp"
-    - "/images/campus/campus-9.webp"
-    - "/images/campus/campus-10.webp"
-    - "/images/campus/campus-11.webp"
-    - "/images/campus/campus-12.webp"
     - "/images/campus/campus-13.webp"
     - "/images/campus/campus-14.webp"
 ---
