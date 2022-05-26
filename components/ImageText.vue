@@ -4,12 +4,12 @@
             <v-col cols="12" xl="6" lg="6" md="6">
                 <div :class="trimClass">
                     <div class="pt-4 px-4 px-xl-16 px-lg-4 px-md-4 px-sm-16">
-                        <v-img v-if="images.length === 0" :src="image" class="align-end" contain>
+                        <image-viewer v-if="images.length === 0" :image="image" class="align-end">
                             <div v-if="hasLeft"
                             class="left-content py-2 px-2 py-lg-10 px-lg-16 py-xl-10 px-xl-16 py-md-8 px-md-6 px-sm-6 py-sm-6">
                                 <slot name="left"></slot>
                             </div>
-                        </v-img>
+                        </image-viewer>
                         <v-carousel v-else v-model="carousel" cycle>
                             <v-carousel-item
                                 v-for="(img, i) in images"
@@ -31,6 +31,7 @@
 </template>
 
 <script>
+import ImageViewer from './ImageViewer.vue'
 export default {
     name: 'ImageText',
     props: {
@@ -47,6 +48,7 @@ export default {
             default: false
         }
     },
+    compeonts: { ImageViewer },
     data () {
         return {
             carousel: 0

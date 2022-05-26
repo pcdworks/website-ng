@@ -8,7 +8,7 @@ order: 0
 main:
   title: "TURN YOUR “AHA!”
           <br>
-          INTO “CHA-CHING!”"
+          INTO “MARKET DOMINANCE!”"
   subtitle: "PCDworks is a product development and innovation firm that
             helps startups, enterprises, and universities move their ideas and
             intellectual property from the mind: to the marketplace."
