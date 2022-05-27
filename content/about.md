@@ -61,7 +61,7 @@ team:
 
 board:
   - name: 'Dan Overly'
-    degrees: ''
+    degrees: 'B.S.M.E,'
     position: ''
     image: ''
     bio: ""
@@ -70,8 +70,8 @@ board:
     position: ''
     image: ''
     bio: ""
-  - name: ''
-    degrees: ''
+  - name: 'Rik Heller'
+    degrees: 'B.S.E.E'
     position: ''
     image: ''
     bio: ""

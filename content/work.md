@@ -27,7 +27,7 @@ took less than nine months from design to
 completion."
     - 
         title: "Water cut sensor"
-        image: ""
+        image: "/images/work/water-cut-sensor.webp"/
         problem: "The flow parameters of a newly
                 developed ratio of water to oil detection
                 method needed to be understood to
