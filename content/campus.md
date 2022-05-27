@@ -13,8 +13,7 @@ campus_1:
     - "/images/campus/campus-6.webp"
     - "/images/campus/campus-7.webp"
     - "/images/campus/campus-5.webp"
-    - "/images/campus/campus-12.webp"
-    - "/images/campus/campus-9.webp"
+    - "/images/campus/map.webp"
 
 
 campus_2:

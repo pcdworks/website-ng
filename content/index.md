@@ -6,9 +6,9 @@ nav_name: Home
 order: 0
 
 main:
-  title: "TURN YOUR “AHA!”
+  title: "TURN YOUR “problem!”
           <br>
-          INTO “MARKET REALITY!”"
+          INTO “a solution!”"
   subtitle: "PCDworks is a product development and innovation firm that
             helps startups, enterprises, and universities move their ideas and
             intellectual property from the mind: to the marketplace."
