@@ -160,7 +160,7 @@ medical:
         results: "Proof of concept tests and demonstration completed within 6 months."
     - 
         title: "Infection detection, post-surgery"
-        image: ""
+        image: "/images/work/wello.webp"
         problem: "Can you anticipate infection in a
                 sutured incision prior to the development of a
                 full-blown infection beneath the surface."
