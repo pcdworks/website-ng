@@ -10,7 +10,7 @@ oil:
   works:
     - 
         title: "Subsea safety valve"
-        image: ""
+        image: "/images/work/subsea-safety-valve.webp"
         problem: "Down hole safety valves are a
                 mission-critical application. Current valves
                 are driven by hydraulics that threaten
