@@ -47,7 +47,7 @@ All told, our Immersive Innovation™ process allows your team to define and
 decompose its problem, abandon preconceived notions, identify the solution
 space, and develop new and innovative concepts within this solution space. This
 all takes place at the PCDworks campus, where you're surrounded by the right
-people, the right psychology, and the right tools and technology to quickly move
+people, the right attitudes, and the right tools and technology to quickly move
 ideas to built out concepts. And most importantly, it's the perfect location for
 distraction-free collaboration and breakthrough thinking.
 
@@ -114,6 +114,6 @@ gone before to help you find the solution you need.
 # New Heights
 
 To date, we've developed innovative solutions for 50+ companies across 110+ corporate innovation-R&D projects—\
-and are responsible for more than 30 patents either issued or in process. Projects include:
+and are responsible for more than 35 patents either issued or in process. Projects include:
 
 </highlights>

@@ -70,19 +70,17 @@ completion."
                 months were spent building and testing this
                 new, disruptive technology."
 group1:
-    - title: 'Consumer Goods'
+    - title: 'Water borne sensing- Autonomous Vehicles'
       image: '/images/work/work-2.webp'
       works:
-        - title: "Coleman Grills"
+        - title: "WASP Autonomous boat"
           image: ""
-          problem: "Set up time for the customer or the assembly point in the
-                \"Big Box\" store exceeded two hours. Coleman asked PCDworks to
-                examine the product to try to reduce assembly time and reduce the
-                manufacturing complexity."
-          solution: ""
-          results: "You could say our design efforts were well done. Altogether,
-            we cut assembly time to less than 1/2 hour, reduced the shipping cube
-            by 20%, and slashed manufacturing costs by 4%."
+          problem: "Real time measurement of various chemicals 
+                    in bodies of water is difficult, slow yet time consuming and expensive."
+          solution: "An autonomous, motorized boat that tracks inside of the body of
+	water, on a pre-programmed route that can be changed by downloading new directions
+from the cloud and collects chemical data in real time that is displayed on a cloud-based dashboard." 
+          
     - title: 'Transportation'
       image: '/images/work/work-3.webp'
       works:
@@ -135,7 +133,7 @@ group2:
                 thermal efficiency, wireless sensor probes were designed, closed loop
                 steam controls were chosen for installation and overall system
                 architecture was designed."
-      - title: "Marmon Food Service (On behalf of Burger King)"
+      - title: "Marmon Food Service (On behalf of Burger King)" 
         image: ""
         problem: "A major fast-food chain is evolving to fresh product cooking
                 to appeal to customers looking for a healthy alternative to heavily fried,

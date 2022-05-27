@@ -8,7 +8,7 @@ order: 0
 main:
   title: "TURN YOUR “AHA!”
           <br>
-          INTO “MARKET DOMINANCE!”"
+          INTO “MARKET REALITY!”"
   subtitle: "PCDworks is a product development and innovation firm that
             helps startups, enterprises, and universities move their ideas and
             intellectual property from the mind: to the marketplace."
@@ -25,20 +25,20 @@ main:
       link: "/services/hardtech-basecamp-incubator"
     - image: "/images/index/lander-2.webp"
       title: "DESIGN ENGINEERING SERVICES"
-      text: "Whether you're revolutionizing the
-            industry or repelling the competition,
-            we dig deeper, work smarter, and
-            push science and technology further
-            to quickly bring your vision to life."
-      link: "/services/design-engineering-services"
-    - image: "/images/index/lander-3.webp"
-      title: "PRODUCT INNOVATION & DEVELOPMENT"
-      text: "Guidance, research,
+      text:  "Guidance, research,
           conceptualization, feasibility,
           prototyping, and production. We
           have everything you need to
           design, build, and test just about
           anything you can dream up."
+      link: "/services/design-engineering-services"
+    - image: "/images/index/lander-3.webp"
+      title: "PRODUCT INNOVATION & DEVELOPMENT"
+      text: "Whether you're revolutionizing the
+            industry or repelling the competition,
+            we dig deeper, work smarter, and
+            push science and technology further
+            to quickly bring your vision to life."
       link: "/services/product-innovation-and-development"
 possible:
   title: "Yes, It's Possible"

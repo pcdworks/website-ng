@@ -51,8 +51,8 @@ professionals as well as to our facilities. This includes a machine shop
 workspace, office space to continue to work on the “paperwork” part of your
 project, and conference rooms for team meetings.
 
-You also have access to our engineering and office software, 3D printing,
-prototyping equipment, and testing hardware, which saves you precious
+You also have access to our engineering and office software, our video studio, 3D printing,
+prototyping equipment, and testing hardware, which can save you precious time and
 capital. There's even a gym and a game room to go along with 8 guest
 rooms with private bathrooms and queen size beds. In short, we have
 everything you need to be a happy—and highly productive—camper.
@@ -71,12 +71,12 @@ target early business development challenges. Things like market analysis,
 financial modeling, pitch development, and business model refinement.
 
 But, to maximize valuation, your startup must also make significant strides
-in developing its technology. HardTech Basecamp enables you to move
+in developing your technology. HardTech Basecamp enables you to move
 quickly through technology readiness levels, develop robust solutions, and
 use capital efficiently.
 
 How? With our expertise in electrical, mechanical, and software engineering;
-as well material science and mathematical and multi-physics modeling.
+as well as material science and mathematical and multi-physics modeling.
 With our ability to conduct testing and certification up to (1A), Intrinsically
 Safe UL levels. And with our Design for Manufacturing (DFM) experience
 and manufacturing and sourcing connections in China, Romania, Germany,
