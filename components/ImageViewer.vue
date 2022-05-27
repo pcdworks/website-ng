@@ -7,6 +7,7 @@
     >
       <template #activator="{ on, attrs }">
         <v-img :src="image" class="align-end" :aspect-ratio="1" contain v-bind="attrs" v-on="on">
+        <slot></slot>
         </v-img>
       </template>
       <v-card>
