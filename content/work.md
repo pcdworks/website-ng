@@ -27,7 +27,7 @@ took less than nine months from design to
 completion."
     - 
         title: "Water cut sensor"
-        image: "/images/work/water-cut-sensor.webp"/
+        image: "/images/work/water-cut-sensor.webp"
         problem: "The flow parameters of a newly
                 developed ratio of water to oil detection
                 method needed to be understood to
@@ -48,7 +48,7 @@ completion."
                     Project completed in 6 months."
     - 
         title: "LEAP pump"
-        image: ""
+        image: "/images/work/leap-pump.webp"
         subtitle: "An elegant solution to crude extraction"
         problem: "How to cost-effectively retrieve
                     the final drops of crude from aging oil fields."
@@ -74,7 +74,7 @@ group1:
       image: '/images/work/work-2.webp'
       works:
         - title: "WASP Autonomous boat"
-          image: ""
+          image: "/images/work/wasp.webp"
           problem: "Real time measurement of various chemicals 
                     in bodies of water is difficult, slow yet time consuming and expensive."
           solution: "An autonomous, motorized boat that tracks inside of the body of
@@ -104,7 +104,7 @@ group2:
     image: '/images/work/work-5.webp'
     works:
       - title: "Automated tie-down device"
-        image: ""
+        image: "/images/work/secureload.webp"
         problem: "The Office of Naval Research needed a self-powered,
                 remote-controlled tension system that would reduce cargo damage,
                 decrease load and unload times, and minimize crew involvement."
@@ -123,18 +123,8 @@ group2:
   - title: 'Food'
     image: '/images/work/work-6.webp'
     works:
-      - title: "Potato cooker"
-        image: ""
-        problem: "Occasional improper cooking caused the entire granule line
-                at a prominent US-based potato manufacturing plant to shut down. This
-                resulted in a 3-day production loss."
-        solution: "We analyzed the problem and set about finding a solution.
-                To do so, the cooker was instrumented to determine hot spots and
-                thermal efficiency, wireless sensor probes were designed, closed loop
-                steam controls were chosen for installation and overall system
-                architecture was designed."
       - title: "Marmon Food Service (On behalf of Burger King)" 
-        image: ""
+        image: "/images/work/burger-king.webp"
         problem: "A major fast-food chain is evolving to fresh product cooking
                 to appeal to customers looking for a healthy alternative to heavily fried,
                 fat covered burgers. The chain's equipment supplier needed a broiler
@@ -153,7 +143,7 @@ medical:
   works:
     - 
         title: "Resuscitation Device"
-        image: ""
+        image: "/images/work/resuscitation-device.webp"
         problem: "When performing CPR on
                 drowning victims and others with respiratory
                 failure, it's difficult to maintain the proper
@@ -186,7 +176,7 @@ medical:
                 Two major patents issued."
     - 
         title: "Cardiopulmonary bypass"
-        image: ""
+        image: "/images/work/cardiopulmonary-bypass.webp"
         problem: "Cardiopulmonary bypass surgery
                 is a time-consuming operation. Every
                 additional minute of surgery decreases a

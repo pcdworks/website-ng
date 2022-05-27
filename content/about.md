@@ -63,7 +63,7 @@ board:
   - name: 'Dan Overly'
     degrees: 'B.S.M.E,'
     position: ''
-    image: ''
+    image: '/images/about/dan-headshot.webp'
     bio: ""
   - name: 'Michael Neal'
     degrees: 'B.S.M.E, M.S.M.E,'
