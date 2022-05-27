@@ -85,7 +85,7 @@ from the cloud and collects chemical data in real time that is displayed on a cl
       image: '/images/work/work-3.webp'
       works:
         - title: "Trinity Rail Railcar / The Connected Railcar"
-          image: ""
+          image: "/images/work/trinity.webp"
           problem: "The mantra of shipping via railroad is “ship and pray”
                 because once the cargo is loaded and the railcar is placed into the
                 hands of the carriers, the shipper loses control over the shipment. As a
