@@ -7,13 +7,14 @@
     >
       <template #activator="{ on, attrs }">
         <v-img :src="image" class="align-end" :aspect-ratio="1" contain v-bind="attrs" v-on="on">
+        <slot></slot>
         </v-img>
       </template>
       <v-card>
           <v-toolbar
             color=""
             >
-            <v-toolbar-title>Image Viewer</v-toolbar-title>
+            <v-toolbar-title>{{alt}}</v-toolbar-title>
             <v-spacer></v-spacer>
             <v-toolbar-items>
                 <v-btn
@@ -38,6 +39,10 @@
         image: {
             type: String,
             default: ''
+        },
+        alt: {
+          type: String,
+          default: 'Image Viewer'
         }
     },
     data () {

@@ -3,12 +3,12 @@
         <v-row class="px-0">
             <v-col cols="12" xl="4" lg="4" md="4">
                 <div :class="trimClass">
-                    <v-img v-if="images.length === 0" :src="image" class="align-end" :aspect-ratio="1" contain>
+                    <image-viewer v-if="images.length === 0" :image="image" class="align-end" :aspect-ratio="1" contain>
                         <div v-if="hasLeft"
                         class="left-content py-2 px-2 py-lg-10 px-lg-16 py-xl-10 px-xl-16 py-md-8 px-md-6 px-sm-6 py-sm-6">
                             <slot name="left"></slot>
                         </div>
-                    </v-img>
+                    </image-viewer>
                     <v-carousel v-else v-model="carousel">
                         <v-carousel-item
                             v-for="(img, i) in images"
@@ -36,8 +36,10 @@
 </template>
 
 <script>
+import ImageViewer from './ImageViewer.vue'
 export default {
     name: 'ImageTextTint',
+    components: { ImageViewer },
     props: {
         image: {
             type: String,

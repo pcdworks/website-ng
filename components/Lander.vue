@@ -48,7 +48,7 @@
                             <span>Learn More</span>
                           </a>
                         </template>
-                        <span>LEARN MORE ABOUT {{card.title}}</span>
+                        <span>Learn More About {{card.title}}</span>
                       </v-tooltip>
                   </v-card-actions>
               </v-card>
