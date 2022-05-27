@@ -9,14 +9,8 @@
                             <slot name="left"></slot>
                         </div>
                     </image-viewer>
-                    <v-carousel v-else v-model="carousel">
-                        <v-carousel-item
-                            v-for="(img, i) in images"
-                            :key="i"
-                            :src="img"
-                        >
-                        </v-carousel-item>
-                    </v-carousel>
+                    <carousel v-else :images="images">
+                    </carousel>
                 </div>
             </v-col>
             <v-col cols="12" xl="8" lg="8" md="8" class="full-height back">
@@ -37,9 +31,10 @@
 
 <script>
 import ImageViewer from './ImageViewer.vue'
+import Carousel from './Carousel.vue'
 export default {
     name: 'ImageTextTint',
-    components: { ImageViewer },
+    components: { ImageViewer, Carousel },
     props: {
         image: {
             type: String,

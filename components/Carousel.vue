@@ -1,13 +1,9 @@
 <template>
-  <v-carousel
-    v-model="model"
-    hide-delimiters
-    class="mb-8"
-  >
+  <v-carousel v-model="model">
     <v-carousel-item
       v-for="(image, i) in images"
       :key="i"
-      :src="image.src"
+      :src="getSource(image)"
     >
     <v-container
       v-if="image.text"
@@ -18,7 +14,7 @@
       <v-layout fill-height align-end pb-0 mb-0>
         <v-flex xs12>
           <v-card class="pa-5 tinted-black">
-          <span class="headline white--text" v-text="image.text"></span>
+          <span class="headline white--text" v-text="getText(image)"></span>
           </v-card>
         </v-flex>
       </v-layout>
@@ -38,6 +34,22 @@ export default {
   data: () => ({
     model: 0
   }),
+  methods: {
+    getSource(image) {
+      if (typeof(image) === 'string') {
+        return image
+      } else {
+        return image.link
+      }
+    },
+    getText(image) {
+        if (typeof(image) === 'object') {
+          return image.text
+      } else {
+        return ''
+      }
+    }
+  }
 }
 </script>
 
