@@ -68,12 +68,12 @@ board:
   - name: 'Michael Neal'
     degrees: 'B.S.M.E, M.S.M.E,'
     position: ''
-    image: ''
+    image: '/images/about/michael-headshot.webp'
     bio: ""
   - name: 'Rik Heller'
     degrees: 'B.S.E.E'
     position: ''
-    image: ''
+    image: '/images/about/rik-headshot.webp'
     bio: ""
 
 
