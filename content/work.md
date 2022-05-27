@@ -9,7 +9,7 @@ oil:
   image: "/images/work/work-1.webp"
   works:
     - 
-        title: "Subsea safety valve"
+        title: "Subsea safety valve-SSSV"
         image: "/images/work/subsea-safety-valve.webp"
         problem: "Down hole safety valves are a
                 mission-critical application. Current valves
@@ -84,7 +84,7 @@ from the cloud and collects chemical data in real time that is displayed on a cl
     - title: 'Transportation'
       image: '/images/work/work-3.webp'
       works:
-        - title: "Trinity Rail Railcar / The Connected Railcar"
+        - title: "Trinity Rail Railcar / The Connected Railcar of the Future"
           image: "/images/work/trinity.webp"
           problem: "The mantra of shipping via railroad is “ship and pray”
                 because once the cargo is loaded and the railcar is placed into the
@@ -123,7 +123,7 @@ group2:
   - title: 'Food'
     image: '/images/work/work-6.webp'
     works:
-      - title: "Marmon Food Service (On behalf of Burger King)" 
+      - title: "Marmon Food Service " 
         image: "/images/work/burger-king.webp"
         problem: "A major fast-food chain is evolving to fresh product cooking
                 to appeal to customers looking for a healthy alternative to heavily fried,
@@ -159,21 +159,15 @@ medical:
                 selected. Two patents pending."
         results: "Proof of concept tests and demonstration completed within 6 months."
     - 
-        title: "Infection detection, post-surgery"
+        title: "FDA approve temperature and health monitoring device"
         image: "/images/work/wello.webp"
-        problem: "Can you anticipate infection in a
-                sutured incision prior to the development of a
-                full-blown infection beneath the surface."
-        solution: "In vivo use of fiber optics in
-                spectroscopy and optical notch filtering for
-                detection and discrimination of bacterial
-                growth in the wound."
-        results: "Early intervention into a specific
-                bacterial species infection in the incision
-                allows for early intervention with species
-                specific antibiotics rather than prophylactic
-                intervention with broad spectrum antibiotics.
-                Two major patents issued."
+        problem: "Body temperature is one sure way of anticipating the onset
+       of infections including COVID 19.  A reliable, FDA certified method of quickly measuring forehead 
+       temperature as a pre-screening measure is critical to slow down the spread of infections"
+        solution: "Wello created an optical device for measuring the temperature of the Glabella- the space between 
+        your eyes, the place on the exterior of the body which is most representative of real body temperature. PCDworks has 
+       helped Wello over the years with enclosures, mechanical tilt mechanism, sensing methodology and software enhancements."
+       
     - 
         title: "Cardiopulmonary bypass"
         image: "/images/work/cardiopulmonary-bypass.webp"
