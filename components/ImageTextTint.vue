@@ -38,8 +38,8 @@
 <script>
 import ImageViewer from './ImageViewer.vue'
 export default {
-  components: { ImageViewer },
     name: 'ImageTextTint',
+    components: { ImageViewer },
     props: {
         image: {
             type: String,

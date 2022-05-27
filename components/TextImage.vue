@@ -33,8 +33,8 @@
 <script>
 import ImageViewer from './ImageViewer.vue'
 export default {
-  components: { ImageViewer },
     name: 'TextImage',
+    components: { ImageViewer },
     props: {
         image: {
             type: String,

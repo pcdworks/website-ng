@@ -34,6 +34,7 @@
 import ImageViewer from './ImageViewer.vue'
 export default {
     name: 'TextImageTint',
+    components: { ImageViewer },
     props: {
         image: {
             type: String,
@@ -48,7 +49,6 @@ export default {
             default: false
         }
     },
-    components: { ImageViewer },
     data () {
         return {
             carousel: 0
