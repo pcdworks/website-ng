@@ -14,6 +14,7 @@ prototypes:
     - "/images/expertise/shop.webp"
     - "/images/expertise/prototype-7.webp"
     - "/images/expertise/scott.webp"
+    - "/images/expertise/novasci.webp"
 
 ---
 

@@ -30,7 +30,7 @@ export default {
 
 .icon-title {
     color: #afbc21;
-    font-size: 2.4rem;
+    font-size: 2.2rem;
     font-weight: 600;
     padding-left: 1rem;
     max-width: calc(60% - 1rem);

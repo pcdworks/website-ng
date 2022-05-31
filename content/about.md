@@ -171,7 +171,7 @@ the big brains (not to mention, small egos) to make it happen.
 <people :people="board"></people>
 </center>
 </backing>
-<text-image image="/images/about/about-nda.webp" :has-right="true">
+<text-image image="/images/about/meeting.webp" :has-right="true">
 <template v-slot:left>
 
 ## Our goal is to help you<br/>know you can succeed.
