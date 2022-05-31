@@ -41,7 +41,7 @@ Co-Founder, psychologist Mike Rainone.
 
 The **Immersion Session™** innovation experience serves as a catalyst to expand the solution space beyond
 the current thinking. Through it, you gain new insight into your own
-understanding of the problem-the “aha” moment.
+understanding of the problem - the “aha” moment.
 
 All told, our Immersive Innovation™ process allows your team to define and
 decompose its problem, abandon preconceived notions, identify the solution

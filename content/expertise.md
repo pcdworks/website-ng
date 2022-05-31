@@ -17,7 +17,7 @@ prototypes:
 
 ---
 
-<text-image image="/images/expertise/coreteam.webp">
+<text-image image="/images/expertise/group-2022.webp">
 <template v-slot:left>
 
 ## Yeah, we've
@@ -166,7 +166,7 @@ an loT product from scratch.
 ## Software Engineering
 <br/>
 
-Our engineers can handle any type of problem from small time-sensitive embedded software to high demand full-stack web applications. We can provide cross-platform desktop applications for Linux, macOS, Windows as well as mobile applications for Android and iOS.
+Our engineers can handle any type of problem from small time-sensitive embedded software to high demand full-stack web applications. We can also provide cross-platform desktop applications for Linux, macOS, Windows as well as mobile applications for Android and iOS.
 
 We've developed embedded systems on several platforms from a wide variety of companies including:
   * Nordic Semiconductor
@@ -175,7 +175,7 @@ We've developed embedded systems on several platforms from a wide variety of com
   * STMicroelectronics
   * Raspberry Pi
 \
-Our web applications designed to be capable of high scalability, easy deployment, and maintainability. Some of the technologies used are: 
+Our web applications designed to be capable of high scalability, easy deployment, and maintainability. *Some* of the technologies used are: 
   * Vue.js
   * React / Fulcro
   * Clojure / ClojureScript
@@ -201,9 +201,9 @@ Also full prototype test lab with complete National Instruments setup
 * Complete machine shop
 * 4 axis CNC mill and manual mill
 * CNC and manual lathes
-* Welding- TIG, MIG, Oxy-Acetylene, and Stick
+* Welding: TIG, MIG, Oxy-Acetylene, and Stick
 * Plasma cutting
-* Metal casting- sand and investment
+* Metal casting: sand and investment
 * Complete wood shop
 * CNC router
 
