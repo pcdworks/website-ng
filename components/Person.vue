@@ -23,22 +23,22 @@
             <v-spacer/>
             <a v-if="phone != ''" :href="'tel:' + phone" target="_blank" class="mr-1">
                 <b-btn icon>
-                <v-icon>mdi-phone</v-icon>
+                <v-icon x-large>mdi-phone</v-icon>
                 </b-btn>
             </a>
             <a v-if="email != ''" :href="'mailto:' + email" target="_blank" class="mr-1">
                 <b-btn icon>
-                <v-icon>mdi-email</v-icon>
+                <v-icon x-large>mdi-email</v-icon>
                 </b-btn>
             </a>
             <a v-if="linkedin != ''" :href="linkedin" target="_blank" class="mr-1">
                 <b-btn icon>
-                <v-icon>mdi-linkedin</v-icon>
+                <v-icon x-large>mdi-linkedin</v-icon>
                 </b-btn>
             </a>
             <a v-if="twitter != ''" :href="twitter" target="_blank" class="mr-1">
                 <b-btn icon>
-                <v-icon>mdi-twitter</v-icon>
+                <v-icon x-large>mdi-twitter</v-icon>
                 </b-btn>
             </a>
         </v-card-actions>
@@ -63,7 +63,7 @@ export default {
         },
         position: {
             type: String,
-            default: 'Human'
+            default: ''
         },
         bio: {
             type: String,

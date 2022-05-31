@@ -63,24 +63,31 @@ board:
   - name: 'Dan Overly'
     degrees: 'B.S.M.E,'
     position: ''
+    linkedin: 'https://www.linkedin.com/in/dan-overly-a7a30a48'
     image: '/images/about/dan-headshot.webp'
-    bio: ""
+    bio: "
+    
+    "
   - name: 'Michael Neal'
     degrees: 'B.S.M.E, M.S.M.E,'
     position: ''
     image: '/images/about/michael-headshot.webp'
+    linkedin: 'https://www.linkedin.com/in/michaelpneal'
     bio: "
-Technology Executive with 34 years in contract R&D that has delivered countless solutions to a broad range of
-technical and business challenges. Experience includes both development of technology and business in the
-government and industrial space. He maintains extensive experience in the design, development, and qualification
-of new technology and technology that is being transferred, ranging from complex electromechanical systems to
-commercial handheld sensor systems.
-"
+    Technology Executive with 34 years in contract R&D that has delivered countless solutions to a broad range of
+    technical and business challenges. Experience includes both development of technology and business in the
+    government and industrial space. He maintains extensive experience in the design, development, and qualification
+    of new technology and technology that is being transferred, ranging from complex electromechanical systems to
+    commercial handheld sensor systems.
+    "
   - name: 'Rik Heller'
     degrees: 'B.S.E.E'
     position: ''
     image: '/images/about/rik-headshot.webp'
-    bio: ""
+    linkedin: 'https://www.linkedin.com/in/rikheller'
+    bio: "
+    
+    "
 
 
 phases:
