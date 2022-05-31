@@ -2,7 +2,7 @@
     <div class="py-16 px-xl-16 px-lg-16 px-md-4">
         <v-row class="px-xl-16 px-lg-16 px-md-4">
             <v-col cols="12" xl="6" lg="6" md="6">
-                <div class="pa-2">
+                <div class="pa-2 mx-4">
                     <slot name="left"></slot>
                 </div>
             </v-col>

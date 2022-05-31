@@ -16,7 +16,7 @@
                 </div>
             </v-col>
             <v-col cols="12" xl="6" lg="6" md="6">
-                <div class="pa-2">
+                <div class="pa-2 mx-4">
                     <slot name="right"></slot>
                 </div>
             </v-col>

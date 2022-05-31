@@ -51,16 +51,16 @@ disciplines including firmware design, software design,
 RF communication, and analog communication
 systems. Our capabilities include:
 
-* Electronic design and simulation
-* Embedded software development
-* PCB design and rapid prototyping
-* Sensor design, mote design, and programming
-* Wireless communication systems design
-* Intelligent wireless ad hoc networks
-* Positioning systems design
-* Power consumption optimization
-* RF, Microwave
-* Control system design
+  * Electronic design and simulation
+  * Embedded software development
+  * PCB design and rapid prototyping
+  * Sensor design, mote design, and programming
+  * Wireless communication systems design
+  * Intelligent wireless ad hoc networks
+  * Positioning systems design
+  * Power consumption optimization
+  * RF, Microwave
+  * Control system design
 
 </template>
 </image-text>
@@ -79,37 +79,34 @@ team is dedicated to quickly producing strong designs
 and performing engineering calculations to verify your
 concept’s validity. Capabilities include:
 
-* Analytical Modeling
-* Solid Modeling
-* Multi-physics FEA (Heat transfer, stress/strain, vibration and fatigue, CFD)
-* Design for Manufacturing
-* Computational Fluid Dynamic Modeling
+  * Analytical Modeling
+  * Solid Modeling
+  * Multi-physics FEA (Heat transfer, stress/strain, vibration and fatigue, CFD)
+  * Design for Manufacturing
+  * Computational Fluid Dynamic Modeling
 
 <br/>
 <v-row>
 <v-col>
 
 Our engineers are experts at all the standard mechanical engineering disciplines:
-
-* Mechanics
-* Kinematics
-* Structural Analysis
-* Mechatronics
-* Thermal and Fluid Dynamics
-* Material Science
+  * Mechanics
+  * Kinematics
+  * Structural Analysis
+  * Mechatronics
+  * Thermal and Fluid Dynamics
+  * Material Science
 
 <br/>
 </v-col>
 <v-col>
 
 In addition, we have local outsider consultants and have worked in:
-
-
-* Vibration
-* Acoustics
-* Surface Treatments
-* Tribology
-* Electrohydraulics
+  * Vibration
+  * Acoustics
+  * Surface Treatments
+  * Tribology
+  * Electrohydraulics
 
 <br/>
 </v-col>

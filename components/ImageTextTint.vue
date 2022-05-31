@@ -14,7 +14,7 @@
                 </div>
             </v-col>
             <v-col cols="12" xl="8" lg="8" md="8" class="full-height back">
-                <div class="pa-2 py-10 px-xl-16 px-lg-16 px-md-4">
+                <div class="pa-2 mx-4 py-10 px-xl-16 px-lg-16 px-md-4">
                     <div class="px-xl-16 px-lg-16 px-md-4">
                         <slot name="right"></slot>
                         <div v-if="button" class="pa-10">

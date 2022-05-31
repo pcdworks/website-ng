@@ -3,7 +3,7 @@
         <v-row class="px-0">
             <v-col cols="12" xl="8" lg="8" md="8" class="full-height back">
                 <div class="pa-2 py-10 px-xl-16 px-lg-16 px-md-4">
-                    <div class="px-xl-16 px-lg-16 px-md-4">
+                    <div class="mx-4 px-xl-16 px-lg-16 px-md-4">
                         <slot name="left"></slot>
                     </div>
                 </div>
