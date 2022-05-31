@@ -69,7 +69,13 @@ board:
     degrees: 'B.S.M.E, M.S.M.E,'
     position: ''
     image: '/images/about/michael-headshot.webp'
-    bio: ""
+    bio: "
+Technology Executive with 34 years in contract R&D that has delivered countless solutions to a broad range of
+technical and business challenges. Experience includes both development of technology and business in the
+government and industrial space. He maintains extensive experience in the design, development, and qualification
+of new technology and technology that is being transferred, ranging from complex electromechanical systems to
+commercial handheld sensor systems.
+"
   - name: 'Rik Heller'
     degrees: 'B.S.E.E'
     position: ''
