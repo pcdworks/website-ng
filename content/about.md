@@ -66,7 +66,7 @@ board:
     linkedin: 'https://www.linkedin.com/in/dan-overly-a7a30a48'
     image: '/images/about/dan-headshot.webp'
     bio: "
-    
+    He has spent his career in the Industrial sector with 32 years at ABB focused on automation in engineering, product development ,product management, sales, marketing, and service in various leadership roles around the world.  He brings a perspective for PCD and our clients that is market facing and real-world practical. He has a passion for helping business grow, seeing ideas become reality and delivering results.
     "
   - name: 'Michael Neal'
     degrees: 'B.S.M.E, M.S.M.E,'
