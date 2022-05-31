@@ -31,6 +31,11 @@
                 <v-icon x-large>mdi-email</v-icon>
                 </b-btn>
             </a>
+            <a v-if="website != ''" :href="website" target="_blank" class="mr-1">
+                <b-btn icon>
+                <v-icon x-large>mdi-web</v-icon>
+                </b-btn>
+            </a>
             <a v-if="linkedin != ''" :href="linkedin" target="_blank" class="mr-1">
                 <b-btn icon>
                 <v-icon x-large>mdi-linkedin</v-icon>
@@ -84,7 +89,11 @@ export default {
         twitter: {
             type: String,
             default: ''
-        }
+        },
+        website: {
+            type: String,
+            default: ''
+        },
     }
 }
 </script>

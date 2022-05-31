@@ -13,7 +13,8 @@
                     :phone="p.phone"
                     :email="p.email"
                     :linkedin="p.linkedin"
-                    :twitter="p.twitter">
+                    :twitter="p.twitter"
+                    :website="p.website">
                 </Person>
             </v-col>
         </v-row>

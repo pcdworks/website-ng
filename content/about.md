@@ -9,6 +9,11 @@ team:
   - name: 'Donna Rainone'
     degrees: 'AIA'
     position: 'President'
+    website: ''
+    phone: ''
+    twitter: ''
+    email: ''
+    linkedin: ''
     image: '/images/about/donna-headshot.webp'
     bio: "
     Donna honed her design and
@@ -25,6 +30,11 @@ team:
   - name: 'Mike Rainone'
     degrees: 'NPDP, IDSA'
     position: 'Vice president'
+    website: ''
+    phone: ''
+    twitter: ''
+    email: ''
+    linkedin: ''
     image: '/images/about/mike-headshot.webp'
     bio: "
     With 30+ patents to his name, Mike
@@ -45,6 +55,11 @@ team:
   - name: 'Bert Sackett'
     degrees: 'B.S.E.E, M.S.E.E,'
     position: 'Partner'
+    website: ''
+    phone: ''
+    twitter: ''
+    email: ''
+    linkedin: ''
     image: '/images/about/bert-headshot.webp'
     bio: "
     Bert is a seasoned engineer with
@@ -64,6 +79,10 @@ board:
     degrees: 'B.S.M.E,'
     position: ''
     linkedin: 'https://www.linkedin.com/in/dan-overly-a7a30a48'
+    website: ''
+    phone: ''
+    twitter: ''
+    email: ''
     image: '/images/about/dan-headshot.webp'
     bio: "
     He has spent his career in the Industrial sector with 32 years at ABB focused on automation in engineering, product development ,product management, sales, marketing, and service in various leadership roles around the world.  He brings a perspective for PCD and our clients that is market facing and real-world practical. He has a passion for helping business grow, seeing ideas become reality and delivering results.
@@ -73,6 +92,10 @@ board:
     position: ''
     image: '/images/about/michael-headshot.webp'
     linkedin: 'https://www.linkedin.com/in/michaelpneal'
+    website: ''
+    phone: ''
+    twitter: ''
+    email: ''
     bio: "
     Technology Executive with 34 years in contract R&D that has delivered countless solutions to a broad range of
     technical and business challenges. Experience includes both development of technology and business in the
@@ -85,6 +108,10 @@ board:
     position: ''
     image: '/images/about/rik-headshot.webp'
     linkedin: 'https://www.linkedin.com/in/rikheller'
+    website: 'https://welloinc.com/'
+    phone: ''
+    twitter: ''
+    email: ''
     bio: "
     
     "
