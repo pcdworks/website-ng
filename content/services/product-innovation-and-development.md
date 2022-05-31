@@ -3,7 +3,7 @@ title: Product Innovation & Development
 nav_name: Product Innovation & Development
 order: 0
 description: 'We don’t stumble onto great ideas. We clear a path and welcome them
-in through the Immersive Innovation™ process developed by PCDworks founder, psychologist Mike Rainone.'
+in through the Immersive Innovation™ process developed by PCDworks Co-founder, psychologist Mike Rainone.'
 highlights:
     - text: "Resuscitation Device"
       link: "https://tylerpaper.com/news/local/makerspace-helps-tyler-doctor-develop-cpr-device/article_70c95da9-2775-593b-95da-9ac6d022f5ef.html"
@@ -37,7 +37,7 @@ highlights:
 We don’t stumble onto great ideas. We clear a path
 and welcome them in through the Immersive
 Innovation™ process developed by PCDworks
-founder, psychologist Mike Rainone.
+Co-Founder, psychologist Mike Rainone.
 
 The **Immersion Session™** innovation experience serves as a catalyst to expand the solution space beyond
 the current thinking. Through it, you gain new insight into your own

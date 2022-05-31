@@ -2,7 +2,7 @@
 title: HardTech Basecamp Incubator
 nav_name: HardTech Basecamp Incubator
 order: 0
-description: "Here, you and your team will live on an 80-acre campus in the
+description: "Here, you and your team will stay on an 80-acre campus in the
 quiet hills of the Piney Woods Region of East Texas, free from distraction.
 You'll work on your project in an equipment-rich environment
 with PCDworks innovation mentors, engineers, and tradesmen."
@@ -23,14 +23,15 @@ venture to ensure success. Just ask the [founders of Renewell.](https://www.rene
 
 **You'll find our HardTech Basecamp functions in much the same way.**
 
-Here, you and your team will live on an 80-acre campus in the quiet hills of
+Here, you and your team will stay on an 80-acre campus in the quiet hills of
 the Piney Woods Region of East Texas, free from distraction. You'll work on
 your project in an equipment-rich environment with PCDworks innovation
 mentors, engineers, and tradesmen. Each one available 24/7 to help you
 design and build your “hard” physical innovation. Every day, you'll learn, fail
 fast, and push forward while avoiding pitfalls.
 
-There's more. You'll dwell in a comfortable guest house on our beautiful
+Since focused, full immersion is the fastest path to success, you can plan to stay a while.
+You'll dwell in a comfortable guest house on our beautiful
 campus where you'll live and eat with the founders and other entrepreneurs
 as family to foster team building and nurture creative problem-solving. The
 entire experience is designed to focus the spirit of creativity and
@@ -101,7 +102,7 @@ allows us to help you get your product to market fast.
 
 **Chances are we're a good fit, if:**
 
-* Your idea or product is a physical “hardtech” product
+* Your idea or product is predominantly a physical “hardtech” product, though we do electronics, hardware and software well.
 * Your idea has been externally vetted (Accelerator, Award based competition, Awarded a Grant, Other Incubator, Entrepreneurial Program)
 * Your group has a vetted idea but needs help designing or building the prototype
 * You're passionate and motivated about innovation and technology

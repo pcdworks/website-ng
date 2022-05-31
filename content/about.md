@@ -39,7 +39,7 @@ team:
     University of Texas at Austin, and an
     MA in Psychology from the
     University of North Texas. He also
-    has done doctoral work in cognitive
+    has done doctoral work in experimental
     psychology at TCU.
     "
   - name: 'Bert Sackett'

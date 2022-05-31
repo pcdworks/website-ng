@@ -98,6 +98,7 @@ Our engineers are experts at all the standard mechanical engineering disciplines
 * Thermal and Fluid Dynamics
 * Material Science
 
+<br/>
 </v-col>
 <v-col>
 
@@ -110,6 +111,7 @@ In addition, we have local outsider consultants and have worked in:
 * Tribology
 * Electrohydraulics
 
+<br/>
 </v-col>
 </v-row>
 
@@ -167,21 +169,23 @@ an loT product from scratch.
 ## Software Engineering
 <br/>
 
-Cross-platform desktop applications for Linux, macOS, Windows
+Our engineers can handle any type of problem from small time-sensitive embedded software to high demand full-stack web applications. We can provide cross-platform desktop applications for Linux, macOS, Windows as well as mobile applications for Android and iOS.
 
-Mobile applications for Android and iOS
-
-We've developed embedded systems on several different platforms from a wide variety of companies including: Nordic Semiconductor, Texas Instruments, NXP,  STMicroelectronics
-
-
-Fullstack web development
-* Vue.js
-* React / Fulcro
-* Clojure / ClojureScript
-* Ruby on Rails
-* PostgreSQL / SQL Server
-* Cassandra
-* Docker
+We've developed embedded systems on several platforms from a wide variety of companies including:
+  * Nordic Semiconductor
+  * Texas Instruments
+  * NXP
+  * STMicroelectronics
+  * Raspberry Pi
+\
+Our web applications designed to be capable of high scalability, easy deployment, and maintainability. Some of the technologies used are: 
+  * Vue.js
+  * React / Fulcro
+  * Clojure / ClojureScript
+  * Ruby on Rails
+  * PostgreSQL / SQL Server
+  * Cassandra
+  * Docker
 
 </template>
 </image-text>
@@ -193,14 +197,14 @@ Fullstack web development
 <br/>
 
 PCDworks has full prototyping capability, from electronic circuits to heavy metal.
-Also full prototype test lab with complete NI setup
+Also full prototype test lab with complete National Instruments setup
 
 * Automatice Pick and Place machine with reflow oven
 * Voltera circuit printer
 * Complete machine shop
 * 4 axis CNC mill and manual mill
 * CNC and manual lathes
-* Welding- TIG, MIG, Oxy-Acetylene, Stick
+* Welding- TIG, MIG, Oxy-Acetylene, and Stick
 * Plasma cutting
 * Metal casting- sand and investment
 * Complete wood shop

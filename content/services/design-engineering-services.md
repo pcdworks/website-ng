@@ -13,8 +13,8 @@ having great ideas. It's about reducing risk, proving concepts and executing the
 
 At PCDworks we realize that innovation isn't
 just about having great ideas. It's about reducing risk, proving concepts 
-and executing them. Reducing risk is about gaining **knowledge**, about gaining certainty. 
-This is about knowing enough at each step of the process to go onto the next step. This is 
+and executing them. Reducing risk is about gaining **knowledge**, about gaining **certainty**. 
+This means knowing enough from each step of the process to go onto the next step. This is 
 what the Toyota's Knowledge Based System is all about, as detailed by
 <a href="/the-knowledge-creating-company.pdf" target="_blank">Nonaka in 1991.</a>
 We have been followers of Nonaka's Knowledge-Creating company from the start. 
@@ -26,7 +26,7 @@ establishing design requirements, preliminary design, testing,  detailed design,
 prototyping the final design, prototype-to-production planning, production, and finally testing again. 
 
 No doubt, the best way to test a theory is to see it in action. That's why we're
-committed to getting physical fast and testing to validate.
+committed to getting physical fast and extensive testing to validation.
 
 </template>
 </text-image>
