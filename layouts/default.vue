@@ -185,7 +185,25 @@ export default {
 }
 </script>
 
-<style>
+<style lang="scss">
+
+iframe {
+  height: auto;
+  width: 100%;
+  aspect-ratio: 21 / 9;
+  padding: 3em;
+}
+
+@media #{map-get($display-breakpoints, 'md-and-down')} {
+
+  iframe {
+    height: auto;
+    width: 100%;
+    aspect-ratio: 9 / 16;
+    padding: 1em;
+  }
+
+}
 
 .learn-more {
   background: #afbd21;
