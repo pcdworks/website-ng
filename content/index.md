@@ -9,9 +9,8 @@ main:
   title: "TURN YOUR “problem”
           <br>
           INTO a “solution!”"
-  subtitle: "PCDworks is a product development and innovation firm that
-            helps startups, enterprises, and universities move their ideas and
-            intellectual property from the mind: to the marketplace."
+  subtitle: "PCDworks is a product development/innovation Basecamp that can take your idea from concept to commercialization
+            "
   image: '/images/index/lander.webp'
   filter: 'to top right, rgba(51, 102, 51, 0.5), rgba(51, 102, 51, 0.5)'
   cards:
@@ -49,7 +48,7 @@ possible:
   filter: "to top right, #5e6e64, #5e6e64"
   cards:
     - image: "/images/index/lander-4.webp"
-      title: "For startups"
+      title: "Basecamp For startups"
       top_title: true
       text: "We help startups move through
           technology readiness levels
@@ -57,7 +56,7 @@ possible:
           solutions and maximizing capital."
       link: "/for/startups"
     - image: "/images/index/lander-5.webp"
-      title: "For Enterprises"
+      title: "Basecamp For Enterprises"
       top_title: true
       text: "Looking for ways to cut costs and
           do more with less? Our blend of
@@ -66,7 +65,7 @@ possible:
           company’s R&D needs."
       link: "/for/enterprises"
     - image: "/images/index/lander-6.webp"
-      title: "For Universities"
+      title: "Basecamp For Universities"
       top_title: true
       text: "We're experts in a range of
           disciplines and bring in specialists
