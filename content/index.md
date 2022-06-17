@@ -6,11 +6,10 @@ nav_name: Home
 order: 0
 
 main:
-  title: "TURN YOUR “problem”
-          <br>
-          INTO a “solution!”"
-  subtitle: "PCDworks is a product development/innovation Basecamp that can take your idea from concept to commercialization
-            "
+  image: '/images/index/mnt.webp'
+  filter: 'to top right, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)'
+
+sections:
   image: '/images/index/lander.webp'
   filter: 'to top right, rgba(51, 102, 51, 0.5), rgba(51, 102, 51, 0.5)'
   cards:
@@ -40,10 +39,6 @@ main:
             to quickly bring your vision to life."
       link: "/services/product-innovation-and-development"
 possible:
-  title: "Yes, It's Possible"
-  subtitle: "Driven by the belief that anything is possible, we're committed
-          to solving problems others cannot. Ready to take your idea from
-          concept to commercial viability in record time? Let's go!"
   image: ""
   filter: "to top right, #5e6e64, #5e6e64"
   cards:
@@ -143,12 +138,23 @@ logos:
 ---
 
 <lander :content="main">
+
+# TURN YOUR problem<br>INTO a solution!
+## *PCDworks is a product development / innovation Basecamp that can take your idea from concept to commercialization*
+
 </lander>
 <center>
 <iframe src="https://www.youtube.com/embed/QU16iUYKPr4">
 </iframe>
 </center>
+<lander :content="sections">
+</lander>
 <lander :content="possible">
+
+# Yes, It's Possible
+Driven by the belief that anything is possible, we're committed to solving problems others cannot. Ready to take your idea from
+concept to commercial viability in record time? Let's go!
+
 </lander>
 
 <clients :logos="logos">

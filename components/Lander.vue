@@ -5,11 +5,7 @@
       <v-col align-self="center">
         <div class="px-xl-16 px-lg-16 px-md-4 px-xs-0 mx-1">
           <center>
-            <!-- eslint-disable vue/no-v-html -->
-            <h1 v-html="content.title"></h1>
-            <!--eslint-enable-->
-            <p>{{content.subtitle}}</p>
-            <br>
+            <slot></slot>
           </center>
           <v-row class="px-xl-16 px-lg-16 px-md-4 px-xs-0 mx-2">
             <v-col v-for="(card, idx) in content.cards" :key="idx"
@@ -96,32 +92,13 @@ export default {
 .entry-text {
   color: #5e6e64;
   font-weight: 600;
-  font-size: 1.2rem;
 }
 
-h1{
-    font-size:5rem;
-    color: rgba(255, 255, 255, 1);
-}
-
-h2 {
-  font-size: 3rem;
-  color: rgba(255, 255, 255, 1);;
-}
-
-p {
-  font-size: 1.5rem;
-  color: rgba(255, 255, 255, 1);;
-  max-width: 50rem;
-  font-weight: 650;
-}
-
-
-@media #{map-get($display-breakpoints, 'md-and-down')} {
-  h1{
-    font-size:2.5rem;
-    color: rgba(255, 255, 255, 1);;
-  }
+::v-deep  h1,
+::v-deep h2,
+::v-deep h3,
+::v-deep p {
+  color: rgba(255, 255, 255, 1);
 }
 
 </style>
