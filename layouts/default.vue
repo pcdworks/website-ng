@@ -275,6 +275,7 @@ iframe {
 #because-i-have-to {
   height: 128px;
   background: #5E6E65;
+  position: relative;
 }
 
 h1 {

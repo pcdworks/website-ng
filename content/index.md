@@ -41,6 +41,7 @@ sections:
 possible:
   image: ""
   filter: "to top right, #5e6e64, #5e6e64"
+  center: true
   cards:
     - image: "/images/index/lander-4.webp"
       title: "Basecamp For startups"
@@ -137,25 +138,30 @@ logos:
     link: "https://smartsecurement.com/"
 ---
 
-<lander :content="main">
+<lander :content="main" snow="true">
 
-# TURN YOUR problem<br>INTO a solution!
-## *PCDworks is a product development / innovation Basecamp that can take your idea from concept to commercialization*
+## *PCDworks is an innovation Basecamp that can take your idea from concept to commercialization*
 
 </lander>
-<center>
-<iframe src="https://www.youtube.com/embed/QU16iUYKPr4">
-</iframe>
-</center>
-<lander :content="sections">
-</lander>
+
+<you-tube link="https://www.youtube.com/embed/QU16iUYKPr4">
+</you-tube>
+
 <lander :content="possible">
 
-# Yes, It's Possible
+# We solve problems other people can't
 Driven by the belief that anything is possible, we're committed to solving problems others cannot. Ready to take your idea from
 concept to commercial viability in record time? Let's go!
 
 </lander>
+
+<lander :content="sections">
+
+## We have the *place*, the *knowledge*, and the *vision* to get your product to the top of the mountain
+
+<br>
+</lander>
+
 
 <clients :logos="logos">
 

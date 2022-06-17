@@ -190,6 +190,7 @@ export default {
   background: #afbd21;
   padding-top: 84px;
   padding-bottom: 84px;
+  position: relative;
 }
 
 #contact-send {
