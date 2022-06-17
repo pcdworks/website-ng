@@ -10,7 +10,7 @@ begin:
 ---
 
 <text-image image="/images/for/universities/fu-1.webp">
-<template v-slot:left>
+<template v-slot:primary>
 
 ## PCDworks
 # FOR UNIVERSITIES

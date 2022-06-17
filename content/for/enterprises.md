@@ -11,7 +11,7 @@ gobutton:
 
 
 <text-image image="/images/for/enterprises/fe-1.webp">
-<template v-slot:left>
+<template v-slot:primary>
 
 ## PCDworks
 # FOR ENTERPRISES

@@ -10,7 +10,7 @@ starthere:
 ---
 
 <text-image image="/images/for/startups/fsu-1.webp">
-<template v-slot:left>
+<template v-slot:primary>
 
 ## PCDworks
 # For Startups
