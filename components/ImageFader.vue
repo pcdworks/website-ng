@@ -23,12 +23,6 @@ export default {
 </script>
 
 <style scoped>
-::v-deep strong {
-    font-weight: 800;
-}
-::v-deep p {
-    font-weight: 600;
-}
 
 .fader-box {
     background: rgba(51, 102, 51, 0.5)
@@ -45,13 +39,5 @@ export default {
     color: white;
     font-weight: 600;
 }
-::v-deep h2 { 
-    font-size: 3rem;
-    font-weight: 700;
-}
 
-::v-deep h3 { 
-    font-size: 3rem;
-    font-weight: 370;
-}
 </style>

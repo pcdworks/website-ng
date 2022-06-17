@@ -34,33 +34,11 @@ export default {
 
 <style lang="scss" scoped>
 
-::v-deep h1{
-    font-size:5rem;
-    color: #5e6e64;
-    line-height: normal;
-}
-
-::v-deep h2 {
-  font-size: 3rem;
-  color: #5e6e64;
-}
-
+::v-deep h1,
+::v-deep h2,
+::v-deep h3,
 ::v-deep p {
-  font-size: 1.5rem;
   color: #5e6e64;
-  max-width: 50rem;
-  font-weight: 650;
-}
-
-@media #{map-get($display-breakpoints, 'md-and-down')} {
-  h1{
-    font-size:2.2rem;
-    line-height: normal;
-  }
-
-  h2{
-      font-size: 1.2rem;
-  }
 }
 
 </style>

@@ -27,22 +27,4 @@ export default {
   color: white;
 }
 
-h1{
-    font-size:5rem;
-}
-
-h2 {
-  font-size: 3rem;
-}
-
-@media #{map-get($display-breakpoints, 'md-and-down')} {
-  h1{
-    font-size:2rem;
-  }
-
-  h2 {
-    font-size: 1.5rem;
-  }
-}
-
 </style>

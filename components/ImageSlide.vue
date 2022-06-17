@@ -28,13 +28,6 @@ export default {
 
 <style lang="scss" scoped>
 
-::v-deep strong {
-    font-weight: 800;
-}
-::v-deep p {
-    font-weight: 600;
-}
-
 .fader-box {
     background: rgba(0, 0, 0, 0.7)
 }
@@ -49,30 +42,6 @@ export default {
     text-align: center;
     color: white;
     font-weight: 600;
-}
-::v-deep h2 { 
-    font-size: 3rem;
-    font-weight: 700;
-}
-
-::v-deep h3 { 
-    font-size: 3rem;
-    font-weight: 370;
-}
-
-@media #{map-get($display-breakpoints, 'md-and-down')} {
-  ::v-deep h1{
-    font-size:3rem;
-  }
-
-  ::v-deep h2 {
-    font-size: 2rem;
-  }
-
-  ::v-deep p {
-      font-size: 1rem;
-  }
-
 }
 
 </style>

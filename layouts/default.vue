@@ -194,17 +194,6 @@ iframe {
   padding: 3em;
 }
 
-@media #{map-get($display-breakpoints, 'md-and-down')} {
-
-  iframe {
-    height: auto;
-    width: 100%;
-    aspect-ratio: 9 / 16;
-    padding: 1em;
-  }
-
-}
-
 .learn-more {
   background: #afbd21;
   text-align: center;
@@ -230,11 +219,6 @@ iframe {
   display: inline-block;
   transform: skew(30deg);
   color: black;
-}
-
-
-h1 {
-  text-transform: uppercase;
 }
 
 #heart {
@@ -292,4 +276,51 @@ h1 {
   height: 128px;
   background: #5E6E65;
 }
+
+h1 {
+  text-transform: uppercase;
+  font-size:5rem;
+}
+
+h2 {
+  font-size: 3rem;
+}
+
+h3 {
+  font-size: 2rem;
+}
+
+p,
+ul {
+  font-size: 1.5rem;
+}
+
+@media #{map-get($display-breakpoints, 'md-and-down')} {
+
+  iframe {
+    height: auto;
+    width: 100%;
+    aspect-ratio: 9 / 16;
+    padding: 1em;
+  }
+
+  h1{
+    font-size:3rem;
+  }
+
+  h2 {
+    font-size: 2rem;
+  }
+
+  h3 {
+    font-size: 1.5rem;
+  }
+
+  p,
+  ul {
+    font-size: 1rem;
+  }
+
+}
+
 </style>

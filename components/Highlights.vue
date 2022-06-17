@@ -3,7 +3,9 @@
     gradient="to top right, rgba(0,0,0,0.5), rgba(0,0,0,0.5)">
         <div class="py-16 px-xl-16 px-lg-16 px-md-4">
             <div class="py-16 px-xl-16 px-lg-16 px-md-4 pa-6">
-                <slot></slot>
+                <div  class="mx-4">
+                    <slot></slot>
+                </div>
                 <v-tooltip v-for="(highlight, idx) in highlights" :key="idx" top>
                 <template #activator="{ on, attrs }">
                     <v-chip
@@ -64,38 +66,11 @@ span .highlight {
   transform: skew(30deg);
 }
 
-::v-deep p, ul {
-    font-size: 1.2rem;
-    font-weight: 500;
-    color: white;
-    padding-left: 1rem;
-    padding-right: 1rem;
-}
-
-::v-deep h1 {
-    text-transform: uppercase;
-    color: white;
-    font-size: 4.5rem;
-    line-height: 1.1;
-    padding-left: 1rem;
-    padding-right: 1rem;
-}
-
+::v-deep p,
+::v-deep ul,
+::v-deep h1,
 ::v-deep h2 {
     color: white;
-    font-size: 3.5rem;
-    padding-left: 1rem;
-    padding-right: 1rem;
 }
 
-@media #{map-get($display-breakpoints, 'md-and-down')} {
-  ::v-deep h1{
-    font-size:3rem;
-  }
-
-  ::v-deep h2 {
-    font-size: 1.5rem;
-  }
-
-}
 </style>
