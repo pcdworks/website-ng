@@ -29,7 +29,7 @@ highlights:
 ---
 
 <text-image image="/images/services/product-innovation-and-development/pepsico-session.png">
-<template v-slot:left>
+<template v-slot:primary>
 
 ## We help discover
 # Exceptional ideas
@@ -54,8 +54,8 @@ distraction-free collaboration and breakthrough thinking.
 </template>
 </text-image>
 
-<image-text image="/images/services/product-innovation-and-development/pid-2.webp">
-<template v-slot:right>
+<text-image image="/images/services/product-innovation-and-development/pid-2.webp" order="it">
+<template v-slot:primary>
 
 ## Experience the power of
 # many
@@ -78,10 +78,10 @@ buried, new insights are identified and developed, and breakthrough
 innovation occurs.
 
 </template>
-</image-text>
+</text-image>
 
 <text-image image="/images/services/product-innovation-and-development/secureload.webp">
-<template v-slot:left>
+<template v-slot:primary>
 
 ## We'll help you create the next
 # disruptive product.

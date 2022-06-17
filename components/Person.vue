@@ -132,4 +132,7 @@ export default {
     width: 90%;
 }
 
+a {
+    text-decoration: none;
+}
 </style>

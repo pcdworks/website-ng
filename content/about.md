@@ -168,7 +168,7 @@ about_1:
   - "/images/about/about-5.webp"
 ---
 <text-image :images="about_1">
-<template v-slot:left>
+<template v-slot:primary>
 
 ## We've got the experience to
 # Make it happen
@@ -211,8 +211,8 @@ the big brains (not to mention, small egos) to make it happen.
 <people :people="board"></people>
 </center>
 </backing>
-<text-image image="/images/about/meeting.webp" :has-right="true">
-<template v-slot:left>
+<text-image image="/images/about/meeting.webp" :extra="true">
+<template v-slot:primary>
 
 ## Our goal is to help you<br/>know you can succeed.
 # Period
@@ -230,7 +230,7 @@ your likelihood of success.
 Here's what you can expect when you work with us.
 
 </template>
-<template v-slot:right>
+<template v-slot:extra>
 
 ## Initial discussion where we cover:
 <br/>

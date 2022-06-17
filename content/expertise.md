@@ -19,7 +19,7 @@ prototypes:
 ---
 
 <text-image image="/images/expertise/group-2022.webp">
-<template v-slot:left>
+<template v-slot:primary>
 
 ## Yeah, we've
 # Got know-how
@@ -39,8 +39,8 @@ engineering challenges.
 </template>
 </text-image>
 
-<image-text image="/images/expertise/expertise-2.webp" trim>
-<template v-slot:right>
+<text-image order="it" image="/images/expertise/expertise-2.webp" trim>
+<template v-slot:primary>
 
 ## Electrical Engineering
 <br/>
@@ -64,10 +64,10 @@ systems. Our capabilities include:
   * Control system design
 
 </template>
-</image-text>
+</text-image order="it">
 
 <text-image image="/images/expertise/expertise-3.webp" trim>
-<template v-slot:left>
+<template v-slot:primary>
 
 ## Mechanical Engineering
 <br/>
@@ -116,8 +116,8 @@ In addition, we have local outsider consultants and have worked in:
 </template>
 </text-image>
 
-<image-text image="/images/expertise/expertise-4.webp" trim>
-<template v-slot:right>
+<text-image order="it" image="/images/expertise/expertise-4.webp" trim>
+<template v-slot:primary>
 
 ## Mathematical Modeling
 <br/>
@@ -141,10 +141,10 @@ capabilities include:
 * Material Library
 
 </template>
-</image-text>
+</text-image order="it">
 
 <text-image image="/images/expertise/expertise-5.webp" trim>
-<template v-slot:left>
+<template v-slot:primary>
 
 ## Sensors and IoT
 <br/>
@@ -161,8 +161,8 @@ an loT product from scratch.
 </template>
 </text-image>
 
-<image-text image="/images/expertise/dashboard.webp" trim>
-<template v-slot:right>
+<text-image order="it" image="/images/expertise/dashboard.webp" trim>
+<template v-slot:primary>
 
 ## Software Engineering
 <br/>
@@ -186,10 +186,10 @@ Our web applications designed to be capable of high scalability, easy deployment
   * Docker
 
 </template>
-</image-text>
+</text-image order="it">
 
 <text-image :images="prototypes" trim>
-<template v-slot:left>
+<template v-slot:primary>
 
 ## Prototyping and Testing
 <br/>

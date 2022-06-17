@@ -1,18 +1,18 @@
 <template>
     <div class="py-16 px-xl-16 px-lg-16 px-md-4">
         <v-row class="px-xl-16 px-lg-16 px-md-4">
-            <v-col cols="12" xl="6" lg="6" md="6">
-                <div class="pa-2 mx-4">
-                    <slot name="left"></slot>
+            <v-col cols="12" xl="6" lg="6" md="6" :order="primaryOrder">
+                <div class="pa-4 mx-4">
+                    <slot name="primary"></slot>
                 </div>
             </v-col>
-            <v-col cols="12" xl="6" lg="6" md="6">
+            <v-col cols="12" xl="6" lg="6" md="6" :order="extraOrder">
                 <div class="pt-4 px-4 px-xl-16 px-lg-4 px-md-4 px-sm-16">
                     <div :class="trimClass">
                         <image-viewer v-if="images.length === 0" :image="image" class="align-end" contain>
-                            <div v-if="hasRight"
-                            class="right-content py-2 px-2 py-lg-10 px-lg-16 py-xl-10 px-xl-16 py-md-8 px-md-6 px-sm-6 py-sm-6">
-                                <slot name="right"></slot>
+                            <div v-if="extra"
+                            class="extra-content py-2 px-2 py-lg-10 px-lg-16 py-xl-10 px-xl-16 py-md-8 px-md-6 px-sm-6 py-sm-6">
+                                <slot name="extra"></slot>
                             </div>
                         </image-viewer>
                         <carousel v-else :images="images">
@@ -43,9 +43,13 @@ export default {
             type: Boolean,
             default: false
         },
-        hasRight: {
+        extra: {
             type: Boolean,
             default: false
+        },
+        order: {
+            type: String,
+            default: 'ti'
         }
     },
     data () {
@@ -57,6 +61,20 @@ export default {
                 return 'trim'
             }
             return ''
+        },
+        primaryOrder () {
+            if (this.order === 'it') {
+                return 2
+            } else {
+                return 1
+            }
+        },
+        extraOrder () {
+            if (this.order === 'it') {
+                return 1
+            } else {
+                return 2
+            }
         }
     }
 }
@@ -72,30 +90,17 @@ export default {
 }
 
 ::v-deep p, ul {
-    font-size: 1.5rem;
     font-weight: 500;
     color: #5e6e64;
-    padding-left: 1rem;
-    padding-right: 1rem;
 }
 
-::v-deep h1 {
-    text-transform: uppercase;
+::v-deep h1,
+::v-deep h2,
+::v-deep h3 {
     color: #afbc21;
-    font-size: 4.5rem;
-    line-height: 1.1;
-    padding-left: 1rem;
-    padding-right: 1rem;
 }
 
-::v-deep h2 {
-    color: #afbc21;
-    font-size: 3.5rem;
-    padding-left: 1rem;
-    padding-right: 1rem;
-}
-
-::v-deep .right-content {
+::v-deep .extra-content {
     background: rgba(51, 102, 51, 0.8);
     color: rgba(255,255,255, 1);
     font-size: 1.3rem;
@@ -106,15 +111,8 @@ export default {
 }
 
 @media #{map-get($display-breakpoints, 'md-and-down')} {
-  ::v-deep h1{
-    font-size:3rem;
-  }
 
-  ::v-deep h2 {
-    font-size: 2rem;
-  }
-
-  ::v-deep .right-content {
+  ::v-deep .extra-content {
         background: rgba(51, 102, 51, 0.8);
         color: rgba(255,255,255, 1);
         font-size: 1rem;

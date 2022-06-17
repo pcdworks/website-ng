@@ -55,7 +55,12 @@ export default {
   width: 100%;
   height: 100%;
   border-radius: 15px;
-  box-shadow: 0px 0px 15px #fff;
+  box-shadow: 0px 0px 10px #fff;
+}
+
+.videoWrapper iframe:hover {
+    box-shadow: 0px 0px 20px #fff;
+
 }
 
 </style>

@@ -8,7 +8,7 @@ You'll work on your project in an equipment-rich environment
 with PCDworks innovation mentors, engineers, and tradesmen."
 ---
 <text-image image="/images/services/hardtech-basecamp-incubator/htbc-1.png">
-<template v-slot:left>
+<template v-slot:primary>
 
 ## To reach startup success,
 # Start here
@@ -40,8 +40,8 @@ camaraderie and accelerate your project to the next stage.
 </template>
 </text-image>
 
-<image-text image="/images/services/hardtech-basecamp-incubator/happy-campers.webp">
-<template v-slot:right>
+<text-image image="/images/services/hardtech-basecamp-incubator/happy-campers.webp" order="it">
+<template v-slot:primary>
 
 ## We strive to make
 # Campers happy
@@ -59,10 +59,10 @@ rooms with private bathrooms and queen size beds. In short, we have
 everything you need to be a happy—and highly productive—camper.
 
 </template>
-</image-text>
+</text-image>
 
 <text-image image="/images/services/hardtech-basecamp-incubator/pack.webp">
-<template v-slot:left>
+<template v-slot:primary>
 
 ## Here's what separates us from
 # The pack

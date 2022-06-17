@@ -29,7 +29,7 @@ campus_2:
 ---
 
 <text-image :images="campus_1">
-<template v-slot:left>
+<template v-slot:primary>
 
 ## For out-of-the-box thinking,
 # Step out of your box
@@ -56,8 +56,8 @@ thinking that yields accelerated breakthrough solutions.
 </template>
 </text-image>
 
-<image-text :images="campus_2">
-<template v-slot:right>
+<text-image :images="campus_2" order="it">
+<template v-slot:primary>
 
 ## Experience if for
 # Yourself
@@ -68,4 +68,4 @@ stroll the grounds, see what we're working on, and explore all the ways you
 can experience out-of-the-box thinking. Schedule your visit today.
 
 </template>
-</image-text>
+</text-image>

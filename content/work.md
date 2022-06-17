@@ -196,7 +196,7 @@ medical:
 
 
 <text-image image="/images/work/hands.webp">
-<template v-slot:left>
+<template v-slot:primary>
 
 ## We specialize in
 # Not specializing

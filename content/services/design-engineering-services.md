@@ -7,7 +7,7 @@ having great ideas. It's about reducing risk, proving concepts and executing the
 ---
 
 <text-image image="/images/services/design-engineering-services/des-1.webp">
-<template v-slot:left>
+<template v-slot:primary>
 
 ## We turn big ideas into the next big thing through  "KNOWING"
 
@@ -31,8 +31,8 @@ committed to getting physical fast and extensive testing to validation.
 </template>
 </text-image>
 
-<image-text image="/images/services/design-engineering-services/des-2.webp">
-<template v-slot:right>
+<text-image image="/images/services/design-engineering-services/des-2.webp" order="it">
+<template v-slot:primary>
 
 ## Experience the fast and
 # The curious
@@ -49,4 +49,4 @@ functional design, we can help you go from ideation to functioning prototype
 in record time.
 
 </template>
-</image-text>
+</text-image>
