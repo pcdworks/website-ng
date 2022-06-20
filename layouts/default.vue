@@ -1,6 +1,6 @@
 <template>
   <v-app>
-    <v-app-bar app fixed hide-on-scroll elevation="2" height="100px" color="white" light>
+    <v-app-bar app fixed hide-on-scroll elevation="2" height="100px" :color="bg" dark class="red--text">
       <v-app-bar-nav-icon class="d-none d-flex d-sm-flex d-md-none"
                          aria-label="Menu" @click.stop="drawer = !drawer">
       </v-app-bar-nav-icon>
@@ -18,7 +18,7 @@
           <div id="menu">
           <v-menu offset-y>
             <template #activator="{ on, attrs }">
-              <v-btn text tile class="nav-btn" v-bind="attrs" v-on="on">
+              <v-btn text tile :class="navBtn" v-bind="attrs" v-on="on">
                 Services
               </v-btn>
             </template>
@@ -32,7 +32,7 @@
               </v-list-item>
             </v-list>
           </v-menu>
-          <v-btn v-for="item in topMenu" :key="item.nav_name" text tile class="nav-btn" :to="item.path">
+          <v-btn v-for="item in topMenu" :key="item.nav_name" text tile :class="navBtn" :to="item.path">
             {{item.nav_name}}
           </v-btn>
           </div>
@@ -82,7 +82,7 @@
         </v-list-item>
       </v-list>
     </v-navigation-drawer>
-    <v-main>
+    <v-main :style="mainStyle">
       <v-container id="heart" fluid>
         <Nuxt />
         <contact-form/>
@@ -102,7 +102,8 @@ export default {
       menu: [],
       topMenu: [],
       darkMode: false,
-      services: []
+      services: [],
+      bg: 'white',
     }
   },
   async fetch() {
@@ -121,11 +122,38 @@ export default {
   computed: {
     switchIcon () {
       return this.darkMode ? 'mdi-white-balance-sunny' : 'mdi-moon-waning-crescent';
+    },
+    mainStyle() {
+      if (this.$route.path === '/') {
+        return 'padding-top: 0px;'
+      }
+      return 'padding-top: 100px;'
+    },
+    navBtn() {
+      if (this.bg === 'transparent') {
+        return 'nav-btn white--text'
+      }
+      return 'nav-btn'
     }
   },
   mounted () {
+    window.onscroll = () => {
+      this.changeColor()
+    }
+    this.changeColor()
   },
   methods: {
+    changeColor() {
+      if (
+        document.body.scrollTop > 100 ||
+        document.documentElement.scrollTop > 100 ||
+        this.$route.path !== '/'
+      ) {
+        this.bg = 'white'
+      } else {
+        this.bg = 'transparent'
+      }
+    },
     darkModeInit () {
       const theme = localStorage.getItem("dark_theme")
       if (theme) {
@@ -181,6 +209,11 @@ export default {
       }), {})
       return groups
     }
+  },
+  watch: {
+    $route(to, from) {
+        this.changeColor()
+    }
   }
 }
 </script>
@@ -191,7 +224,7 @@ iframe {
   height: auto;
   width: 100%;
   aspect-ratio: 21 / 9;
-  padding: 3em;
+  padding: 3rem;
 }
 
 .learn-more {

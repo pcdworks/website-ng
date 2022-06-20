@@ -1,10 +1,10 @@
 <template>
-  <v-img :src="content.image" :aspect-ratio="16/9"
+  <v-img :src="content.image" :aspect-ratio="18/9"
          :gradient="content.filter">
     <v-row class="py-16 lander fill-height" align="center">
       <v-col align-self="center">
         <div class="px-xl-16 px-lg-16 px-md-4 px-xs-0 mx-1">
-          <div class="mx-4 mx-md-8 mx-lg-16">
+          <div class="pt-16 mx-4 mx-md-8 mx-lg-16">
             <center v-if="content.center">
               <slot></slot>
             </center>

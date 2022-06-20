@@ -7,25 +7,52 @@ Texas'
 order: 0
 
 campus_1:
-    - "/images/campus/campus-0.webp"
-    - "/images/campus/campus-1.webp"
-    - "/images/campus/campus-3.webp"
-    - "/images/campus/campus-6.webp"
-    - "/images/campus/campus-7.webp"
-    - "/images/campus/campus-5.webp"
-    - "/images/campus/campus-14.webp"
-    - "/images/campus/map.webp"
+    - link: "/images/campus/campus-0.webp"
+      alt: "Welcome to PCDworks"
+      text:
+    - link: "/images/campus/campus-1.webp"
+      alt:
+      text:
+    - link: "/images/campus/campus-3.webp"
+      alt:
+      text:
+    - link: "/images/campus/campus-6.webp"
+      alt:
+      text:
+    - link: "/images/campus/campus-7.webp"
+      alt:
+      text:
+    - link: "/images/campus/campus-5.webp"
+      alt:
+      text:
+    - link: "/images/campus/campus-14.webp"
+      alt:
+      text:
+    - link: "/images/campus/map.webp"
 
 
 campus_2:
-    - "/images/campus/campus-4.webp"
-    - "/images/campus/campus-8.webp"
-    - "/images/campus/campus-13.webp"
-    - "/images/campus/campus-15.webp"
-    - "/images/campus/campus-16.webp"
-    - "/images/campus/campus-17.webp"
-    - "/images/campus/campus-18.webp"
-
+    - link: "/images/campus/campus-4.webp"
+      alt:
+      text:
+    - link: "/images/campus/campus-8.webp"
+      alt:
+      text:
+    - link: "/images/campus/campus-13.webp"
+      alt:
+      text:
+    - link: "/images/campus/campus-15.webp"
+      alt:
+      text:
+    - link: "/images/campus/campus-16.webp"
+      alt:
+      text:
+    - link: "/images/campus/campus-17.webp"
+      alt:
+      text:
+    - link: "/images/campus/campus-18.webp"
+      alt:
+      text:
 ---
 
 <text-image :images="campus_1">

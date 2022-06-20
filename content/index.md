@@ -140,7 +140,7 @@ logos:
 
 <lander :content="main" snow="true">
 
-## PCDworks - The innovation Basecamp
+## PCDworks – The innovation Basecamp
 ### From Idea to Concept to Commercialization We Climb That Innovation Mountain with You
 
 
