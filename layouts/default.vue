@@ -136,6 +136,11 @@ export default {
       return 'nav-btn'
     }
   },
+  watch: {
+    $route(to, from) {
+        this.changeColor()
+    }
+  },
   mounted () {
     window.onscroll = () => {
       this.changeColor()
@@ -210,11 +215,6 @@ export default {
       return groups
     }
   },
-  watch: {
-    $route(to, from) {
-        this.changeColor()
-    }
-  }
 }
 </script>
 
