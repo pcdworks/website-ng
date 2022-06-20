@@ -140,7 +140,10 @@ logos:
 
 <lander :content="main" snow="true">
 
-## *PCDworks is an innovation Basecamp that can take your idea from concept to commercialization*
+## PCDworks - The innovation Basecamp
+### From Idea to Concept to Commercialization We Climb That Innovation Mountain with You
+
+
 
 </lander>
 
@@ -150,8 +153,9 @@ logos:
 <lander :content="possible">
 
 # We solve problems other people can't
-Driven by the belief that anything is possible, we're committed to solving problems others cannot. Ready to take your idea from
-concept to commercial viability in record time? Let's go!
+Driven by the belief that anything is possible, we're committed to solving problems others cannot.
+\
+Ready to take your idea from concept to commercial viability in record time? Let's go!
 
 </lander>
 

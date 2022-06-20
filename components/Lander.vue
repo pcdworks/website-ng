@@ -13,7 +13,7 @@
           <v-row class="px-xl-16 px-lg-16 px-md-4 px-xs-0 mx-2">
             <v-col v-for="(card, idx) in content.cards" :key="idx"
                   cols="12" xs="12" sm="12" md="12" xl="4" lg="4">
-              <v-card elevation="8" class="pb-6 fill-height" tile>
+              <v-card elevation="8" class="pb-6 fill-height d-flex flex-column" tile>
                 <v-card-title v-if="card.top_title">
                   <div class="top-title">
                     <center>{{card.title}}</center>
@@ -39,6 +39,7 @@
                         <center>{{card.text}}</center>
                       </p>
                   </v-card-text>
+                  <v-spacer/>
                   <v-card-actions>
                      <v-tooltip top>
                         <template #activator="{ on, attrs }">
