@@ -13,7 +13,7 @@
           <v-row class="px-xl-16 px-lg-16 px-md-4 px-xs-0 mx-2">
             <v-col v-for="(card, idx) in content.cards" :key="idx"
                   cols="12" xs="12" sm="12" md="12" xl="4" lg="4">
-              <v-card elevation="8" class="pb-6 fill-height person" tile>
+              <v-card elevation="8" class="pb-6 fill-height" tile>
                 <v-card-title v-if="card.top_title">
                   <div class="top-title">
                     <center>{{card.title}}</center>
@@ -56,7 +56,7 @@
         </div>
       </v-col>
     </v-row>
-    <div v-if="snow">
+    <div v-if="snow === 'true'">
       <div class="snowflakes" aria-hidden="true">
         <div class="snowflake">
         ❅
@@ -108,8 +108,8 @@ export default {
           default: () => {}
       },
       snow: {
-        type: Boolean,
-        default: false
+        type: String,
+        default: 'false'
       }
     }
 }
@@ -123,9 +123,11 @@ export default {
   color: white;
   text-transform: uppercase;
   font-size: 2rem;
-  height: 3rem;
   line-height: 3rem;
+  height: 3rem;
   font-weight: 650;
+  white-space: normal;
+  word-break: break-word;
 }
 
 .entry-title {
@@ -146,6 +148,22 @@ export default {
 ::v-deep h3,
 ::v-deep p {
   color: rgba(255, 255, 255, 1);
+}
+
+@media #{map-get($display-breakpoints, 'lg-only')} {
+  .top-title {
+    font-size: 1.1rem;
+    height: 1.6rem;
+    line-height: 1.6rem;
+  }
+}
+
+@media #{map-get($display-breakpoints, 'md-and-down')} {
+  .top-title {
+    font-size: 1rem;
+    height: 1.5rem;
+    line-height: 1.5rem;
+  }
 }
 
 /* snow thanks to https://github.com/pajasevi/CSSnowflakes */
