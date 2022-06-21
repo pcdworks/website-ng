@@ -155,7 +155,7 @@ logos:
 # We solve problems other people can't
 Driven by the belief that anything is possible, we're committed to solving problems others cannot.
 \
-Ready to take your idea from concept to commercial viability in record time? Let's go!
+Ready to take your idea from concept to commercial viability in record time? [Let's go!](/contact)
 
 </lander>
 

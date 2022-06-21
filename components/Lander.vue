@@ -147,7 +147,9 @@ export default {
 ::v-deep  h1,
 ::v-deep h2,
 ::v-deep h3,
-::v-deep p {
+::v-deep p,
+::v-deep ul,
+::v-deep a {
   color: rgba(255, 255, 255, 1);
 }
 

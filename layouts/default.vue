@@ -322,13 +322,6 @@ ul {
 
 @media #{map-get($display-breakpoints, 'md-and-down')} {
 
-  iframe {
-    height: auto;
-    width: 100%;
-    aspect-ratio: 9 / 16;
-    padding: 1em;
-  }
-
   h1{
     font-size:3rem;
   }
