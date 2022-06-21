@@ -38,9 +38,9 @@
           </div>
         </v-col>
         <v-col cols="3" lg="3" md="2" class="d-none d-sm-none d-md-flex" align-self="center" xl="3">
-          <a id="contact-btn" class="nav-btn" href="#contact">
+          <router-link id="contact-btn" class="nav-btn" to="/contact">
             <span>Contact</span>
-          </a>
+          </router-link>
         </v-col>
       </v-row>
     </v-app-bar>
@@ -75,7 +75,7 @@
         <v-list-item v-for="item in topMenu" :key="item.nav_name" :to="item.path">
           <v-list-item-title v-text="item.nav_name"></v-list-item-title>
         </v-list-item>
-        <v-list-item href="#contact">
+        <v-list-item to="/contact">
           <v-list-item-title>
             Contact
           </v-list-item-title>
@@ -85,7 +85,6 @@
     <v-main :style="mainStyle">
       <v-container id="heart" fluid>
         <Nuxt />
-        <contact-form/>
         <div id="because-i-have-to"></div>
       </v-container>
     </v-main>
@@ -93,9 +92,8 @@
 </template>
 
 <script>
-import ContactForm from '~/components/ContactForm.vue'
 export default {
-  components: { ContactForm },
+  components: { },
   data () {
     return {
       drawer: false,
@@ -198,7 +196,7 @@ export default {
       ).replace(/-/g, ' ')
     },
     setCategory (item) {
-      if(item.path && item.path !== '/index') {
+      if(item.path && item.path !== '/index' && item.path !== '/contact') {
         const path = item.path.split('/')
         if(path.length > 2) {
           item.category = this.toTitleCase(path[1])
@@ -219,13 +217,6 @@ export default {
 </script>
 
 <style lang="scss">
-
-iframe {
-  height: auto;
-  width: 100%;
-  aspect-ratio: 21 / 9;
-  padding: 3rem;
-}
 
 .learn-more {
   background: #afbd21;
@@ -306,7 +297,7 @@ iframe {
 }
 
 #because-i-have-to {
-  height: 128px;
+  height: 512px;
   background: #5E6E65;
   position: relative;
 }
