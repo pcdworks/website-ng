@@ -1,13 +1,26 @@
 <template>
-  <div class="py-16 px-xl-16 px-lg-16 px-md-4">
-    <v-row class="px-xl-16 px-lg-16 px-md-4">
-      <v-col cols="12" xl="6" lg="6" md="6" :order="primaryOrder">
-        <div class="pa-4 mx-4">
+  <div :class="outerClass">
+    <v-row :class="rowClass">
+      <v-col
+        cols="12"
+        :xl="primarySize"
+        :lg="primarySize"
+        :md="primarySize"
+        :order="primaryOrder"
+        :class="tintClass"
+      >
+        <div :class="padContentClass">
           <slot name="primary"></slot>
         </div>
       </v-col>
-      <v-col cols="12" xl="6" lg="6" md="6" :order="extraOrder">
-        <div class="pt-4 px-4 px-xl-16 px-lg-4 px-md-4 px-sm-16">
+      <v-col
+        cols="12"
+        :xl="extraSize"
+        :lg="extraSize"
+        :md="extraSize"
+        :order="extraOrder"
+      >
+        <div :class="padImageClass">
           <div :class="trimClass">
             <image-viewer
               v-if="images.length === 0"
@@ -68,6 +81,14 @@ export default {
       type: String,
       default: 'ti',
     },
+    tint: {
+      type: Boolean,
+      default: false,
+    },
+    third: {
+      type: Boolean,
+      default: false,
+    },
   },
   data() {
     return {}
@@ -93,11 +114,65 @@ export default {
         return 2
       }
     },
+    primarySize() {
+      if (this.third) {
+        return 8
+      }
+      return 6
+    },
+    extraSize() {
+      if (this.third) {
+        return 4
+      }
+      return 6
+    },
+    tintClass() {
+      if (this.tint) {
+        return 'tint full-height'
+      }
+      return ''
+    },
+    outerClass() {
+      if (this.tint) {
+        return 'py-8 px-0'
+      }
+      return 'py-16 px-xl-16 px-lg-16 px-md-4'
+    },
+    rowClass() {
+      if (this.tint) {
+        return 'px-0'
+      }
+      return 'px-xl-16 px-lg-16 px-md-4'
+    },
+    padImageClass() {
+      if (this.tint) {
+        return ''
+      }
+      return 'pt-4 px-4 px-xl-16 px-lg-4 px-md-4 px-sm-16'
+    },
+    padContentClass() {
+      if (this.tint) {
+        return 'mx-4 px-xl-16 px-lg-16 px-md-4 py-10'
+      }
+      return 'pa-4 mx-4'
+    },
   },
 }
 </script>
 
 <style lang="scss" scoped>
+.tint {
+  background: #5e6e64;
+}
+
+.tint ::v-deep h1,
+.tint ::v-deep h2,
+.tint ::v-deep h3,
+.tint ::v-deep p,
+.tint ::v-deep ul {
+  color: white;
+}
+
 .trim {
   background: linear-gradient(90deg, rgba(255, 255, 255, 0) 50%, #5e6e64 50%);
   padding-top: 3rem;
@@ -106,7 +181,7 @@ export default {
 }
 
 ::v-deep p,
-ul {
+::v-deep ul {
   font-weight: 500;
   color: #5e6e64;
 }
