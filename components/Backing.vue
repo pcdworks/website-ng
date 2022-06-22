@@ -1,19 +1,19 @@
 <template>
-    <div class="backing">
-        <slot></slot>
-    </div>
+  <div class="backing">
+    <slot></slot>
+  </div>
 </template>
 
 <script>
 export default {
-    name: 'Backing',
-    async asyncData ({ $content }) {
+  name: 'Backing',
+  async asyncData({ $content }) {
     const page = await $content('home').fetch()
 
     return {
-      page
+      page,
     }
-  }
+  },
 }
 </script>
 
@@ -26,5 +26,4 @@ export default {
   background: #5e6e65;
   color: white;
 }
-
 </style>

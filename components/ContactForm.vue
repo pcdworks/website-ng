@@ -8,15 +8,13 @@
             <v-col cols="12" xs="12" md="4" lg="3" xl="2">
               <v-main class="pa-0">
                 <h1 id="mega">
-                  Let's get<br>
+                  Let's get<br />
                   to work
                 </h1>
                 <p id="mega-message">
-                  Whether your challenge is tiny
-                  or titanic, we're eager to help.
-                  Drop us a line and let's discuss
-                  how, together, we can make
-                  your project a success.
+                  Whether your challenge is tiny or titanic, we're eager to
+                  help. Drop us a line and let's discuss how, together, we can
+                  make your project a success.
                 </p>
               </v-main>
             </v-col>
@@ -119,27 +117,27 @@ export default {
       message: '',
       phone: '',
       email: '',
-      company: ''
-    }
+      company: '',
+    },
   }),
   methods: {
     nameRules() {
-      return [v => !!v || 'Name is required']
+      return [(v) => !!v || 'Name is required']
     },
     emailRules() {
       return [
-        v => !!v || 'Email address is required',
-        v => /.+@.+/.test(v) || 'Email address must be valid'
+        (v) => !!v || 'Email address is required',
+        (v) => /.+@.+/.test(v) || 'Email address must be valid',
       ]
     },
     phoneRules() {
-      return [v => !!v || 'Phone number is required']
+      return [(v) => !!v || 'Phone number is required']
     },
     companyRules() {
-      return [v => !!v || 'Company website is required']
+      return [(v) => !!v || 'Company website is required']
     },
     messageRules() {
-      return [v => !!v || 'Project description is required']
+      return [(v) => !!v || 'Project description is required']
     },
     validate() {
       this.$refs.form.validate()
@@ -150,30 +148,29 @@ export default {
     encode(data) {
       return Object.keys(data)
         .map(
-          key => `${encodeURIComponent(key)}=${encodeURIComponent(data[key])}`
+          (key) => `${encodeURIComponent(key)}=${encodeURIComponent(data[key])}`
         )
         .join('&')
     },
     handleSubmit() {
-      if(this.$refs.form.validate()) {
+      if (this.$refs.form.validate()) {
         fetch('/', {
-            method: 'POST',
-            headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
-            body: this.encode({
-              'form-name': 'contact',
-              ...this.form
-            })
+          method: 'POST',
+          headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
+          body: this.encode({
+            'form-name': 'contact',
+            ...this.form,
+          }),
         })
-        .then(() => {
-          this.$router.push('/thanks')
-        })
-        .catch(() => {
-          this.$router.push('/404')
-        })
+          .then(() => {
+            this.$router.push('/thanks')
+          })
+          .catch(() => {
+            this.$router.push('/404')
+          })
       }
-
-    }
-  }
+    },
+  },
 }
 </script>
 
@@ -207,7 +204,6 @@ export default {
   color: white;
 }
 
-
 #contact-send:visited {
   color: #fff;
 }
@@ -220,6 +216,4 @@ export default {
   display: inline-block;
   transform: skew(30deg);
 }
-
-
 </style>

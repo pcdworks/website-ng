@@ -1,10 +1,10 @@
 <template>
-    <iframe
-        onload="this.height=this.contentWindow.document.body.scrollHeight;"
-        src=""
-        class="contact"
-    >
-    </iframe>
+  <iframe
+    onload="this.height=this.contentWindow.document.body.scrollHeight;"
+    src=""
+    class="contact"
+  >
+  </iframe>
 </template>
 
 <script>

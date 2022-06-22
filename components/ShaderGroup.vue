@@ -1,19 +1,11 @@
 <template>
-<v-row
-      class="fill-height"
-      align="center"
-      justify="center"
-    >
-      <template v-for="(item, i) in items">
-        <v-col
-          :key="i"
-          cols="12"
-          md="4"
-        >
+  <v-row class="fill-height" align="center" justify="center">
+    <template v-for="(item, i) in items">
+      <v-col :key="i" cols="12" md="4">
         <shader :src="item.src" :text="item.text"></shader>
-        </v-col>
-      </template>
-</v-row>
+      </v-col>
+    </template>
+  </v-row>
 </template>
 
 <script>
@@ -23,16 +15,16 @@ export default {
   props: {
     items: {
       type: Array,
-      default: () => { return [] }
-    }
+      default: () => {
+        return []
+      },
+    },
   },
-  data: () => ({
-  })
+  data: () => ({}),
 }
 </script>
 
 <style>
-
 .v-card--reveal {
   align-items: center;
   bottom: 0;
@@ -41,5 +33,4 @@ export default {
   position: absolute;
   width: 100%;
 }
-
 </style>
