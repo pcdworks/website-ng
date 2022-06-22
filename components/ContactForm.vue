@@ -111,7 +111,7 @@
 
 <script>
 export default {
-  name: 'Contact',
+  name: 'ContactForm',
   data: () => ({
     valid: true,
     form: {
@@ -189,7 +189,7 @@ export default {
 .contact-panel {
   background: #afbd21;
   padding-top: 84px;
-  padding-bottom: 84px;
+  padding-bottom: 284px;
   position: relative;
 }
 

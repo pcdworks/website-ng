@@ -85,15 +85,16 @@
     <v-main :style="mainStyle">
       <v-container id="heart" fluid>
         <Nuxt />
-        <div id="because-i-have-to"></div>
+        <Footer/>
       </v-container>
     </v-main>
   </v-app>
 </template>
 
 <script>
+import Footer from '~/components/Footer.vue'
 export default {
-  components: { },
+  components: { Footer },
   data () {
     return {
       drawer: false,
@@ -249,6 +250,10 @@ export default {
   padding: 0 !important;
 }
 
+.nuxt-content {
+  margin-bottom: -6.2px !important;
+}
+
 .v-toolbar__content, .v-toolbar__extension {
   padding-left: 32px;
   padding-right: 32px;
@@ -294,12 +299,6 @@ export default {
 
 #menu {
   margin: 0 auto;
-}
-
-#because-i-have-to {
-  height: 512px;
-  background: #5E6E65;
-  position: relative;
 }
 
 h1 {
