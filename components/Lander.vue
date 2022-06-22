@@ -85,7 +85,7 @@
         </div>
       </v-col>
     </v-row>
-    <div v-if="snow === 'true'">
+    <div v-if="snow">
       <div class="snowflakes" aria-hidden="true">
         <div class="snowflake">❅</div>
         <div class="snowflake">❆</div>
@@ -113,8 +113,8 @@ export default {
       default: () => {},
     },
     snow: {
-      type: String,
-      default: 'false',
+      type: Boolean,
+      default: false,
     },
   },
 }

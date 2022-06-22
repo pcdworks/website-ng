@@ -138,7 +138,7 @@ logos:
     link: "https://smartsecurement.com/"
 ---
 
-<lander :content="main" snow="true">
+<lander :content="main" snow>
 
 ## PCDworks – The innovation Basecamp
 ### From Idea to Concept to Commercialization We Climb That Innovation Mountain with You
