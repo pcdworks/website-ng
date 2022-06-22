@@ -32,8 +32,8 @@ world is waiting for.
 </template>
 </text-image>
 
-<image-text-tint image="/images/for/enterprises/fe-2.webp" :button="gobutton">
-<template v-slot:right>
+<text-image-tint image="/images/for/enterprises/fe-2.webp" :button="gobutton">
+<template v-slot:primary>
 
 ## It hinges on you. Swing into action now and see how we can help you succeed with:
 
@@ -44,7 +44,7 @@ world is waiting for.
 * A balance of business acumen and bold thinking
 
 </template>
-</image-text-tint>
+</text-image-tint>
 
 <image-slide image="/images/for/enterprises/fe-3.webp">
 <template>

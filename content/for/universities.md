@@ -32,8 +32,8 @@ student development, and more.
 </template>
 </text-image>
 
-<image-text-tint image="/images/for/universities/fu-2.webp" :button="begin">
-<template v-slot:right>
+<text-image-tint image="/images/for/universities/fu-2.webp" :button="begin">
+<template v-slot:primary>
 
 ## It's all academic. We're singularly qualified to extend your research capabilities by helping you:
 </br>
@@ -46,7 +46,7 @@ student development, and more.
 * Elevate your university and attract new companies as clients
 
 </template>
-</image-text-tint>
+</text-image-tint>
 
 <image-slide image="/images/for/universities/fu-3.webp">
 <template>

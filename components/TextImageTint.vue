@@ -1,14 +1,14 @@
 <template>
   <div class="py-8 px-0">
     <v-row class="px-0">
-      <v-col cols="12" xl="8" lg="8" md="8" class="full-height back">
+      <v-col cols="12" xl="8" lg="8" md="8" class="full-height back" :order="primaryOrder">
         <div class="pa-2 py-10 px-xl-16 px-lg-16 px-md-4">
           <div class="mx-4 px-xl-16 px-lg-16 px-md-4">
-            <slot name="left"></slot>
+            <slot name="primary"></slot>
           </div>
         </div>
       </v-col>
-      <v-col cols="12" xl="4" lg="4" md="4">
+      <v-col cols="12" xl="4" lg="4" md="4" :order="extraOrder">
         <div :class="trimClass">
           <image-viewer
             v-if="images.length === 0"
@@ -17,9 +17,9 @@
             :aspect-ratio="1"
           >
             <div
-              v-if="hasRight"
+              v-if="extra"
               class="
-                right-content
+                extra-content
                 py-2
                 px-2
                 py-lg-10
@@ -31,7 +31,7 @@
                 py-sm-6
               "
             >
-              <slot name="right"></slot>
+              <slot name="extra"></slot>
             </div>
           </image-viewer>
           <carousel v-else :images="images"> </carousel>
@@ -60,6 +60,14 @@ export default {
       type: Boolean,
       default: false,
     },
+    extra: {
+      type: Boolean,
+      default: false,
+    },
+    order: {
+      type: String,
+      default: 'ti',
+    },
   },
   data() {
     return {
@@ -67,14 +75,25 @@ export default {
     }
   },
   computed: {
-    hasRight() {
-      return this.$slots.default[0].text.length > 4
-    },
     trimClass() {
       if (this.trim) {
         return 'trim'
       }
       return ''
+    },
+    primaryOrder() {
+      if (this.order === 'it') {
+        return 2
+      } else {
+        return 1
+      }
+    },
+    extraOrder() {
+      if (this.order === 'it') {
+        return 1
+      } else {
+        return 2
+      }
     },
   },
 }
@@ -116,7 +135,7 @@ ul {
   padding-right: 1rem;
 }
 
-::v-deep .right-content {
+::v-deep .extra-content {
   background: rgba(51, 102, 51, 0.8);
   color: rgba(255, 255, 255, 1);
   font-size: 1.3rem;
@@ -135,7 +154,7 @@ ul {
     font-size: 2rem;
   }
 
-  ::v-deep .right-content {
+  ::v-deep .extra-content {
     background: rgba(51, 102, 51, 0.8);
     color: rgba(255, 255, 255, 1);
     font-size: 1rem;

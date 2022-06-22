@@ -95,7 +95,7 @@ allows us to help you get your product to market fast.
 </text-image>
 
 <text-image-tint image="/images/services/hardtech-basecamp-incubator/htbc-4.webp">
-<template v-slot:left>
+<template v-slot:primary>
 
 ## Is HardTech Basecamp
 # RIGHT FOR YOU?
