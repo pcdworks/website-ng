@@ -32,10 +32,10 @@ unwavering support.
 </template>
 </text-image>
 
-<image-text-tint image="/images/for/startups/fsu-2.webp" :button="starthere">
-<template v-slot:right>
+<text-image tint  order="it" third image="/images/for/startups/fsu-2.webp" :button="starthere">
+<template v-slot:primary>
 
-## Here's how we'll make your journey more productive—<br/>and more pleasant:
+## Here's how we'll make your journey more productive—and more pleasant:
 
 * Map out a strict schedule to deliver results, fast
 * Establish guideposts and guardrails to stay on track
@@ -45,7 +45,7 @@ unwavering support.
 
 
 </template>
-</image-text-tint>
+</text-image>
 
 <image-slide image="/images/for/startups/fsu-3.webp">
 <template>

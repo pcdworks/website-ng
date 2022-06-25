@@ -38,9 +38,9 @@
           </div>
         </v-col>
         <v-col cols="3" lg="3" md="2" class="d-none d-sm-none d-md-flex" align-self="center" xl="3">
-          <a id="contact-btn" class="nav-btn" href="#contact">
+          <router-link id="contact-btn" class="nav-btn" to="/contact">
             <span>Contact</span>
-          </a>
+          </router-link>
         </v-col>
       </v-row>
     </v-app-bar>
@@ -75,7 +75,7 @@
         <v-list-item v-for="item in topMenu" :key="item.nav_name" :to="item.path">
           <v-list-item-title v-text="item.nav_name"></v-list-item-title>
         </v-list-item>
-        <v-list-item href="#contact">
+        <v-list-item to="/contact">
           <v-list-item-title>
             Contact
           </v-list-item-title>
@@ -85,17 +85,16 @@
     <v-main :style="mainStyle">
       <v-container id="heart" fluid>
         <Nuxt />
-        <contact-form/>
-        <div id="because-i-have-to"></div>
+        <Footer/>
       </v-container>
     </v-main>
   </v-app>
 </template>
 
 <script>
-import ContactForm from '~/components/ContactForm.vue'
+import Footer from '~/components/Footer.vue'
 export default {
-  components: { ContactForm },
+  components: { Footer },
   data () {
     return {
       drawer: false,
@@ -198,7 +197,7 @@ export default {
       ).replace(/-/g, ' ')
     },
     setCategory (item) {
-      if(item.path && item.path !== '/index') {
+      if(item.path && item.path !== '/index' && item.path !== '/contact') {
         const path = item.path.split('/')
         if(path.length > 2) {
           item.category = this.toTitleCase(path[1])
@@ -219,13 +218,6 @@ export default {
 </script>
 
 <style lang="scss">
-
-iframe {
-  height: auto;
-  width: 100%;
-  aspect-ratio: 21 / 9;
-  padding: 3rem;
-}
 
 .learn-more {
   background: #afbd21;
@@ -256,6 +248,10 @@ iframe {
 
 #heart {
   padding: 0 !important;
+}
+
+.nuxt-content {
+  margin-bottom: -6.2px !important;
 }
 
 .v-toolbar__content, .v-toolbar__extension {
@@ -305,12 +301,6 @@ iframe {
   margin: 0 auto;
 }
 
-#because-i-have-to {
-  height: 128px;
-  background: #5E6E65;
-  position: relative;
-}
-
 h1 {
   text-transform: uppercase;
   font-size:5rem;
@@ -330,13 +320,6 @@ ul {
 }
 
 @media #{map-get($display-breakpoints, 'md-and-down')} {
-
-  iframe {
-    height: auto;
-    width: 100%;
-    aspect-ratio: 9 / 16;
-    padding: 1em;
-  }
 
   h1{
     font-size:3rem;

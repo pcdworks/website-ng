@@ -1,10 +1,7 @@
 <template>
   <div class="mb-5">
-    <div  class="map-responsive">
-      <iframe :src="src"
-              frameborder="0"
-              style="border:0;"
-              allowfullscreen="">
+    <div class="map-responsive">
+      <iframe :src="src" frameborder="0" style="border: 0" allowfullscreen="">
       </iframe>
     </div>
   </div>
@@ -15,17 +12,16 @@ export default {
   props: {
     src: {
       type: String,
-      default: ''
-    }
+      default: '',
+    },
   },
-  data: () => ({
-  }),
+  data: () => ({}),
 }
 </script>
 
 <style scoped>
 .map-responsive {
-  overflow:hidden;
+  overflow: hidden;
   padding-bottom: 40.25%;
   position: relative;
   height: 0;

@@ -1,15 +1,17 @@
 <template>
   <div>
-    <div class='embed-container'>
-      <iframe :src="link"
-              frameborder='0'
-              webkitAllowFullScreen
-              mozallowfullscreen
-              allowFullScreen>
+    <div class="embed-container">
+      <iframe
+        :src="link"
+        frameborder="0"
+        webkitAllowFullScreen
+        mozallowfullscreen
+        allowFullScreen
+      >
       </iframe>
     </div>
     <div class="below-text">
-      {{text}}
+      {{ text }}
     </div>
   </div>
 </template>
@@ -35,5 +37,4 @@
   width: 100%;
   height: 100%;
 }
-
 </style>

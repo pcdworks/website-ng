@@ -94,8 +94,8 @@ allows us to help you get your product to market fast.
 </template>
 </text-image>
 
-<text-image-tint image="/images/services/hardtech-basecamp-incubator/htbc-4.webp">
-<template v-slot:left>
+<text-image tint  order="it" third image="/images/services/hardtech-basecamp-incubator/htbc-4.webp">
+<template v-slot:primary>
 
 ## Is HardTech Basecamp
 # RIGHT FOR YOU?
@@ -111,4 +111,4 @@ funding which may be augmented by our investors, depending on where you are in y
 development process and the strength of your “pitch”
 
 </template>
-</text-image-tint>
+</text-image>

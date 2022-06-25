@@ -1,5 +1,5 @@
 <template>
-<!-- start, center, end -->
+  <!-- start, center, end -->
   <v-row :justify="justify" class="pa-3 mb-2">
     <v-img
       :src="src"
@@ -8,11 +8,7 @@
       :max-height="maxHeight"
     >
       <template #placeholder>
-        <v-row
-          class="fill-height ma-0"
-          align="center"
-          justify="center"
-        >
+        <v-row class="fill-height ma-0" align="center" justify="center">
           <v-progress-circular
             indeterminate
             color="grey lighten-5"
@@ -28,22 +24,21 @@ export default {
   props: {
     src: {
       type: String,
-      default: ''
+      default: '',
     },
     justify: {
       type: String,
-      default: 'start'
+      default: 'start',
     },
     maxWidth: {
       type: String,
-      default: '100%'
+      default: '100%',
     },
     maxHeight: {
       type: String,
-      default: '50%'
-    }
+      default: '50%',
+    },
   },
-  data: () => ({
-  }),
+  data: () => ({}),
 }
 </script>
