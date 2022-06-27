@@ -68,7 +68,7 @@
     <v-main :style="mainStyle">
       <v-container id="heart" fluid>
         <Nuxt />
-        <Footer/>
+        <Footer />
       </v-container>
     </v-main>
   </v-app>

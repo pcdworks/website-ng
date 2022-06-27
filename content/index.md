@@ -156,9 +156,12 @@ logos:
 <lander :content="possible">
 
 # We solve problems other people can't
-Driven by the belief that anything is possible, we're committed to solving problems others cannot.
-\
-Ready to take your idea from concept to commercial viability in record time? [Let's go!](/contact)
+
+"The bottom line is that you haven't met another PCDworks. While every engineering
+firm on the planet will claim to be able to "solve the toughest problems", etc., I don't
+know of hardly any firms with the capabilities, depth, and flexibility that PCDworks has. They
+are like the Green Baret of engineering and technical innovation." – Michael Mortan // Board Advisor, PCDworks
+
 
 </lander>
 
