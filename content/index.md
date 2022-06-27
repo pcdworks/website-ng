@@ -7,7 +7,7 @@ order: 0
 
 main:
   image: '/images/index/mnt.webp'
-  filter: 'to top right, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)'
+  filter: 'to top right, rgba(0, 0, 0, 0.95), rgba(0, 0, 0, 0.1)'
 
 sections:
   image: '/images/index/lander.webp'

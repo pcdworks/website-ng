@@ -1,21 +1,18 @@
 <template>
   <v-app>
-    <v-app-bar app fixed hide-on-scroll elevation="2" height="100px" :color="bg" dark class="red--text">
+    <v-app-bar app fixed hide-on-scroll elevation="2" height="100px" :color="bg" dark>
       <v-app-bar-nav-icon class="d-none d-flex d-sm-flex d-md-none"
                          aria-label="Menu" @click.stop="drawer = !drawer">
       </v-app-bar-nav-icon>
-      <v-row align="center" align-content="center">
-        <v-col cols="12" xl="3" lg="3" md="2" sm="12" xs="12">
-          <center>
+
             <v-toolbar-title>
               <router-link to="/" alt="Home page">
                 <Logo/>
               </router-link>
             </v-toolbar-title>
-          </center>
-        </v-col>
-        <v-col cols="6" lg="6" md="8" class="d-none d-sm-none d-md-flex" xl="6" align-self="center">
-          <div id="menu">
+
+        <v-spacer class="d-none d-sm-none d-md-flex"></v-spacer>
+        <div id="menu" class="d-none d-sm-none d-md-flex">
           <v-menu offset-y>
             <template #activator="{ on, attrs }">
               <v-btn text tile :class="navBtn" v-bind="attrs" v-on="on">
@@ -32,17 +29,11 @@
               </v-list-item>
             </v-list>
           </v-menu>
+          </div>
           <v-btn v-for="item in topMenu" :key="item.nav_name" text tile :class="navBtn" :to="item.path">
             {{item.nav_name}}
           </v-btn>
-          </div>
-        </v-col>
-        <v-col cols="3" lg="3" md="2" class="d-none d-sm-none d-md-flex" align-self="center" xl="3">
-          <router-link id="contact-btn" class="nav-btn" to="/contact">
-            <span>Contact</span>
-          </router-link>
-        </v-col>
-      </v-row>
+          
     </v-app-bar>
     <v-navigation-drawer
       v-model="drawer"
@@ -102,7 +93,8 @@ export default {
       topMenu: [],
       darkMode: false,
       services: [],
-      bg: 'white',
+      bg: '#212121',
+      transparent: '#00000060'
     }
   },
   async fetch() {
@@ -129,10 +121,11 @@ export default {
       return 'padding-top: 100px;'
     },
     navBtn() {
-      if (this.bg === 'transparent') {
-        return 'nav-btn white--text'
+      let classValue = 'd-none d-sm-none d-md-flex nav-btn'
+      if (this.bg === this.transparent) {
+        classValue += ' white--text'
       }
-      return 'nav-btn'
+      return classValue
     }
   },
   watch: {
@@ -153,9 +146,9 @@ export default {
         document.documentElement.scrollTop > 100 ||
         this.$route.path !== '/'
       ) {
-        this.bg = 'white'
+        this.bg = '#212121'
       } else {
-        this.bg = 'transparent'
+        this.bg = this.transparent
       }
     },
     darkModeInit () {
@@ -197,7 +190,7 @@ export default {
       ).replace(/-/g, ' ')
     },
     setCategory (item) {
-      if(item.path && item.path !== '/index' && item.path !== '/contact') {
+      if(item.path && item.path !== '/index') {
         const path = item.path.split('/')
         if(path.length > 2) {
           item.category = this.toTitleCase(path[1])
@@ -219,32 +212,6 @@ export default {
 
 <style lang="scss">
 
-.learn-more {
-  background: #afbd21;
-  text-align: center;
-  text-decoration: none;
-  border: 0;
-  outline: 0;
-  padding: 12px 44px;
-  display: inline-block;
-  transform: skew(-30deg);
-  text-transform: uppercase;
-  margin: 0 auto;
-  max-width: 100%;
-  color: black;
-  text-transform: uppercase;
-  font-weight: 680;
-}
-
-.learn-more:visited {
-  color: black;
-}
-
-.learn-more > span {
-  display: inline-block;
-  transform: skew(30deg);
-  color: black;
-}
 
 #heart {
   padding: 0 !important;
@@ -262,39 +229,6 @@ export default {
 .nav-btn {
   font-size: 1rem !important;
   font-weight: 700;
-  color: black !important;
-}
-
-#contact-btn {
-  background: #afbd21;
-  text-align: center;
-  text-decoration: none;
-  border: 0;
-  outline: 0;
-  padding: 12px 24px;
-  display: inline-block;
-  transform: skew(-30deg);
-  text-transform: uppercase;
-  margin: 0 auto;
-  max-width: 100%;
-}
-
-#contact-btn-pad {
-  -webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
-  -moz-box-sizing: border-box;    /* Firefox, other Gecko */
-  box-sizing: border-box;         /* Opera/IE 8+ */
-  max-width: 312px;
-  width: 100%;
-  text-align: center;
-}
-
-#contact-btn:visited {
-  color: #fff;
-}
-
-#contact-btn > span {
-  display: inline-block;
-  transform: skew(30deg);
 }
 
 #menu {

@@ -9,7 +9,5 @@
   width: 100%;
   padding-right: 6px;
   padding-left: 6px;
-  filter: drop-shadow(0.3px 0 0 white) drop-shadow(0 0px 0 white)
-    drop-shadow(-0.3px 0 0 white) drop-shadow(0 -0.3px 0 white);
 }
 </style>

@@ -63,21 +63,28 @@
                 </v-card-text>
                 <v-spacer />
                 <v-card-actions>
-                  <v-tooltip top>
-                    <template #activator="{ on, attrs }">
-                      <a
-                        class="learn-more"
-                        :href="card.link"
-                        :aria-label="card.title"
-                        :alt="card.title"
-                        v-bind="attrs"
-                        v-on="on"
-                      >
-                        <span>Learn More</span>
-                      </a>
-                    </template>
-                    <span>Learn More About {{ card.title }}</span>
-                  </v-tooltip>
+                  <v-row align="center">
+                    <v-col></v-col>
+                    <v-col>
+                      <v-tooltip top>
+                        <template #activator="{ on, attrs }">
+                        <v-btn
+                          x-large
+                          color="primary"
+                          :to="card.link"
+                          :aria-label="card.title"
+                          :alt="card.title"
+                          v-bind="attrs"
+                          v-on="on">
+                            Learn More
+                          </v-btn>
+                        </template>
+                        <span>Learn More About {{ card.title }}</span>
+                      </v-tooltip>
+                    </v-col>
+                    <v-col></v-col>
+                  </v-row>
+
                 </v-card-actions>
               </v-card>
             </v-col>
