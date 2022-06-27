@@ -3,6 +3,9 @@
     <v-row align="center">
       <v-col class="mx-lg-16 px-lg-16" align-self="center">
         <div class="mx-lg-16 px-lg-16">
+          <div class="mx-4 mx-sm-8 mx-md-12">
+            <slot></slot>
+          </div>
           <div class="videoWrapper my-6 mx-4 mx-sm-8 mx-md-12">
             <iframe
               :src="link"
@@ -17,8 +20,6 @@
             </iframe>
           </div>
         </div>
-        <br />
-        <slot></slot>
       </v-col>
     </v-row>
   </div>
@@ -36,7 +37,16 @@ export default {
 }
 </script>
 
-<style scoped>
+<style lang="scss" scoped>
+
+::v-deep h1,
+::v-deep h2,
+::v-deep h3,
+::v-deep p,
+::v-deep ul {
+  color: white;
+}
+
 .backing {
   background: #1f1f1f;
   position: relative;
