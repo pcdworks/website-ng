@@ -4,13 +4,11 @@
       <v-app-bar-nav-icon class="d-none d-flex d-sm-flex d-md-none"
                          aria-label="Menu" @click.stop="drawer = !drawer">
       </v-app-bar-nav-icon>
-
-            <v-toolbar-title>
-              <router-link to="/" alt="Home page">
-                <Logo/>
-              </router-link>
-            </v-toolbar-title>
-
+        <v-toolbar-title>
+          <router-link to="/" alt="Home page">
+            <Logo/>
+          </router-link>
+        </v-toolbar-title>
         <v-spacer class="d-none d-sm-none d-md-flex"></v-spacer>
         <div id="menu" class="d-none d-sm-none d-md-flex">
           <v-menu offset-y>
@@ -29,12 +27,11 @@
               </v-list-item>
             </v-list>
           </v-menu>
-          </div>
-          <v-btn v-for="item in topMenu" :key="item.nav_name" text tile :class="navBtn" :to="item.path">
-            {{item.nav_name}}
-          </v-btn>
-          
-    </v-app-bar>
+        </div>
+        <v-btn v-for="item in topMenu" :key="item.nav_name" text tile :class="navBtn" :to="item.path">
+          {{item.nav_name}}
+        </v-btn>
+      </v-app-bar>
     <v-navigation-drawer
       v-model="drawer"
       app
@@ -65,11 +62,6 @@
         </v-list-group>
         <v-list-item v-for="item in topMenu" :key="item.nav_name" :to="item.path">
           <v-list-item-title v-text="item.nav_name"></v-list-item-title>
-        </v-list-item>
-        <v-list-item to="/contact">
-          <v-list-item-title>
-            Contact
-          </v-list-item-title>
         </v-list-item>
       </v-list>
     </v-navigation-drawer>
