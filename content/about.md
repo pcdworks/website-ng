@@ -13,7 +13,7 @@ team:
     phone: ''
     twitter: ''
     email: ''
-    linkedin: ''
+    linkedin: 'https://www.linkedin.com/in/donna-rainone-91b301a'
     image: '/images/about/donna-headshot.webp'
     bio: "
     Donna honed her design and
