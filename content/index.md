@@ -136,11 +136,12 @@ logos:
   - image: "/images/index/logo/smartsecurement.webp"
     alt: "SMART Securement Systems, LLC."
     link: "https://smartsecurement.com/"
+
 ---
 
 <lander :content="main" snow>
 
-## PCDworks – The innovation Basecamp
+## PCDworks – The Innovation Basecamp
 ### From Concept to Commercialization, We Climb That Innovation Mountain with You
 
 
