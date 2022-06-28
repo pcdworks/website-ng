@@ -86,7 +86,7 @@ export default {
       darkMode: false,
       services: [],
       bg: '#212121',
-      transparent: '#00000060'
+      transparent: '#000000B3'
     }
   },
   async fetch() {
