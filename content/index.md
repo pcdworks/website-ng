@@ -150,7 +150,7 @@ logos:
 
 <you-tube link="https://www.youtube.com/embed/QU16iUYKPr4">
 
-# Featured on Made in America
+# Featured on "Made in America"
 
 </you-tube>
 
