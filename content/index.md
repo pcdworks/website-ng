@@ -139,7 +139,7 @@ logos:
 
 ---
 
-<lander :content="main" snow>
+<lander :content="main">
 
 ## PCDworks – The Innovation Basecamp
 ### From Concept to Commercialization, We Climb That Innovation Mountain with You
@@ -151,7 +151,7 @@ logos:
 <you-tube link="https://www.youtube.com/embed/QU16iUYKPr4">
 
 # OUR VISION:
-To do our part to work with those whom we consider both friends and colleagues to solve the planet’s challenges, through HardTech with a purpose, like the Renewll start-up that we incubated, as featured on the YouTube Channel "*Made in America*"
+To do our part to work with those whom we consider both friends and colleagues to solve the planet’s challenges, through HardTech with a purpose, like the Renewell start-up that we incubated, as featured on the YouTube Channel "*Made in America*"
 
 </you-tube>
 
