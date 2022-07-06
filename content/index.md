@@ -150,7 +150,8 @@ logos:
 
 <you-tube link="https://www.youtube.com/embed/QU16iUYKPr4">
 
-# Featured on "Made in America"
+# OUR VISION:
+To do our part to work with those whom we consider both friends and colleagues to solve the planet’s challenges, through HardTech with a purpose, like the Renewll start-up that we incubated, as featured on the YouTube Channel "*Made in America*"
 
 </you-tube>
 

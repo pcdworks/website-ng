@@ -9,10 +9,12 @@ order: 0
 campus_1:
     - link: "/images/campus/campus-0.webp"
       alt: "Welcome to PCDworks"
-      text:
+      text: 
+
     - link: "/images/campus/campus-1.webp"
-      alt:
-      text:
+      alt: "Our landscaped campus"
+      text: |
+        ## Our landscaped pond with Office/Lab and Prototype in the background
     - link: "/images/campus/campus-3.webp"
       alt:
       text:
