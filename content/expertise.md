@@ -25,14 +25,13 @@ prototypes:
 # Got know-how
 <br/>
 
-Truly breakthrough product development
+Breakthrough product development
 requires high quality engineering capabilities and
-services. As a knowledge-based company, we
-use a stage-gate approach that involves constant
-testing, refinement, and communication.
+services. We are a knowledge-based company; our approach involves 
+constant testing, refinement, and retesting.
 
 At PCDworks, we have the team, technology, and
-tenacity to take on even the most impossible
+tenacity to take on even the most difficult
 engineering challenges.
 
 
@@ -45,9 +44,7 @@ engineering challenges.
 ## Electrical Engineering
 <br/>
 
-Because many of our solutions require
-electro-mechanical subsystems, we maintain strong
-electrical engineering capabilities across a range of
+We maintain strong electrical engineering capabilities across a range of
 disciplines including firmware design, software design,
 RF communication, and analog communication
 systems. Our capabilities include:
@@ -72,11 +69,10 @@ systems. Our capabilities include:
 ## Mechanical Engineering
 <br/>
 
-With extensive engineering capabilities, we provide a
+In our mechanical engineering capabilities, we provide a
 full range of services, including 3D CAD layouts,
-electronic circuit design, analytical modeling, and
-multi-physics simulation. Our mechanical engineering
-team is dedicated to quickly producing strong designs
+FEA analytical modeling, and multi-physics simulation. 
+Our mechanical engineering team is dedicated to quickly producing strong designs
 and performing engineering calculations to verify your
 concept’s validity. Capabilities include:
 
@@ -194,8 +190,8 @@ Our web applications designed to be capable of high scalability, easy deployment
 ## Prototyping and Testing
 <br/>
 
-PCDworks has full prototyping capability, from electronic circuits to heavy metal.
-Also full prototype test lab with complete National Instruments setup
+PCDworks has full prototyping capability, from electronic circuits to heavy metal fabrication.
+We also have afull prototype test lab with complete National Instruments setup
 
 * Automatice Pick and Place machine with reflow oven
 * Voltera circuit printer
@@ -207,6 +203,7 @@ Also full prototype test lab with complete National Instruments setup
 * Metal casting: sand and investment
 * Complete wood shop
 * CNC router
+* FDM and Resin 3D printers
 
 
 </template>

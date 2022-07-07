@@ -151,7 +151,8 @@ logos:
 <you-tube link="https://www.youtube.com/embed/QU16iUYKPr4">
 
 # OUR VISION
-To do our part to work with those whom we consider both friends and colleagues to solve the planet’s challenges, through HardTech with a purpose, like the Renewell start-up that we incubated, as featured on the YouTube Channel "*Made in America*"
+To work with those whom we consider both friends and colleagues to solve the planet’s challenges, through HardTech with a purpose, like the Renewll start-up that we incubated, as featured on the YouTube Channel "*Made in America*"
+
 
 </you-tube>
 
@@ -161,15 +162,15 @@ To do our part to work with those whom we consider both friends and colleagues t
 
 "The bottom line is that you haven't met another PCDworks. While every engineering
 firm on the planet will claim to be able to "solve the toughest problems", etc., I don't
-know of hardly any firms with the capabilities, depth, and flexibility that PCDworks has. They
-are like the Green Baret of engineering and technical innovation." – Michael Mortan // Board Advisor, PCDworks
+know of any firm with the capabilities, depth, and flexibility that PCDworks has. They
+are like the Green Baret of engineering and technical innovation." – Michael Morton // Board Advisor, PCDworks
 
 
 </lander>
 
 <lander :content="sections">
 
-## We have the *place*, the *knowledge*, and the *vision* to get your product to the top of the mountain
+## We have the *place*, the *knowledge*, and the *vision* to help you get your product to the top of the mountain
 
 <br>
 </lander>

@@ -202,13 +202,10 @@ medical:
 # Not specializing
 <br/>
 
-The diversity of industries we work in is one of
-our greatest strengths. Our ability to
-cross-pollinate information, ideas, and insights
-from a wide swath of sectors leads to pioneering
-outcomes. Check out these customer success
-briefs to see how we found innovative solutions
-to some of their toughest problems.
+*The diversity of work experience is one of
+our greatest strengths. 
+*Our ability to cross-pollinate knowledge, ideas, and insights
+from a wide swath of sectors leads to pioneering outcomes.
 
 
 </template>
