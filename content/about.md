@@ -174,17 +174,11 @@ about_1:
 # Make it happen
 <br/>
 
-*For a quarter of a century, we've developed
-innovative solutions for 50+ companies across a
-range of industries. 
-*We've racked up more
-than 40 patents along the way. 
-*Our projects span
-industries including renewable energy,
-transportation, medical, oil and gas, food
-processing, military, and consumer goods. 
+  * For a quarter of a century, we've developed innovative solutions for 50+ companies across a range of industries. 
+  * We've racked up more than 40 patents along the way. 
+  * Our projects span industries including renewable energy,  transportation, medical, oil and gas, food  processing, military, and consumer goods. 
 
-##To us, diversity is our strength.##
+## To us, diversity is our strength.
 
 Made up of a core team of passionate and experienced scientists,
 engineers, and technical development experts, we also call upon a global
