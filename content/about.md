@@ -174,14 +174,17 @@ about_1:
 # Make it happen
 <br/>
 
-For a quarter of a century, we've developed
+*For a quarter of a century, we've developed
 innovative solutions for 50+ companies across a
-range of industries. And we've racked up more
-than 30 patents along the way. Our projects span
+range of industries. 
+*We've racked up more
+than 40 patents along the way. 
+*Our projects span
 industries including renewable energy,
 transportation, medical, oil and gas, food
-processing, military, and consumer goods. To us,
-diversity is our strength.
+processing, military, and consumer goods. 
+
+##To us, diversity is our strength.##
 
 Made up of a core team of passionate and experienced scientists,
 engineers, and technical development experts, we also call upon a global
@@ -190,7 +193,7 @@ expertise in their respective fields to bring together the right team for your
 particular project.
 
 Bottom line? When you're ready to get your idea out into the world, we've got
-the big brains (not to mention, small egos) to make it happen.
+the creativity, curiosity, deep knowledge (small egos) to make it happen.
 
 </template>
 </text-image>
@@ -222,10 +225,10 @@ As a knowledge-based company, we use a stage gate
 approach that involves constant testing, refinement,
 and communication. This cycle of gaining knowledge
 through iterative research, experimentation, and
-discovery results in learning, which we apply to reduce
-risk; it's a proven methodology that breaks down a
-complex problem, prioritizes next steps, and increases
-your likelihood of success.
+discovery results in learning which informs knowledge, 
+which we apply to reduce risk; it's a proven methodology 
+that breaks down a complex problem, prioritizes next steps, 
+and increases your likelihood of success.
 
 Here's what you can expect when you work with us.
 
