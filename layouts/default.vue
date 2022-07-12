@@ -204,6 +204,26 @@ export default {
 
 <style lang="scss">
 
+primary,
+primary h1,
+primary h2,
+primary h3,
+primary h4,
+primary p,
+primary ul {
+  color: #afbd21 !important;
+}
+
+secondary,
+secondary h1,
+secondary h2,
+secondary h3,
+secondary h4,
+secondary p,
+secondary ul {
+  color: #5E6E65;
+}
+
 
 #heart {
   padding: 0 !important;
