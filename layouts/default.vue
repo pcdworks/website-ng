@@ -10,6 +10,9 @@
           </router-link>
         </v-toolbar-title>
         <v-spacer class="d-none d-sm-none d-md-flex"></v-spacer>
+        <v-btn text tile :class="navBtn" to="/">
+          Home
+        </v-btn>
         <div id="menu" class="d-none d-sm-none d-md-flex">
           <v-menu offset-y>
             <template #activator="{ on, attrs }">
@@ -51,7 +54,6 @@
               <v-list-item-title v-text="'Services'"></v-list-item-title>
             </v-list-item-content>
           </template>
-
           <v-list-item
             v-for="(item, index) in menu.Services"
             :key="index"
@@ -221,7 +223,17 @@ secondary h3,
 secondary h4,
 secondary p,
 secondary ul {
-  color: #5E6E65;
+  color: #5E6E65 !important;
+}
+
+black,
+black h1,
+black h2,
+black h3,
+black h4,
+black p,
+black ul {
+  color: #000000 !important;
 }
 
 
