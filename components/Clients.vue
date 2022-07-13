@@ -5,19 +5,22 @@
         <div class="px-xl-16 px-lg-16 px-md-4 px-xs-0 mx-1">
           <center>
             <slot></slot>
+            <v-btn v-if="hasButton" color="primary" :to="button.link" :alt="button.alt">
+              {{button.text}}
+            </v-btn>
           </center>
         </div>
       </v-col>
       <v-col cols="12" align-self="center">
-        <v-row class="py-4 px-16" align="stretch">
+        <v-row class="py-4 px-4 px-sm-16 px-md-16" align="stretch">
           <v-col
             v-for="(logo, idx) in logos"
             :key="idx"
-            cols="12"
-            lx="2"
+            cols="6"
+            lx="1"
             lg="2"
             md="3"
-            sm="4"
+            sm="3"
           >
             <v-list-item :href="logo.link" target="_blank">
               <v-img :src="logo.image" :alt="logo.alt" contain></v-img>
@@ -37,7 +40,16 @@ export default {
       type: Array,
       default: () => [],
     },
+    button: {
+      type: Object,
+      default: () => {},
+    }
   },
+  computed: {
+    hasButton() {
+      return this.button && Object.keys(this.button).length !== 0
+    }
+  }
 }
 </script>
 
