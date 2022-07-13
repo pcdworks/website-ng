@@ -2,13 +2,18 @@
   <v-img :src="getImage" :aspect-ratio="18 / 9" :gradient="getFilter">
     <v-row class="py-16 lander fill-height" align="center">
       <v-col align-self="center">
-        <div class="px-xl-16 px-lg-16 px-md-4 px-xs-0 mx-1">
-          <div class="pt-16 mx-4 mx-md-8 mx-lg-16">
+        <div v-if="hasBacking" class="panel pa-4" :style="'background: ' + backing">
+          <slot></slot>
+        </div>
+        <div v-else class="px-xl-16 px-lg-16 px-md-4 px-xs-0 mx-1">
+          <div class="mt-16 mx-4 mx-md-8 mx-lg-16">
             <center v-if="getCenter">
               <slot></slot>
             </center>
             <slot v-else></slot>
           </div>
+        </div>
+        <div class="px-xl-16 px-lg-16 px-md-4 px-xs-0 mx-1">
           <v-row class="px-xl-16 px-lg-16 px-md-4 px-xs-0 mx-2">
             <v-col
               v-for="(card, idx) in getCards"
@@ -120,6 +125,10 @@ export default {
       type: Boolean,
       default: false,
     },
+    backing: {
+      type: String,
+      default: ''
+    },
     image: {
       type: String,
       default: ''
@@ -161,12 +170,21 @@ export default {
       } else {
         return this.content.image
       }
+    },
+    hasBacking() {
+      return this.backing !== ''
     }
   }
 }
 </script>
 
 <style lang="scss" scoped>
+.panel {
+  display: inline-block;
+  border-top-right-radius: 8px;
+  border-bottom-right-radius: 8px;    
+}
+
 .top-title {
   background: #5e6e64;
   width: 100%;
