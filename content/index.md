@@ -7,7 +7,7 @@ order: 0
 
 main:
   image: '/images/index/mnt.webp'
-  filter: 'to top right, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.1)'
+  filter: ''
 
 sections:
   image: '/images/index/lander.webp'
@@ -139,21 +139,40 @@ logos:
 
 ---
 
-<lander :content="main">
+<lander :content="main" backing="#000000B3" center>
 
-## PCDworks – The Innovation Basecamp
-### From Concept to Commercialization, We Climb That Innovation Mountain with You
+## The Innovation Basecamp
+<primary>
 
+## We Climb That Innovation Mountain with You
+</primary>
 
+### From Concept to Commercialization
 
 </lander>
 
-<you-tube link="https://www.youtube.com/embed/QU16iUYKPr4">
+<tri-force :button="{link: 'https://www.youtube.com/watch?v=QU16iUYKPr4', text: 'Watch Now ➡'}">
 
-# OUR VISION
-To do our part to work with those whom we consider both friends and colleagues to solve the planet’s challenges, through HardTech with a purpose, like the Renewell start-up that we incubated, as featured on the YouTube Channel "*Made in America*"
+OUR VISION
 
-</you-tube>
+### **To work with those whom we consider both friends**
+### **and colleagues to solve the planet's challenges,**
+### **<primary>through HardTech with a purpose</primary>**
+\
+Innovation shouldn't be a barrier to your company's growth. We have our own secret sauce for creativity: relationships and honesty.
+
+<template v-slot:secondary>
+
+#### Our work with Renewell featured on "American Innovators" and Incubated at PCDworks.
+</template>
+
+<template v-slot:tertiary>
+
+<you-tube-full link="https://www.youtube.com/embed/QU16iUYKPr4"></you-tube>
+</template>
+
+
+</tri-force>
 
 <lander :content="possible">
 
