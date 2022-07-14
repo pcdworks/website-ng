@@ -5,10 +5,6 @@ description: 'We provides innovation and expertise in new product development to
 nav_name: Home
 order: 0
 
-main:
-  image: '/images/index/mnt.webp'
-  filter: ''
-
 sections:
   image: '/images/index/lander.webp'
   filter: 'to top right, rgba(51, 102, 51, 0.5), rgba(51, 102, 51, 0.5)'
@@ -139,7 +135,7 @@ logos:
 
 ---
 
-<lander :content="main" backing="#000000B3" center>
+<lander image="/images/index/mnt.webp" backing="#000000B3" center>
 
 ## The Innovation Basecamp
 <primary>
@@ -170,21 +166,25 @@ Innovation shouldn't be a barrier to your company's growth. We have our own secr
 
 <you-tube-full link="https://www.youtube.com/embed/QU16iUYKPr4"></you-tube>
 </template>
-
-
 </tri-force>
 
-<lander :content="possible">
+<lander filter="to top right, #5e6e64, #5e6e64">
 
-# We solve problems other people can't
+WHAT WE DO
 
-"The bottom line is that you haven't met another PCDworks. While every engineering
-firm on the planet will claim to be able to "solve the toughest problems", etc., I don't
-know of hardly any firms with the capabilities, depth, and flexibility that PCDworks has. They
-are like the Green Baret of engineering and technical innovation." – Michael Mortan // Board Advisor, PCDworks
+<center>
 
+### We create HardTech for
+### <primary>meaningful innovations</primary>
+\
+Writing our own rules on how to build HardTech, one project at a time. We
+can help you find what you are looking for.
+
+
+</center>
 
 </lander>
+
 
 <lander :content="sections">
 

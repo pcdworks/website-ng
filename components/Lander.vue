@@ -1,5 +1,5 @@
 <template>
-  <v-img :src="getImage" :aspect-ratio="18 / 9" :gradient="getFilter">
+  <v-img :src="getImage" :aspect-ratio="getAspect" :gradient="getFilter">
     <v-row class="py-16 lander fill-height" align="center">
       <v-col align-self="center">
         <div v-if="hasBacking" class="mt-16 panel py-4 px-2 mr-4 px-md-10 px-lg-16" :style="'background: ' + backing">
@@ -122,7 +122,13 @@ export default {
   props: {
     content: {
       type: Object,
-      default: () => {},
+      default: () => {
+        return {
+          filter: '',
+          image: '',
+          center: false
+        }
+      },
     },
     snow: {
       type: Boolean,
@@ -150,6 +156,12 @@ export default {
     }
   },
   computed: {
+    getAspect() {
+      if(this.image === '' && this.content.image === '') {
+        return 0
+      }
+      return 18 / 9
+    },
     getCenter() {
       return this.center || this.content.center
     },
@@ -161,7 +173,7 @@ export default {
       }
     },
     getCards() {
-      if (this.cards.length !== 0) {
+      if (this.cards && this.cards.length !== 0) {
         return this.cards
       } else {
         return this.content.cards
