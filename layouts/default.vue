@@ -272,6 +272,10 @@ h3 {
   font-size: 2rem;
 }
 
+h4 {
+  font-size: 1.8rem;
+}
+
 p,
 ul {
   font-size: 1.5rem;
@@ -289,6 +293,10 @@ ul {
 
   h3 {
     font-size: 1.5rem;
+  }
+
+  h4 {
+    font-size: 1.3rem;
   }
 
   p,
