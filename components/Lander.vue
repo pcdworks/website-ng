@@ -2,8 +2,11 @@
   <v-img :src="getImage" :aspect-ratio="18 / 9" :gradient="getFilter">
     <v-row class="py-16 lander fill-height" align="center">
       <v-col align-self="center">
-        <div v-if="hasBacking" class="panel pa-4" :style="'background: ' + backing">
-          <slot></slot>
+        <div v-if="hasBacking" class="mt-16 panel py-4 px-2 mr-4 px-md-10 px-lg-16" :style="'background: ' + backing">
+          <center v-if="getCenter">
+            <slot></slot>
+          </center>
+          <slot v-else></slot>
         </div>
         <div v-else class="px-xl-16 px-lg-16 px-md-4 px-xs-0 mx-1">
           <div class="mt-16 mx-4 mx-md-8 mx-lg-16">
