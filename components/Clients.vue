@@ -12,7 +12,7 @@
         </div>
       </v-col>
       <v-col cols="12" align-self="center">
-        <v-row class="py-4 px-4 px-sm-16 px-md-16" align="stretch">
+        <v-row class="py-4 px-4 px-sm-16 px-md-16" align="stretch"  justify="center">
           <v-col
             v-for="(logo, idx) in logos"
             :key="idx"
