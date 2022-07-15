@@ -2,14 +2,15 @@
   <v-img :src="getImage" :aspect-ratio="getAspect" :gradient="getFilter">
     <v-row class="py-16 lander fill-height" align="center">
       <v-col align-self="center">
-        <div v-if="hasBacking" class="mt-16 panel py-4 px-2 mr-4 px-md-10 px-lg-16" :style="'background: ' + backing">
+        <div v-if="hasBacking" class="mt-16 panel py-4 px-2 mr-4 px-md-10 px-lg-16" :style="'background: ' + backing" :id="color">
           <center v-if="getCenter">
             <slot></slot>
           </center>
           <slot v-else></slot>
         </div>
-        <div v-else class="px-xl-16 px-lg-16 px-md-4 px-xs-0 mx-1">
-          <div class="mt-16 mx-4 mx-md-8 mx-lg-16">
+        <div v-else class="px-xl-16 px-lg-16 px-md-4 px-xs-0 mx-1" :id="color">
+          <div class="mt-6 mx-4 mx-md-8 mx-lg-16">
+            <h3><u><b>{{title}}</b></u></h3>
             <center v-if="getCenter">
               <slot></slot>
             </center>
@@ -153,6 +154,14 @@ export default {
     cards: {
       type: Array,
       default: () => []
+    },
+    title: {
+      type: String,
+      default: ''
+    },
+    color: {
+      type: String,
+      default: 'white'
     }
   },
   computed: {
@@ -226,13 +235,22 @@ export default {
   font-weight: 600;
 }
 
-::v-deep h1,
-::v-deep h2,
-::v-deep h3,
-::v-deep p,
-::v-deep ul,
-::v-deep a {
+::v-deep #white h1,
+::v-deep #white h2,
+::v-deep #white h3,
+::v-deep #white p,
+::v-deep #white ul,
+::v-deep #white a {
   color: rgba(255, 255, 255, 1);
+}
+
+::v-deep #black h1,
+::v-deep #black h2,
+::v-deep #black h3,
+::v-deep #black p,
+::v-deep #black ul,
+::v-deep #black a {
+  color: rgba(0, 0, 0, 1);
 }
 
 @media #{map-get($display-breakpoints, 'lg-only')} {

@@ -147,9 +147,7 @@ logos:
 
 </lander>
 
-<tri-force :button="{link: 'https://www.youtube.com/watch?v=QU16iUYKPr4', text: 'Watch Now ➡'}">
-
-OUR VISION
+<tri-force :button="{link: 'https://www.youtube.com/watch?v=QU16iUYKPr4', text: 'Watch Now ➡'}" title="OUR VISION">
 
 ### **To work with those whom we consider both friends**
 ### **and colleagues to solve the planet's challenges,**
@@ -168,11 +166,7 @@ Innovation shouldn't be a barrier to your company's growth. We have our own secr
 </template>
 </tri-force>
 
-<lander filter="to top right, #5e6e64, #5e6e64">
-
-WHAT WE DO
-
-<center>
+<lander filter="to top right, #5e6e64, #5e6e64" center title="WHAT WE DO">
 
 ### We create HardTech for
 ### <primary>meaningful innovations</primary>
@@ -180,23 +174,28 @@ WHAT WE DO
 Writing our own rules on how to build HardTech, one project at a time. We
 can help you find what you are looking for.
 
-
-</center>
-
 </lander>
 
+<lander title="THE BOTTOM LINE" color="black" center>
 
-<lander :content="sections">
+\
+**“...is that <primary>you haven’t met another PCDwork</primary>. While**
+**every engineering firm on the planet will claim to be**
+**able to ‘solve the toughest problems’, etc., I don’t know**
+**of hardly any firms with the capabilities, depth, and**
+**flexibility that PCDworks has. They are like the Green**
+**Baret of engineering and technical innovation.”**
+\
+\
+-Michael Morton // Board Advisor, PCDworks
 
-## We have the *place*, the *knowledge*, and the *vision* to get your product to the top of the mountain
-
-<br>
 </lander>
 
 
 <clients :logos="logos">
 
-# INNOVATION COMES<br/>IN ALL FORMS
-## (Just like the clients who trust us)
+# INNOVATION COMES
+# IN ALL FORMS
+## Just like the clients who trust us
 
 </clients>

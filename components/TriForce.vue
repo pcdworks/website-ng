@@ -4,6 +4,7 @@
         <div class="mx-md-8 mx-lg-16">
             <v-row class="py-16 fill-height" align="center">
                 <v-col align-self="center" cols="12" class="pa-8 pa-md-16">
+                    <h3><u><b>{{title}}</b></u></h3>
                     <center v-if="center">
                         <slot></slot>
                     </center>
@@ -37,7 +38,11 @@ export default {
         button: {
             type: Object,
             default: () => {}
-        }
+        },
+        title: {
+            type: String,
+            default: ''
+        },
     },
     computed: {
         hasButton() {
