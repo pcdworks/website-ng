@@ -192,6 +192,23 @@ can help you find what you are looking for.
 </lander>
 
 
+<box background="/images/index/lander.webp"
+      image="/images/index/lander-4.webp"
+      :button="{text: 'expertise', link: '/expertise'}"
+      filter="to top right, rgba(51, 102, 51, 0.5), rgba(51, 102, 51, 0.5)"
+      :aspect="21/5">
+
+## We work with you to build <primary>unique products</primary>, so you can keep making a positive change in the world.
+\
+We work with our clients to co-create HardTech projects that
+people are proud of.
+It might seem obvious, but the way to ensure your product is the
+best, is to effectively frame the problem and reduce risk at each
+step.
+
+</box>
+
+
 <clients :logos="logos">
 
 # INNOVATION COMES

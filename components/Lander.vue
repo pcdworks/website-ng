@@ -2,13 +2,13 @@
   <v-img :src="getImage" :aspect-ratio="getAspect" :gradient="getFilter">
     <v-row class="py-16 lander fill-height" align="center">
       <v-col align-self="center">
-        <div v-if="hasBacking" class="mt-16 panel py-4 px-2 mr-4 px-md-10 px-lg-16" :style="'background: ' + backing" :id="color">
+        <div v-if="hasBacking" :id="color" class="mt-16 panel py-4 px-2 mr-4 px-md-10 px-lg-16" :style="'background: ' + backing">
           <center v-if="getCenter">
             <slot></slot>
           </center>
           <slot v-else></slot>
         </div>
-        <div v-else class="px-xl-16 px-lg-16 px-md-4 px-xs-0 mx-1" :id="color">
+        <div v-else :id="color" class="px-xl-16 px-lg-16 px-md-4 px-xs-0 mx-1">
           <div class="mt-6 mx-4 mx-md-8 mx-lg-16">
             <h3><u><b>{{title}}</b></u></h3>
             <center v-if="getCenter">

@@ -48,7 +48,7 @@ export default {
         hasButton() {
             return this.button && Object.keys(this.button).length !== 0
         }
-  }
+    }
 }
 </script>
 
