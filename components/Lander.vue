@@ -206,7 +206,8 @@ export default {
 .panel {
   display: inline-block;
   border-top-right-radius: 8px;
-  border-bottom-right-radius: 8px;    
+  border-bottom-right-radius: 8px;
+  box-shadow: 6px 8px 8px black;
 }
 
 .top-title {

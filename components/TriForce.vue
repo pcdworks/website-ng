@@ -18,6 +18,9 @@
                 <v-col cols="12" md="6" class="pa-8 pr-md-16">
                     <slot name="tertiary"></slot>
                 </v-col>
+                <v-col cols="12">
+                    <slot name="quaternary"></slot>
+                </v-col>
             </v-row>
         </div>
     </div>
