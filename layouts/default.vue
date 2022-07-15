@@ -14,7 +14,7 @@
         <v-btn text tile :class="navBtn" to="/">
           Home
         </v-btn>
-        <div id="menu" class="d-none d-sm-none d-md-flex">
+        <!-- <div id="menu" class="d-none d-sm-none d-md-flex">
           <v-menu offset-y>
             <template #activator="{ on, attrs }">
               <v-btn text tile :class="navBtn" v-bind="attrs" v-on="on">
@@ -31,7 +31,7 @@
               </v-list-item>
             </v-list>
           </v-menu>
-        </div>
+        </div> -->
         <v-btn v-for="item in topMenu" :key="item.nav_name" text tile :class="navBtn" :to="item.path">
           {{item.nav_name}}
         </v-btn>
@@ -49,7 +49,7 @@
             Home
           </v-list-item-title>
         </v-list-item>
-        <v-list-group>
+        <!-- <v-list-group>
           <template #activator>
             <v-list-item-content>
               <v-list-item-title v-text="'Services'"></v-list-item-title>
@@ -62,7 +62,7 @@
           >
             <v-list-item-title v-text="item.nav_name"></v-list-item-title>
           </v-list-item>
-        </v-list-group>
+        </v-list-group> -->
         <v-list-item v-for="item in topMenu" :key="item.nav_name" :to="item.path">
           <v-list-item-title v-text="item.nav_name"></v-list-item-title>
         </v-list-item>
