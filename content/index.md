@@ -133,6 +133,13 @@ logos:
     alt: "SMART Securement Systems, LLC."
     link: "https://smartsecurement.com/"
 
+words:
+  - meaningful innovations
+  - people who are good humans
+  - an appreciation of edge effect abundance
+  - empowering creativity
+  - finding the best solution
+
 ---
 
 <lander image="/images/index/mnt.webp" backing="#000000B3" center>
@@ -169,7 +176,7 @@ Innovation shouldn't be a barrier to your company's growth. We have our own secr
 <lander filter="to top right, #5e6e64, #5e6e64" center title="WHAT WE DO">
 
 ### We create HardTech for
-### <primary>meaningful innovations</primary>
+### <primary><type-writer :strings="words"></type-writer></primary>
 \
 Writing our own rules on how to build HardTech, one project at a time. We
 can help you find what you are looking for.
