@@ -9,6 +9,7 @@
             <Logo/>
           </router-link>
         </v-toolbar-title>
+        &nbsp;&nbsp;
         <v-spacer class="d-none d-sm-none d-md-flex"></v-spacer>
         <v-btn text tile :class="navBtn" to="/">
           Home
