@@ -17,6 +17,9 @@
                 <v-col cols="12" md="6">
                     <slot name="tertiary"></slot>
                 </v-col>
+                <v-col cols="12">
+                    <slot name="quaternary"></slot>
+                </v-col>
             </v-row>
         </div>
     </div>
