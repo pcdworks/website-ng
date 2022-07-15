@@ -185,7 +185,7 @@ export default {
       ).replace(/-/g, ' ')
     },
     setCategory (item) {
-      if(item.path && item.path !== '/index') {
+      if(item.path && item.path !== '/index' && item.path !== '/expertise' && item.path !== '/campus') {
         const path = item.path.split('/')
         if(path.length > 2) {
           item.category = this.toTitleCase(path[1])

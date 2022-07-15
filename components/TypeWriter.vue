@@ -27,5 +27,7 @@ export default {
 </script>
 
 <style>
-
+#typewriter {
+    font-family: "DroidSansMono",monospace;
+}
 </style>

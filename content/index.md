@@ -154,13 +154,15 @@ words:
 
 </lander>
 
-<tri-force :button="{link: 'https://www.youtube.com/watch?v=QU16iUYKPr4', text: 'Watch Now ➡'}" title="OUR VISION">
+<tri-force :button="{link: 'https://www.youtube.com/watch?v=QU16iUYKPr4', text: 'Watch Now ➡'}" title="OUR VISION" background="#3b3838">
 
 ### **To work with those whom we consider both friends**
 ### **and colleagues to solve the planet's challenges,**
-### **<primary>through HardTech with a purpose</primary>**
+### **<primary>through HardTech with a purpose.</primary>**
 \
-Innovation shouldn't be a barrier to your company's growth. We have our own secret sauce for creativity: relationships and honesty.
+Innovation shouldn't be a barrier to your company's growth.
+\
+We have our own secret sauce for creativity: relationships and honesty.
 
 <template v-slot:secondary>
 
@@ -216,10 +218,9 @@ step.
 </box>
 
 
-<clients :logos="logos">
+<clients :logos="logos" :button="{text: 'Projects', link: '/work'}">
 
-# INNOVATION COMES
-# IN ALL FORMS
-## Just like the clients who trust us
+# **INNOVATION COMES IN ALL FORMS**
+### Just like the clients who trust us
 
 </clients>

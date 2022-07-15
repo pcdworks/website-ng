@@ -1,6 +1,6 @@
 <template>
   <v-img :src="getImage" :aspect-ratio="getAspect" :gradient="getFilter">
-    <v-row class="py-16 lander fill-height" align="center">
+    <v-row class="pb-16 pt-10 lander fill-height" align="center">
       <v-col align-self="center">
         <div v-if="hasBacking" :id="color" class="mt-16 panel py-4 px-2 mr-4 px-md-10 px-lg-16" :style="'background: ' + backing">
           <center v-if="getCenter">
@@ -8,9 +8,9 @@
           </center>
           <slot v-else></slot>
         </div>
-        <div v-else :id="color" class="px-xl-16 px-lg-16 px-md-4 px-xs-0 mx-1">
+        <div v-else :id="color" class="px-xl-16 px-lg-16 px-md-16 px-xs-0 mx-1">
           <div class="mt-6 mx-4 mx-md-8 mx-lg-16">
-            <h3><u><b>{{title}}</b></u></h3>
+            <h4>{{title}}</h4>
             <center v-if="getCenter">
               <slot></slot>
             </center>
@@ -203,11 +203,12 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+
 .panel {
   display: inline-block;
   border-top-right-radius: 8px;
   border-bottom-right-radius: 8px;
-  box-shadow: 6px 8px 8px black;
+  box-shadow: 3.0px 6.1px 6.1px black;
 }
 
 .top-title {
@@ -239,6 +240,7 @@ export default {
 ::v-deep #white h1,
 ::v-deep #white h2,
 ::v-deep #white h3,
+::v-deep #white h4,
 ::v-deep #white p,
 ::v-deep #white ul,
 ::v-deep #white a {
@@ -248,6 +250,7 @@ export default {
 ::v-deep #black h1,
 ::v-deep #black h2,
 ::v-deep #black h3,
+::v-deep #black h4,
 ::v-deep #black p,
 ::v-deep #black ul,
 ::v-deep #black a {

@@ -166,7 +166,76 @@ about_1:
   - "/images/about/about-3.webp"
   - "/images/about/about-4.webp"
   - "/images/about/about-5.webp"
+
+campus_2:
+    - link: "/images/campus/campus-4.webp"
+      alt:
+      text:
+    - link: "/images/campus/campus-8.webp"
+      alt:
+      text:
+    - link: "/images/campus/campus-13.webp"
+      alt:
+      text:
+    - link: "/images/campus/campus-15.webp"
+      alt:
+      text:
+    - link: "/images/campus/campus-16.webp"
+      alt:
+      text:
+    - link: "/images/campus/campus-17.webp"
+      alt:
+      text:
+    - link: "/images/campus/campus-18.webp"
+      alt:
+      text:
 ---
+
+<tri-force center>
+
+## Hey, <primary>we’re PCDworks</primary>,
+### nice to meet you
+\
+We are a small group of people with big capabilities
+
+
+<template v-slot:secondary>
+
+### We are value driven individuals that care about the quality we produce.
+</template>
+
+<template v-slot:tertiary>
+<image-viewer alt="PCDworks Team" image="/images/expertise/group-2022.webp"></image-viewer>
+</template>
+
+<template v-slot:quaternary>
+
+For a quarter of a century, we’ve developed innovative solutions for
+companies and startups alike. And we’ve racked up more than 30 patents
+along the way.
+\
+Our projects span industries including renewable energy, transportation,
+medical, oil and gas, food processing, military and consumer goods.
+\
+\
+<primary>To us, diversity is our strength.</primary>
+</template>
+</tri-force>
+<text-image :images="campus_2" order="it">
+<template v-slot:primary>
+
+## Experience if for
+# Yourself
+<br/>
+
+All are welcome to visit our campus. Come by yourself or bring your team to
+stroll the grounds, see what we're working on, and explore all the ways you
+can experience out-of-the-box thinking. Schedule your visit today.
+
+</template>
+</text-image>
+
+<!--
 <text-image :images="about_1">
 <template v-slot:primary>
 
@@ -264,3 +333,4 @@ of PCDworks for yourself.
 Palestine, TX 75803
 
 </image-fader>
+-->

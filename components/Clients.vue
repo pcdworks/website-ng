@@ -5,7 +5,8 @@
         <div class="px-xl-16 px-lg-16 px-md-4 px-xs-0 mx-1">
           <center>
             <slot></slot>
-            <v-btn v-if="hasButton" color="primary" :to="button.link" :alt="button.alt">
+            <br/>
+            <v-btn v-if="hasButton" color="primary" :to="button.link" :alt="button.alt" class="my-12">
               {{button.text}}
             </v-btn>
           </center>
