@@ -71,6 +71,9 @@
     <v-main :style="mainStyle">
       <v-container id="heart" fluid>
         <Nuxt />
+          <v-btn fab dark large color="primary" fixed right bottom to="/contact" class="mb-md-4 mr-md-2 mr-0 mb-0">
+              <v-icon dark>mdi-email</v-icon>
+          </v-btn>
         <Footer />
       </v-container>
     </v-main>
@@ -185,7 +188,7 @@ export default {
       ).replace(/-/g, ' ')
     },
     setCategory (item) {
-      if(item.path && item.path !== '/index' && item.path !== '/expertise' && item.path !== '/campus') {
+      if(item.path && item.path !== '/index' && item.path !== '/expertise' && item.path !== '/campus' && item.path !== '/contact') {
         const path = item.path.split('/')
         if(path.length > 2) {
           item.category = this.toTitleCase(path[1])
@@ -274,12 +277,12 @@ h3 {
 }
 
 h4 {
-  font-size: 1.8rem;
+  font-size: 1.6rem;
 }
 
 p,
 ul {
-  font-size: 1.5rem;
+  font-size: 1.3rem;
 }
 
 @media #{map-get($display-breakpoints, 'md-and-down')} {

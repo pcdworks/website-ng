@@ -10,7 +10,7 @@
         </div>
         <div v-else :id="color" class="px-xl-16 px-lg-16 px-md-16 px-xs-0 mx-1">
           <div class="mt-6 mx-4 mx-md-8 mx-lg-16">
-            <h4>{{title}}</h4>
+            <p>{{title}}</p>
             <center v-if="getCenter">
               <slot></slot>
             </center>

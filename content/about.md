@@ -1,6 +1,6 @@
 ---
 title: About
-nav_name: About
+nav_name: About Us
 order: 3
 description: "PCDworks for a quarter of a century, we've developed
 innovative solutions for 50+ companies across a range of industries."
@@ -218,7 +218,7 @@ Our projects span industries including renewable energy, transportation,
 medical, oil and gas, food processing, military and consumer goods.
 \
 \
-<primary>To us, diversity is our strength.</primary>
+<primary>To us, diversity of thought is our strength.</primary>
 </template>
 </tri-force>
 <text-image :images="campus_2" order="it">

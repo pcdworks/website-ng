@@ -1,21 +1,21 @@
 <template>
-    <div class="px-xl-16 px-lg-16 px-md-4 px-xs-0"
+    <div class="px-xl-16 px-lg-16 px-md-4 px-xs-0 pt-12"
         :style="'background: ' + background">
         <div class="mx-md-8 mx-lg-16">
-            <v-row class="pb-12 fill-height" align="center">
-                <v-col align-self="center" cols="12" class="pt-12 px-8 px-md-16">
-                    <h4>{{title}}</h4>
+            <v-row class="fill-height">
+                <v-col align-self="center" cols="12" class="px-8 px-md-16 pb-16">
+                    <p>{{title}}</p>
                     <center v-if="center">
                         <slot></slot>
                     </center>
                     <slot v-else></slot>
                 </v-col>
-                <v-col cols="12" md="6" class="pb-8 pl-md-16 px-8">
+                <v-col cols="12" md="4" lg="6" class="pb-8 pl-md-16 px-8 pt-8">
                     <slot name="secondary"></slot>
                     <br/>
                     <v-btn v-if="hasButton" :href="button.link" color="primary" target="_blank">{{button.text}}</v-btn>
                 </v-col>
-                <v-col cols="12" md="6" class="pb-8 pr-md-16">
+                <v-col cols="12" md="8" lg="6" class="pb-8 pr-md-16">
                     <slot name="tertiary"></slot>
                 </v-col>
                 <v-col cols="12">

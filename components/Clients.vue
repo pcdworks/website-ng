@@ -6,7 +6,7 @@
           <center>
             <slot></slot>
             <br/>
-            <v-btn v-if="hasButton" color="primary" :to="button.link" :alt="button.alt" class="my-12">
+            <v-btn v-if="hasButton" color="primary" :to="button.link" :alt="button.alt" class="mt-6 mb-16">
               {{button.text}}
             </v-btn>
           </center>
@@ -64,6 +64,6 @@ export default {
 ::v-deep h2,
 ::v-deep h3,
 ::v-deep p {
-  color: #5e6e64;
+  color: black;
 }
 </style>

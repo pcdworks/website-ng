@@ -136,7 +136,6 @@ logos:
 words:
   - meaningful innovations
   - people who are good humans
-  - an appreciation of edge effect abundance
   - empowering creativity
   - finding the best solution
 
@@ -166,7 +165,7 @@ We have our own secret sauce for creativity: relationships and honesty.
 
 <template v-slot:secondary>
 
-#### Our work with Renewell featured on "American Innovators" and Incubated at PCDworks.
+Our work with Renewell featured<br>on "American Innovators" and<br>incubated at PCDworks.
 </template>
 
 <template v-slot:tertiary>
@@ -187,6 +186,10 @@ can help you find what you are looking for.
 
 <lander title="THE BOTTOM LINE" color="black" center>
 
+
+<div class="px-lg-16">
+<div class="px-lg-16">
+
 \
 **“...is that <primary>you haven’t met another PCDwork</primary>. While**
 **every engineering firm on the planet will claim to be**
@@ -198,6 +201,8 @@ can help you find what you are looking for.
 \
 -Michael Morton // Board Advisor, PCDworks
 
+</div>
+</div>
 </lander>
 
 
