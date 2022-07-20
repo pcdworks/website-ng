@@ -5,7 +5,7 @@
         <v-img
           :src="image"
           class="align-end"
-          :aspect-ratio="1"
+          :aspect-ratio="aspect"
           contain
           v-bind="attrs"
           v-on="on"
@@ -48,6 +48,10 @@ export default {
       type: String,
       default: 'Image Viewer',
     },
+    aspect: {
+      type: Number,
+      default: 1
+    }
   },
   data() {
     return {

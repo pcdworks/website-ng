@@ -18,7 +18,7 @@ prototypes:
 
 ---
 
-<text-image image="/images/expertise/group-2022.webp">
+<text-image image="/images/expertise/group-2022.webp" trim>
 <template v-slot:primary>
 
 ## Yeah, we've

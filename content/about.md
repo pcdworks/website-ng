@@ -191,7 +191,7 @@ campus_2:
       text:
 ---
 
-<tri-force center>
+<tri-force center background="#3B3838">
 
 ## Hey, <primary>we’re PCDworks</primary>,
 ### nice to meet you
@@ -201,11 +201,14 @@ We are a small group of people with big capabilities
 
 <template v-slot:secondary>
 
+<right>
+
 ### We are value driven individuals that care about the quality we produce.
+</right>
 </template>
 
 <template v-slot:tertiary>
-<image-viewer alt="PCDworks Team" image="/images/expertise/group-2022.webp"></image-viewer>
+<image-viewer alt="PCDworks Team" image="/images/expertise/group-2022.webp" :aspect="21/9"></image-viewer>
 </template>
 
 <template v-slot:quaternary>

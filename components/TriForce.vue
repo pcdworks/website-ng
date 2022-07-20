@@ -3,7 +3,7 @@
         :style="'background: ' + background">
         <div class="mx-md-8 mx-lg-16">
             <v-row class="fill-height">
-                <v-col align-self="center" cols="12" class="px-8 px-md-16 pb-16">
+                <v-col align-self="center" cols="12" class="px-8 px-md-16 pb-10">
                     <p>{{title}}</p>
                     <center v-if="center">
                         <slot></slot>
@@ -18,7 +18,7 @@
                 <v-col cols="12" md="8" lg="6" class="pb-8 pr-md-16">
                     <slot name="tertiary"></slot>
                 </v-col>
-                <v-col cols="12">
+                <v-col cols="12" class="pa-8">
                     <center v-if="center">
                         <slot name="quaternary"></slot>
                     </center>

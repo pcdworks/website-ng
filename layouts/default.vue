@@ -241,6 +241,9 @@ black ul {
   color: #000000 !important;
 }
 
+right {
+  text-align: right;
+}
 
 #heart {
   padding: 0 !important;
