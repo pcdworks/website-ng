@@ -72,7 +72,8 @@
       <v-container id="heart" fluid>
         <Nuxt />
           <v-btn fab dark large color="primary" fixed right bottom to="/contact" class="mb-md-4 mr-md-2 mr-0 mb-0">
-              <v-icon dark>mdi-email</v-icon>
+              <v-icon v-if="$route.path === '/contact'" dark>mdi-email-edit</v-icon>
+              <v-icon v-else dark>mdi-email</v-icon>
           </v-btn>
         <Footer />
       </v-container>
