@@ -1,17 +1,25 @@
 <template>
-  <v-img :src="content.image" :aspect-ratio="18 / 9" :gradient="content.filter">
+  <v-img :src="getImage" :aspect-ratio="18 / 9" :gradient="getFilter">
     <v-row class="py-16 lander fill-height" align="center">
       <v-col align-self="center">
-        <div class="px-xl-16 px-lg-16 px-md-4 px-xs-0 mx-1">
-          <div class="pt-16 mx-4 mx-md-8 mx-lg-16">
-            <center v-if="content.center">
+        <div v-if="hasBacking" class="mt-16 panel py-4 px-2 mr-4 px-md-10 px-lg-16" :style="'background: ' + backing">
+          <center v-if="getCenter">
+            <slot></slot>
+          </center>
+          <slot v-else></slot>
+        </div>
+        <div v-else class="px-xl-16 px-lg-16 px-md-4 px-xs-0 mx-1">
+          <div class="mt-16 mx-4 mx-md-8 mx-lg-16">
+            <center v-if="getCenter">
               <slot></slot>
             </center>
             <slot v-else></slot>
           </div>
+        </div>
+        <div class="px-xl-16 px-lg-16 px-md-4 px-xs-0 mx-1">
           <v-row class="px-xl-16 px-lg-16 px-md-4 px-xs-0 mx-2">
             <v-col
-              v-for="(card, idx) in content.cards"
+              v-for="(card, idx) in getCards"
               :key="idx"
               cols="12"
               xs="12"
@@ -82,7 +90,6 @@
                     </v-tooltip>
                     <v-spacer/>
                   </v-row>
-
                 </v-card-actions>
               </v-card>
             </v-col>
@@ -121,11 +128,67 @@ export default {
       type: Boolean,
       default: false,
     },
+    backing: {
+      type: String,
+      default: ''
+    },
+    image: {
+      type: String,
+      default: ''
+    },
+    center: {
+      type: Boolean,
+      default: false
+    },
+    filter: {
+      type: String,
+      default: ''
+    },
+    cards: {
+      type: Array,
+      default: () => []
+    }
   },
+  computed: {
+    getCenter() {
+      return this.center || this.content.center
+    },
+    getFilter() {
+      if (this.filter !== '') {
+        return this.filter
+      } else {
+        return this.content.filter
+      }
+    },
+    getCards() {
+      if (this.cards.length !== 0) {
+        return this.cards
+      } else {
+        return this.content.cards
+      }
+    },
+    getImage() {
+      if(this.image !== '') {
+        return this.image
+      } else {
+        return this.content.image
+      }
+    },
+    hasBacking() {
+      return this.backing !== ''
+    }
+  }
 }
 </script>
 
 <style lang="scss" scoped>
+.panel {
+  display: inline-block;
+  border-top-right-radius: 8px;
+  border-bottom-right-radius: 8px;
+  box-shadow: 6px 8px 8px black;
+}
+
 .top-title {
   background: #5e6e64;
   width: 100%;

@@ -6,14 +6,7 @@
 
 <script>
 export default {
-  name: 'Backing',
-  async asyncData({ $content }) {
-    const page = await $content('home').fetch()
-
-    return {
-      page,
-    }
-  },
+  name: 'Backing'
 }
 </script>
 

@@ -9,7 +9,11 @@
             <Logo/>
           </router-link>
         </v-toolbar-title>
+        &nbsp;&nbsp;
         <v-spacer class="d-none d-sm-none d-md-flex"></v-spacer>
+        <v-btn text tile :class="navBtn" to="/">
+          Home
+        </v-btn>
         <div id="menu" class="d-none d-sm-none d-md-flex">
           <v-menu offset-y>
             <template #activator="{ on, attrs }">
@@ -51,7 +55,6 @@
               <v-list-item-title v-text="'Services'"></v-list-item-title>
             </v-list-item-content>
           </template>
-
           <v-list-item
             v-for="(item, index) in menu.Services"
             :key="index"
@@ -68,7 +71,10 @@
     <v-main :style="mainStyle">
       <v-container id="heart" fluid>
         <Nuxt />
-        <Footer />
+        <v-btn fab dark large color="primary" fixed right bottom to="/contact" class="mb-md-4 mr-md-2 mr-0 mb-0">
+          <v-icon dark>mdi-email</v-icon>
+        </v-btn>
+        <Footer/>
       </v-container>
     </v-main>
   </v-app>
@@ -204,6 +210,36 @@ export default {
 
 <style lang="scss">
 
+primary,
+primary h1,
+primary h2,
+primary h3,
+primary h4,
+primary p,
+primary ul {
+  color: #afbd21 !important;
+}
+
+secondary,
+secondary h1,
+secondary h2,
+secondary h3,
+secondary h4,
+secondary p,
+secondary ul {
+  color: #5E6E65 !important;
+}
+
+black,
+black h1,
+black h2,
+black h3,
+black h4,
+black p,
+black ul {
+  color: #000000 !important;
+}
+
 
 #heart {
   padding: 0 !important;
@@ -240,6 +276,10 @@ h3 {
   font-size: 2rem;
 }
 
+h4 {
+  font-size: 1.8rem;
+}
+
 p,
 ul {
   font-size: 1.5rem;
@@ -257,6 +297,10 @@ ul {
 
   h3 {
     font-size: 1.5rem;
+  }
+
+  h4 {
+    font-size: 1.3rem;
   }
 
   p,
